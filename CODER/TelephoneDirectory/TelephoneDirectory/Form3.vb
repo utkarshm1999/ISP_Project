@@ -159,18 +159,20 @@ Public Class Form3
             DataGridView1.DataSource = dt
             DataGridView1.ClearSelection()
             Dim num As Integer = DataGridView1.Columns.Count
-            Dim btn1 As DataGridViewButtonColumn = New DataGridViewButtonColumn()
-            btn1.HeaderText = "Click Here"
-            btn1.Name = "btn"
-            btn1.Text = "Reject"
-            btn1.UseColumnTextForButtonValue = True
-            DataGridView1.Columns.Add(btn1)
-            Dim btn2 As DataGridViewButtonColumn = New DataGridViewButtonColumn()
-            btn2.HeaderText = "Click Here"
-            btn2.Name = "btn2"
-            btn2.Text = "Accept"
-            btn2.UseColumnTextForButtonValue = True
-            DataGridView1.Columns.Add(btn2)
+            If DataGridView1.ColumnCount = 4 Then
+                Dim btn1 As DataGridViewButtonColumn = New DataGridViewButtonColumn()
+                btn1.HeaderText = "Click Here"
+                btn1.Name = "btn"
+                btn1.Text = "Reject"
+                btn1.UseColumnTextForButtonValue = True
+                DataGridView1.Columns.Add(btn1)
+                Dim btn2 As DataGridViewButtonColumn = New DataGridViewButtonColumn()
+                btn2.HeaderText = "Click Here"
+                btn2.Name = "btn2"
+                btn2.Text = "Accept"
+                btn2.UseColumnTextForButtonValue = True
+                DataGridView1.Columns.Add(btn2)
+            End If
         Catch ex As Exception
             MsgBox("No Requests Right Now!!")
         End Try
