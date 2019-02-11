@@ -1,0 +1,571 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TelephoneDirectory
+</name>
+</assembly>
+<members>
+<member name="T:TelephoneDirectory.GeneralUserDBDataSet1.GeneralUserDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TelephoneDirectory.GeneralUserDBDataSet1.GeneralUserRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TelephoneDirectory.GeneralUserDBDataSet1.GeneralUserRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TelephoneDirectory.GeneralUserDBDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:TelephoneDirectory.GeneralUserDBDataSet1TableAdapters.GeneralUserTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:TelephoneDirectory.GeneralUserDBDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(TelephoneDirectory.GeneralUserDBDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.GeneralUserDBDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(TelephoneDirectory.GeneralUserDBDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.GeneralUserDBDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(TelephoneDirectory.GeneralUserDBDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:TelephoneDirectory.GeneralUserDBDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:TelephoneDirectory.GeneralUserDBDataSet1TableAdapters.TableAdapterManager.UpdateAll(TelephoneDirectory.GeneralUserDBDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:TelephoneDirectory.GeneralUserDBDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:TelephoneDirectory.GeneralUserDBDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:TelephoneDirectory.GeneralUserDBDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet.InternetPlansDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet.InternetPlansRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet.InternetPlansRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSetTableAdapters.InternetPlansTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:TelephoneDirectory.InternetPlansDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(TelephoneDirectory.InternetPlansDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.InternetPlansDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(TelephoneDirectory.InternetPlansDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.InternetPlansDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(TelephoneDirectory.InternetPlansDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:TelephoneDirectory.InternetPlansDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:TelephoneDirectory.InternetPlansDataSetTableAdapters.TableAdapterManager.UpdateAll(TelephoneDirectory.InternetPlansDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet1.InternetPlansDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet1.InternetPlansRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet1.InternetPlansRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet1TableAdapters.InternetPlansTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:TelephoneDirectory.InternetPlansDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(TelephoneDirectory.InternetPlansDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.InternetPlansDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(TelephoneDirectory.InternetPlansDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.InternetPlansDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(TelephoneDirectory.InternetPlansDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:TelephoneDirectory.InternetPlansDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:TelephoneDirectory.InternetPlansDataSet1TableAdapters.TableAdapterManager.UpdateAll(TelephoneDirectory.InternetPlansDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:TelephoneDirectory.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:TelephoneDirectory.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:TelephoneDirectory.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:TelephoneDirectory.RoundedRectangle.DrawRoundedRectangle(System.Drawing.Graphics,System.Drawing.Pen,System.Single,System.Single,System.Single,System.Single,System.Single)">
+	<summary>
+ Draws a rounded rectangle specified by a pair of coordinates, a width, a height and the radius 
+ for the arcs that make the rounded edges.
+ </summary>
+</member><member name="M:TelephoneDirectory.RoundedRectangle.FillRoundedRectangle(System.Drawing.Graphics,System.Drawing.Brush,System.Single,System.Single,System.Single,System.Single,System.Single)">
+	<summary>
+ Fills the interior of a rounded rectangle specified by a pair of coordinates, a width, a height
+ and the radius for the arcs that make the rounded edges.
+ </summary>
+	<param name="brush">System.Drawing.Brush that determines the characteristics of the fill.</param>
+	<param name="x">The x-coordinate of the upper-left corner of the rectangle to fill.</param>
+	<param name="y">The y-coordinate of the upper-left corner of the rectangle to fill.</param>
+	<param name="width">Width of the rectangle to fill.</param>
+	<param name="height">Height of the rectangle to fill.</param>
+	<param name="radius">The radius of the arc used for the rounded edges.</param>
+</member><member name="M:TelephoneDirectory.RoundedRectangle.FillRoundedRectangle(System.Drawing.Graphics,System.Drawing.Brush,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Fills the interior of a rounded rectangle specified by a pair of coordinates, a width, a height
+ and the radius for the arcs that make the rounded edges.
+ </summary>
+	<param name="brush">System.Drawing.Brush that determines the characteristics of the fill.</param>
+	<param name="x">The x-coordinate of the upper-left corner of the rectangle to fill.</param>
+	<param name="y">The y-coordinate of the upper-left corner of the rectangle to fill.</param>
+	<param name="width">Width of the rectangle to fill.</param>
+	<param name="height">Height of the rectangle to fill.</param>
+	<param name="radius">The radius of the arc used for the rounded edges.</param>
+</member><member name="T:TelephoneDirectory.TVPlansDataSet.TVPlansDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TelephoneDirectory.TVPlansDataSet.TVPlansRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TelephoneDirectory.TVPlansDataSet.TVPlansRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TelephoneDirectory.TVPlansDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:TelephoneDirectory.TVPlansDataSetTableAdapters.TVPlansTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:TelephoneDirectory.TVPlansDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(TelephoneDirectory.TVPlansDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.TVPlansDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(TelephoneDirectory.TVPlansDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.TVPlansDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(TelephoneDirectory.TVPlansDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:TelephoneDirectory.TVPlansDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:TelephoneDirectory.TVPlansDataSetTableAdapters.TableAdapterManager.UpdateAll(TelephoneDirectory.TVPlansDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:TelephoneDirectory.TVPlansDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:TelephoneDirectory.TVPlansDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:TelephoneDirectory.TVPlansDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:TelephoneDirectory.TVPlansDataSet1.TVPlansDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TelephoneDirectory.TVPlansDataSet1.TVPlansRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TelephoneDirectory.TVPlansDataSet1.TVPlansRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TelephoneDirectory.TVPlansDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:TelephoneDirectory.TVPlansDataSet1TableAdapters.TVPlansTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:TelephoneDirectory.TVPlansDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(TelephoneDirectory.TVPlansDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.TVPlansDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(TelephoneDirectory.TVPlansDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.TVPlansDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(TelephoneDirectory.TVPlansDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:TelephoneDirectory.TVPlansDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:TelephoneDirectory.TVPlansDataSet1TableAdapters.TableAdapterManager.UpdateAll(TelephoneDirectory.TVPlansDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:TelephoneDirectory.TVPlansDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:TelephoneDirectory.TVPlansDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:TelephoneDirectory.TVPlansDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:TelephoneDirectory.GeneralUserDBDataSet.GeneralUserDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TelephoneDirectory.GeneralUserDBDataSet.GeneralUserRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TelephoneDirectory.GeneralUserDBDataSet.GeneralUserRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TelephoneDirectory.GeneralUserDBDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:TelephoneDirectory.GeneralUserDBDataSetTableAdapters.GeneralUserTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:TelephoneDirectory.GeneralUserDBDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(TelephoneDirectory.GeneralUserDBDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.GeneralUserDBDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(TelephoneDirectory.GeneralUserDBDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.GeneralUserDBDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(TelephoneDirectory.GeneralUserDBDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:TelephoneDirectory.GeneralUserDBDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:TelephoneDirectory.GeneralUserDBDataSetTableAdapters.TableAdapterManager.UpdateAll(TelephoneDirectory.GeneralUserDBDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:TelephoneDirectory.GeneralUserDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:TelephoneDirectory.GeneralUserDBDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:TelephoneDirectory.GeneralUserDBDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:TelephoneDirectory.MobilePlansDBDataSet.MobilePlansDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TelephoneDirectory.MobilePlansDBDataSet.MobilePlansRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TelephoneDirectory.MobilePlansDBDataSet.MobilePlansRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TelephoneDirectory.MobilePlansDBDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:TelephoneDirectory.MobilePlansDBDataSetTableAdapters.MobilePlansTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:TelephoneDirectory.MobilePlansDBDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(TelephoneDirectory.MobilePlansDBDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.MobilePlansDBDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(TelephoneDirectory.MobilePlansDBDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.MobilePlansDBDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(TelephoneDirectory.MobilePlansDBDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:TelephoneDirectory.MobilePlansDBDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:TelephoneDirectory.MobilePlansDBDataSetTableAdapters.TableAdapterManager.UpdateAll(TelephoneDirectory.MobilePlansDBDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:TelephoneDirectory.MobilePlansDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:TelephoneDirectory.MobilePlansDBDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:TelephoneDirectory.MobilePlansDBDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:TelephoneDirectory.UserRequestDBDataSet.UserRequestDBDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TelephoneDirectory.UserRequestDBDataSet.UserRequestDBRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TelephoneDirectory.UserRequestDBDataSet.UserRequestDBRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TelephoneDirectory.UserRequestDBDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:TelephoneDirectory.UserRequestDBDataSetTableAdapters.UserRequestDBTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:TelephoneDirectory.UserRequestDBDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(TelephoneDirectory.UserRequestDBDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.UserRequestDBDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(TelephoneDirectory.UserRequestDBDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.UserRequestDBDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(TelephoneDirectory.UserRequestDBDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:TelephoneDirectory.UserRequestDBDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:TelephoneDirectory.UserRequestDBDataSetTableAdapters.TableAdapterManager.UpdateAll(TelephoneDirectory.UserRequestDBDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:TelephoneDirectory.UserRequestDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:TelephoneDirectory.UserRequestDBDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:TelephoneDirectory.UserRequestDBDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet2.InternetPlansDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet2.InternetPlansRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet2.InternetPlansRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet2TableAdapters.InternetPlansTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:TelephoneDirectory.InternetPlansDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(TelephoneDirectory.InternetPlansDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.InternetPlansDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(TelephoneDirectory.InternetPlansDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.InternetPlansDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(TelephoneDirectory.InternetPlansDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:TelephoneDirectory.InternetPlansDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:TelephoneDirectory.InternetPlansDataSet2TableAdapters.TableAdapterManager.UpdateAll(TelephoneDirectory.InternetPlansDataSet2)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:TelephoneDirectory.InternetPlansDataSet2TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:TelephoneDirectory.MobilePlansDBDataSet1.MobilePlansDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TelephoneDirectory.MobilePlansDBDataSet1.MobilePlansRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TelephoneDirectory.MobilePlansDBDataSet1.MobilePlansRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TelephoneDirectory.MobilePlansDBDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:TelephoneDirectory.MobilePlansDBDataSet1TableAdapters.MobilePlansTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:TelephoneDirectory.MobilePlansDBDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(TelephoneDirectory.MobilePlansDBDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.MobilePlansDBDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(TelephoneDirectory.MobilePlansDBDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:TelephoneDirectory.MobilePlansDBDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(TelephoneDirectory.MobilePlansDBDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:TelephoneDirectory.MobilePlansDBDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:TelephoneDirectory.MobilePlansDBDataSet1TableAdapters.TableAdapterManager.UpdateAll(TelephoneDirectory.MobilePlansDBDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:TelephoneDirectory.MobilePlansDBDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:TelephoneDirectory.MobilePlansDBDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:TelephoneDirectory.MobilePlansDBDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>
