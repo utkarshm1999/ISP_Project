@@ -3,6 +3,7 @@ Imports System.Data
 Imports System.Text.RegularExpressions
 
 Public Class Form3
+
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
         Mobile_button_Click(sender, e)
@@ -157,6 +158,19 @@ Public Class Form3
             da.Fill(dt)
             DataGridView1.DataSource = dt
             DataGridView1.ClearSelection()
+            Dim num As Integer = DataGridView1.Columns.Count
+            Dim btn1 As DataGridViewButtonColumn = New DataGridViewButtonColumn()
+            btn1.HeaderText = "Click Here"
+            btn1.Name = "btn"
+            btn1.Text = "Reject"
+            btn1.UseColumnTextForButtonValue = True
+            DataGridView1.Columns.Add(btn1)
+            Dim btn2 As DataGridViewButtonColumn = New DataGridViewButtonColumn()
+            btn2.HeaderText = "Click Here"
+            btn2.Name = "btn2"
+            btn2.Text = "Accept"
+            btn2.UseColumnTextForButtonValue = True
+            DataGridView1.Columns.Add(btn2)
         Catch ex As Exception
             MsgBox("No Requests Right Now!!")
         End Try
@@ -449,5 +463,78 @@ Public Class Form3
             End If
         End If
         conn.Close()
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+        If e.ColumnIndex = 4 Then
+            Dim row As Integer
+            Dim ID As Integer
+            Try
+                row = DataGridView1.CurrentRow.Index
+                ID = DataGridView1.Item(0, row).Value()
+            Catch ex As Exception
+                MsgBox("Please Select A Row First")
+                Exit Sub
+            End Try
+            Dim path As String = My.Application.Info.DirectoryPath
+            path = path + "\UserRequestDB.accdb"
+            Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
+            Dim conn = New OleDbConnection(dbsource)
+            conn.Open()
+            Dim F As Integer = 2    'Rejected
+            Dim query As String = "Update [UserRequestDB] set [Flag]=" & F & " Where [ID] = " & ID & ""
+            Dim cmd As OleDbCommand
+            cmd = New OleDbCommand(query, conn)
+            cmd.ExecuteNonQuery()
+            cmd.Dispose()
+            conn.Close()
+            Button6.PerformClick()
+            MsgBox("Rejected")
+            DataGridView1.ClearSelection()
+            conn.Close()
+        ElseIf e.ColumnIndex = 5 Then
+            Dim row As Integer
+            Dim ID As Integer
+            Dim PNo As String = ""
+            Dim Cost As Integer = 0
+            Try
+                row = DataGridView1.CurrentRow.Index
+                ID = DataGridView1.Item(0, row).Value()
+                PNo = DataGridView1.Item(1, row).Value()
+                Cost = DataGridView1.Item(2, row).Value()
+            Catch ex As Exception
+                MsgBox("Please Select A Row First")
+                Exit Sub
+            End Try
+            Dim path As String = My.Application.Info.DirectoryPath
+            path = path + "\UserRequestDB.accdb"
+            Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
+            Dim conn = New OleDbConnection(dbsource)
+            conn.Open()
+            Dim F As Integer = 1   'Accepted
+            Dim query As String = "Update [UserRequestDB] set [Flag]=" & F & " Where [ID] = " & ID & ""
+            Dim cmd As OleDbCommand
+            cmd = New OleDbCommand(query, conn)
+            cmd.ExecuteNonQuery()
+            cmd.Dispose()
+            conn.Close()
+            path = My.Application.Info.DirectoryPath + "\GeneralUserDB.accdb"
+            dbsource = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
+            conn = New OleDbConnection(dbsource)
+            conn.Open()
+            query = "Select TBalance From GeneralUser Where PhoneNo='" & PNo & "'"
+            cmd = New OleDbCommand(query, conn)
+            Dim CurrBalance As Integer = cmd.ExecuteScalar()
+            CurrBalance = CurrBalance + Cost
+            query = "Update GeneralUser set [TBalance]=" & CurrBalance & " Where PhoneNo='" & PNo & "'"
+            cmd = New OleDbCommand(query, conn)
+            cmd.ExecuteNonQuery()
+            cmd.Dispose()
+            conn.Close()
+            Button6.PerformClick()
+            MsgBox("Accepted")
+            DataGridView1.ClearSelection()
+            conn.Close()
+        End If
     End Sub
 End Class

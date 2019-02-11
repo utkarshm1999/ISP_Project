@@ -214,7 +214,7 @@ Partial Class Form3
         Me.Panel17.Controls.Add(Me.GroupBox2)
         Me.Panel17.Controls.Add(Me.GroupBox1)
         Me.Panel17.Controls.Add(Me.DataGridView2)
-        Me.Panel17.Location = New System.Drawing.Point(4, 15)
+        Me.Panel17.Location = New System.Drawing.Point(108, 294)
         Me.Panel17.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(1400, 736)
