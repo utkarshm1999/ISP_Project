@@ -21,7 +21,7 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        Form3.Show()
         Dim uname As String = ""
         Dim pword As String = ""
         Dim username As String = ""
@@ -66,7 +66,7 @@ Public Class Form1
                 TextBox1.Clear()
                 TextBox2.Clear()
             End If
-            End If
+        End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles register_button.Click

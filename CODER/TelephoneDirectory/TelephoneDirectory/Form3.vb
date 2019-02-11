@@ -29,6 +29,10 @@ Public Class Form3
         Panel13.Width = Panel6.Width
         Panel13.Height = Panel6.Height
 
+        Panel17.Location = New Point(0, 0)
+        Panel17.Width = Panel6.Width
+        Panel17.Height = Panel6.Height
+
         Panel7.Location = New Point(0, 0)
     End Sub
 
@@ -91,12 +95,12 @@ Public Class Form3
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        If TextBox11.Text = "" Or TextBox12.Text = "" Or TextBox5.Text = "" Then
+        If TextBox11.Text = "" Or TextBox12.Text = "" Or TextBox5.Text = "" Or TextBox23.Text = "" Or TextBox24.Text = "" Or TextBox25.Text = "" Or TextBox26.Text = "" Or TextBox27.Text = "" Then
             MsgBox("Please Enter All Details")
-        ElseIf Regex.IsMatch(TextBox12.Text, "^[0-9 ]+$") And Regex.IsMatch(TextBox5.Text, "^[0-9 ]+$") Then
+        ElseIf Regex.IsMatch(TextBox12.Text, "^[0-9 ]+$") And Regex.IsMatch(TextBox5.Text, "^[0-9 ]+$") And Regex.IsMatch(TextBox23.Text, "^[0-9 ]+$") And Regex.IsMatch(TextBox25.Text, "^[0-9 ]+$") Then
             'Validation of talktime and message number
             Dim Type_ As String = ""
-            Dim date_ As String = DateTimePicker1.Text
+            Dim date_ As String = TextBox27.Text
             If RadioButton5.Checked = True Then
                 Type_ = "PostPaid"
             ElseIf RadioButton6.Checked = True Then
@@ -104,22 +108,26 @@ Public Class Form3
             End If
 
             Dim path As String = My.Application.Info.DirectoryPath
-            path = path + "\GeneralUserDB.accdb"
+            path = path + "\MobilePlansDB.accdb"
             Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
             Dim conn = New OleDbConnection(dbsource)
-            Dim insert As String = "Insert into MobileServices([PlanName],[TT_Balance],[M_Balance],[DateOfExpiry],[Type]) Values('" & TextBox11.Text & "','" & TextBox12.Text & "','" & TextBox5.Text & "','" & date_ & "','" & Type_ & "');"
+            Dim insert As String = "Insert into MobilePlans([PlanName],[TT_balance],[M_balance],[Validity period],[Type],[Cost],[Description],[Net_MB],[Net_Balance]) Values('" & TextBox11.Text & "','" & TextBox12.Text & "','" & TextBox5.Text & "','" & date_ & "','" & Type_ & "','" & TextBox23.Text & "','" & TextBox24.Text & "','" & TextBox25.Text & "','" & TextBox26.Text & "');"
             Dim cmd As New OleDbCommand(insert, conn)
             conn.Open()
             Try
                 cmd.ExecuteNonQuery()
                 MsgBox("Succesfully Created")
                 Reset_fields()
+                TextBox23.Text = ""
+                TextBox24.Text = ""
+                TextBox25.Text = ""
+                TextBox26.Text = ""
             Catch ex As Exception
                 MsgBox("Error Try Again" + ex.ToString)
             End Try
             conn.Close()
         Else
-            MsgBox("Please Fill Numbers In TalkTime And Messages Fields")
+            MsgBox("Please Fill Numbers In TalkTime Cost Net_MB And Messages Fields")
         End If
     End Sub
 
@@ -139,13 +147,13 @@ Public Class Form3
         Dim dt As New DataTable
         Dim da As New OleDbDataAdapter
         Dim path As String = My.Application.Info.DirectoryPath
-        path = path + "\GeneralUserDB.accdb"
+        path = path + "\UserRequestDB.accdb"
         Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
         Dim conn = New OleDbConnection(dbsource)
         conn.Open()
         Dim F As Integer = 0
         Try
-            da = New OleDbDataAdapter("Select [IdNo],[PhoneNumber],[AmountRequested],[DateOfRequest] from UserRequestDB where Flag = " & F & "", conn)
+            da = New OleDbDataAdapter("Select [ID],[PhoneNumber],[AmountRequested],[DateOfRequest] from UserRequestDB where Flag = " & F & "", conn)
             da.Fill(dt)
             DataGridView1.DataSource = dt
             DataGridView1.ClearSelection()
@@ -170,21 +178,25 @@ Public Class Form3
             Exit Sub
         End Try
         Dim path As String = My.Application.Info.DirectoryPath
-        path = path + "\GeneralUserDB.accdb"
+        path = path + "\UserRequestDB.accdb"
         Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
         Dim conn = New OleDbConnection(dbsource)
         conn.Open()
         Dim F As Integer = 1   'Accepted
-        Dim query As String = "Update [UserRequestDB] set [Flag]=" & F & " Where [IdNo] = " & ID & ""
+        Dim query As String = "Update [UserRequestDB] set [Flag]=" & F & " Where [ID] = " & ID & ""
         Dim cmd As OleDbCommand
         cmd = New OleDbCommand(query, conn)
         cmd.ExecuteNonQuery()
         cmd.Dispose()
+        conn.Close()
+        path = My.Application.Info.DirectoryPath + "\GeneralUserDB.accdb"
+        dbsource = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
+        conn = New OleDbConnection(dbsource)
+        conn.Open()
         query = "Select TBalance From GeneralUser Where PhoneNo='" & PNo & "'"
         cmd = New OleDbCommand(query, conn)
         Dim CurrBalance As Integer = cmd.ExecuteScalar()
         CurrBalance = CurrBalance + Cost
-
         query = "Update GeneralUser set [TBalance]=" & CurrBalance & " Where PhoneNo='" & PNo & "'"
         cmd = New OleDbCommand(query, conn)
         cmd.ExecuteNonQuery()
@@ -206,12 +218,12 @@ Public Class Form3
             Exit Sub
         End Try
         Dim path As String = My.Application.Info.DirectoryPath
-        path = path + "\GeneralUserDB.accdb"
+        path = path + "\UserRequestDB.accdb"
         Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
         Dim conn = New OleDbConnection(dbsource)
         conn.Open()
         Dim F As Integer = 2    'Rejected
-        Dim query As String = "Update [UserRequestDB] set [Flag]=" & F & " Where [IdNo] = " & ID & ""
+        Dim query As String = "Update [UserRequestDB] set [Flag]=" & F & " Where [ID] = " & ID & ""
         Dim cmd As OleDbCommand
         cmd = New OleDbCommand(query, conn)
         cmd.ExecuteNonQuery()
@@ -264,12 +276,12 @@ Public Class Form3
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        If TextBox13.Text = "" Or TextBox14.Text = "" Or TextBox9.Text = "" Or DateTimePicker3.Text = "" Then
+        If TextBox13.Text = "" Or TextBox14.Text = "" Or TextBox9.Text = "" Or TextBox8.Text = "" Then
             MsgBox("Please Enter All Details")
         ElseIf Regex.IsMatch(TextBox9.Text, "^[0-9 ]+$") Then
             'Validation of talktime and message number
             Dim Type_ As String = ""
-            Dim date_ As String = DateTimePicker3.Text
+            Dim date_ As String = TextBox8.Text
             If RadioButton3.Checked = True Then
                 Type_ = "PostPaid"
             ElseIf RadioButton4.Checked = True Then
@@ -277,7 +289,7 @@ Public Class Form3
             End If
 
             Dim path As String = My.Application.Info.DirectoryPath
-            path = path + "\GeneralUserDB.accdb"
+            path = path + "\TVPlans.accdb"
             Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
             Dim conn = New OleDbConnection(dbsource)
             Dim insert As String = "Insert into TVPlans([Type],[Cost],[PlanName],[Validity],[Description]) Values('" & Type_ & "','" & TextBox9.Text & "','" & TextBox13.Text & "','" & date_ & "','" & TextBox14.Text & "');"
@@ -289,7 +301,8 @@ Public Class Form3
                 TextBox13.Text = ""
                 TextBox14.Text = ""
                 TextBox9.Text = ""
-                DateTimePicker1.Text = ""
+                TextBox27.Text = ""
+                TextBox8.Text = ""
             Catch ex As Exception
                 MsgBox("Error Try Again" + ex.ToString)
             End Try
@@ -300,12 +313,12 @@ Public Class Form3
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If TextBox2.Text = "" Or TextBox7.Text = "" Or TextBox1.Text = "" Or TextBox3.Text = "" Or TextBox6.Text = "" Or DateTimePicker2.Text = "" Then
+        If TextBox2.Text = "" Or TextBox7.Text = "" Or TextBox1.Text = "" Or TextBox3.Text = "" Or TextBox6.Text = "" Or TextBox4.Text = "" Then
             MsgBox("Please Enter All Details")
         ElseIf Regex.IsMatch(TextBox3.Text, "^[0-9 ]+$") And Regex.IsMatch(TextBox1.Text, "^[0-9 ]+$") And Regex.IsMatch(TextBox6.Text, "^[0-9 ]+$") Then
             'Validation of talktime and message number
             Dim Type_ As String = ""
-            Dim date_ As String = DateTimePicker2.Text
+            Dim date_ As String = TextBox4.Text
             If RadioButton1.Checked = True Then
                 Type_ = "PostPaid"
             ElseIf RadioButton2.Checked = True Then
@@ -313,7 +326,7 @@ Public Class Form3
             End If
 
             Dim path As String = My.Application.Info.DirectoryPath
-            path = path + "\GeneralUserDB.accdb"
+            path = path + "\InternetPlans.accdb"
             Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
             Dim conn = New OleDbConnection(dbsource)
             Dim insert As String = "Insert into InternetPlans([Type],[Cost],[PlanName],[Validity],[Description],[DataLimit],[Speed]) Values('" & Type_ & "','" & TextBox3.Text & "','" & TextBox2.Text & "','" & date_ & "','" & TextBox7.Text & "','" & TextBox6.Text & "','" & TextBox1.Text & "');"
@@ -327,7 +340,7 @@ Public Class Form3
                 TextBox1.Text = ""
                 TextBox6.Text = ""
                 TextBox3.Text = ""
-                DateTimePicker2.Text = ""
+                TextBox4.Text = ""
             Catch ex As Exception
                 MsgBox("Error Try Again")
             End Try
@@ -402,7 +415,7 @@ Public Class Form3
                         TextBox19.Text = reader.GetString(0).ToString
                         TextBox20.Text = reader.GetString(3).ToString
                         TextBox21.Text = reader.GetString(12).ToString
-                        TextBox22.Text = reader.GetString(10).ToString
+                        TextBox22.Text = reader.GetDateTime(10).ToString
                     End While
                 Catch ex As Exception
                     MsgBox("Number Does Not Exist!!" + ex.ToString)
