@@ -35,9 +35,9 @@ Public Class Form2
         Dim Sname As String
         Dim Address As String
         Dim UserName As String
-        ' Dim Tbalance As Integer
+
         Dim DOB As String
-        ' Dim Country As String
+
         Dim Aadhar As String
 
 
@@ -61,16 +61,15 @@ Public Class Form2
                 Sname = reader.GetString(2).ToString
                 UserName = reader.GetString(3).ToString
                 Tbalance = reader.GetValue(6)
-                'Tbalance = reader.GetString(6).ToString
+
                 mobileplannumber = reader.GetValue(7)
-                ' MsgBox("Mobile plan number is " + CStr(mobileplannumber))
+
                 internetplannumber = reader.GetValue(8)
                 tvplannumber = reader.GetValue(9)
 
 
-                ' DOB = reader.GetString(10).ToString
 
-
+                DOB = reader.GetValue(10).ToString
 
                 Aadhar = reader.GetString(12).ToString
 
@@ -85,14 +84,21 @@ Public Class Form2
                 internetusage = reader.GetValue(19)
             End While
         Catch ex As Exception
-            ' MsgBox("i try it" + Convert.ToString(ex))
+
         End Try
         conn.Close()
+
+
+
+
+
+
         UserNameTextBox.Text = UserName
         AddressTextBox.Text = Address
         FirstNameTextBox.Text = Fname
         SecondNameTextBox.Text = Sname
         dashboardname_label.Text = Fname + Sname
+        DOBDateTimePicker.Text = DOB
         Dim dashboardnumber_label = New Label
         dashboardnumber_label.Text = UserNumber
         DOBDateTimePicker.Text = DOB
@@ -148,29 +154,50 @@ Public Class Form2
         Dim description As String
 
 
+
+        Dim dt As New DataTable
+        Dim da As New OleDbDataAdapter
+
         conn.Open()
-        ' MsgBox("in function")
+
+        Try
+            da = New OleDbDataAdapter("Select [ID],[Cost],[PlanName],[TT_balance],[M_balance],[Net_balance],[Validity period] From MobilePlans", conn)
+            da.Fill(dt)
+            DataGridView1.DataSource = dt
+            DataGridView1.ClearSelection()
+            Dim btn As DataGridViewButtonColumn = New DataGridViewButtonColumn()
+            If DataGridView1.ColumnCount = 7 Then
+                btn.HeaderText = "Click to Avail"
+                btn.Name = "btn"
+                btn.Text = "Select"
+                btn.UseColumnTextForButtonValue = True
+                DataGridView1.Columns.Add(btn)
+            End If
+
+
+        Catch ex As Exception
+            MsgBox("No Users Right Now!!")
+        End Try
+
         If mobileplannumber <> "0" Then
             Dim sql As String = "SELECT * FROM MobilePlans WHERE [ID]=" & mobileplannumber
-            ' MsgBox(sql)
+
             Try
                 cmd = New OleDbCommand(sql, conn)
                 reader = cmd.ExecuteReader()
-                'MsgBox("Fetching details")
+
 
 
                 While reader.Read
                     planname = reader.GetString(3).ToString
                     description = reader.GetString(4).ToString
-                    ' ttbalance = reader.GetValue(5)
-                    ' mbalance = reader.GetValue(6)
-                    ' netbalance = reader.GetValue(7)
+
                     validityperiod = reader.GetValue(8)
                     netbalance = reader.GetValue(9)
 
 
                 End While
-                ' MsgBox("planname is " + planname)
+
                 conn.Close()
                 planname_label.Text = planname
                 Dim thisdate As Date
@@ -192,40 +219,25 @@ Public Class Form2
                 End If
 
 
-                ' MsgBox(thisdate)
-
-
-                '   MsgBox(validityperiod)
-                '  MsgBox(datediff.Days)
 
                 If (validityperiod - CInt(datediff.Days) > 0) Then
                     Label19.Text = "Days left: " & CStr(validityperiod - CInt(datediff.Days))
                     daysleftformobileplan = (validityperiod - CInt(datediff.Days))
                     Label12.Text = "Days left: " & CStr(validityperiod - CInt(datediff.Days))
                 Else
-                    Label11.Text = planname_label.Text = "No active plans"
-                    'mobileplannumber = 0
+                    Label11.Text = "No active plans"
+                    planname_label.Text = "No active plans"
+
                     Label19.Text = ""
                     Label12.Text = ""
                     daysleftformobileplan = 0
                     dbmobile_cpb.Visible = False
                     mp_cpb.Visible = False
+                    Panel7.Height = 110
 
 
 
-                    '    dbsource = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\sem4\Software_Lab\assignment2\GeneralUserDB.accdb"
-                    '   conn = New OleDbConnection(dbsource)
-                    '   sql = "Update [GeneralUser] set MobilePlan=" & 0
-                    '  Reset_details()
 
-                    'Try
-                    'cmd = New OleDbCommand(sql, conn)
-                    'cmd.ExecuteNonQuery()
-                    'cmd.Dispose()
-                    'conn.Close()
-                    'Catch ex As Exception
-
-                    'End Try
                 End If
 
 
@@ -237,9 +249,15 @@ Public Class Form2
 
 
         Else
+            Label11.Text = "No active plans"
             planname_label.Text = "No active plans"
+
             Label19.Text = ""
-            'MsgBox("Plan number is 0")
+            Label12.Text = ""
+            daysleftformobileplan = 0
+            dbmobile_cpb.Visible = False
+            mp_cpb.Visible = False
+            Panel7.Height = 110
         End If
         conn.Close()
     End Function
@@ -269,6 +287,8 @@ Public Class Form2
         internet_panel.Hide()
         myprofile_panel.Hide()
         passwordchange_panel.Hide()
+        Reset_details()
+
 
     End Sub
 
@@ -282,6 +302,8 @@ Public Class Form2
 
         myprofile_panel.Hide()
         passwordchange_panel.Hide()
+        Reset_details()
+
 
     End Sub
     Private Function reset_internetplandetails()
@@ -295,33 +317,52 @@ Public Class Form2
         Dim cmd As OleDbCommand
         Dim validityperiod As Integer
         Dim planname As String
-        'Dim ttbalance As Integer
-        'Dim mbalance As Integer
-        'Dim netbalance As Integer
+
         Dim description As String
 
 
         conn.Open()
-        ' MsgBox("in function")
+
+        Dim dt As New DataTable
+        Dim da As New OleDbDataAdapter
+
+
+        Try
+            da = New OleDbDataAdapter("Select [ID],[PlanName],[Cost],[Speed],[DataLimit],[Validity] From InternetPlans", conn)
+
+            da.Fill(dt)
+            DataGridView2.DataSource = dt
+            DataGridView2.ClearSelection()
+            Dim btn As DataGridViewButtonColumn = New DataGridViewButtonColumn()
+            If DataGridView2.ColumnCount = 6 Then
+                btn.HeaderText = "Click to Avail"
+                btn.Name = "btn"
+                btn.Text = "Select"
+                btn.UseColumnTextForButtonValue = True
+                DataGridView2.Columns.Add(btn)
+            End If
+
+
+        Catch ex As Exception
+            MsgBox("No Users Right Now!!")
+        End Try
+
         If internetplannumber <> "0" Then
             Dim sql As String = "SELECT * FROM InternetPlans WHERE [ID]=" & internetplannumber
-            ' MsgBox(sql)
+
             Try
                 cmd = New OleDbCommand(sql, conn)
                 reader = cmd.ExecuteReader()
-                'MsgBox("Fetching details")
 
 
                 While reader.Read
                     planname = reader.GetString(2).ToString
                     description = reader.GetString(3).ToString
-                    ' ttbalance = reader.GetValue(5)
-                    ' mbalance = reader.GetValue(6)
-                    'netbalance = reader.GetValue(7)
+
                     validityperiod = reader.GetValue(7)
 
                 End While
-                ' MsgBox("planname is " + planname)
+
                 conn.Close()
                 Label35.Text = planname
                 Label10.Text = planname
@@ -329,13 +370,7 @@ Public Class Form2
                 thisdate = Today
                 Dim datediff = thisdate - internetplanstartdate
 
-                ' to edit Label11.Text = planname
 
-                ' MsgBox(thisdate)
-
-
-                '   MsgBox(validityperiod)
-                '  MsgBox(datediff.Days)
 
                 If (validityperiod - CInt(datediff.Days) > 0) Then
                     Label36.Text = "Days left: " & CStr(validityperiod - CInt(datediff.Days))
@@ -350,38 +385,26 @@ Public Class Form2
                     ip_cpb.Value = CInt(datediff.Days)
                     Dim x As Integer = CInt(datediff.Days) / validityperiod
                     If x < 50 Then
-                        dbmobile_cpb.ProgressColor = Color.FromArgb(255 * x / 50, 255, 0)
-                        mp_cpb.ProgressColor = Color.FromArgb(255 * x / 50, 255, 0)
+                        dbinternet_cpb.ProgressColor = Color.FromArgb(255 * x / 50, 255, 0)
+                        ip_cpb.ProgressColor = Color.FromArgb(255 * x / 50, 255, 0)
                     ElseIf x <= 100 Then
-                        dbmobile_cpb.ProgressColor = Color.FromArgb(255, 255 - 255 * (x - 50) / 50, 0)
-                        mp_cpb.ProgressColor = Color.FromArgb(255, 255 - 255 * (x - 50) / 50, 0)
+                        dbinternet_cpb.ProgressColor = Color.FromArgb(255, 255 - 255 * (x - 50) / 50, 0)
+                        ip_cpb.ProgressColor = Color.FromArgb(255, 255 - 255 * (x - 50) / 50, 0)
                     End If
 
                 Else
                     Label35.Text = "No active plans"
                     Label10.Text = "No active plans"
-                    'mobileplannumber = 0
+
                     Label36.Text = ""
                     Label17.Text = ""
-                    ' Label12.Text = ""
+
                     daysleftforinternetplan = 0
                     dbinternet_cpb.Visible = False
                     ip_cpb.Visible = False
+                    Panel6.Height = 110
 
 
-                    '    dbsource = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\sem4\Software_Lab\assignment2\GeneralUserDB.accdb"
-                    '   conn = New OleDbConnection(dbsource)
-                    '   sql = "Update [GeneralUser] set MobilePlan=" & 0
-                    '  Reset_details()
-
-                    'Try
-                    'cmd = New OleDbCommand(sql, conn)
-                    'cmd.ExecuteNonQuery()
-                    'cmd.Dispose()
-                    'conn.Close()
-                    'Catch ex As Exception
-
-                    'End Try
                 End If
 
 
@@ -394,8 +417,17 @@ Public Class Form2
 
         Else
             Label35.Text = "No active plans"
+            Label10.Text = "No active plans"
+
             Label36.Text = ""
-            'MsgBox("Plan number is 0")
+            Label17.Text = ""
+
+            daysleftforinternetplan = 0
+            dbinternet_cpb.Visible = False
+            ip_cpb.Visible = False
+            Panel6.Height = 110
+
+
         End If
         conn.Close()
     End Function
@@ -431,27 +463,48 @@ Public Class Form2
 
 
         conn.Open()
-        ' MsgBox("in function")
+        Dim dt As New DataTable
+        Dim da As New OleDbDataAdapter
+
+
+        Try
+            da = New OleDbDataAdapter("Select [ID],[PlanName],[Cost],[AvailableChannels(Image)],[Validity] From TVPlans", conn)
+
+            da.Fill(dt)
+            DataGridView3.DataSource = dt
+            DataGridView3.ClearSelection()
+            Dim btn As DataGridViewButtonColumn = New DataGridViewButtonColumn()
+            If DataGridView3.ColumnCount = 5 Then
+                btn.HeaderText = "Click to Avail"
+                btn.Name = "btn"
+                btn.Text = "Select"
+                btn.UseColumnTextForButtonValue = True
+                DataGridView3.Columns.Add(btn)
+            End If
+
+
+        Catch ex As Exception
+            MsgBox("No Users Right Now!!")
+        End Try
+
         If tvplannumber <> "0" Then
             Dim sql As String = "SELECT * FROM TVPlans WHERE [ID]=" & tvplannumber
-            ' MsgBox(sql)
+
             Try
                 cmd = New OleDbCommand(sql, conn)
                 reader = cmd.ExecuteReader()
-                'MsgBox("Fetching details")
+
 
 
                 While reader.Read
                     planname = reader.GetString(3).ToString
 
                     description = reader.GetString(5).ToString
-                    '  ttbalance = reader.GetValue(5)
-                    ' mbalance = reader.GetValue(6)
-                    'netbalance = reader.GetValue(7)
+
                     validityperiod = reader.GetValue(4)
 
                 End While
-                ' MsgBox("planname is " + planname)
+
                 conn.Close()
                 Label30.Text = planname
                 Dim thisdate As Date
@@ -459,11 +512,7 @@ Public Class Form2
                 Dim datediff = thisdate - tvplanstartdate
                 Label33.Text = planname
 
-                ' MsgBox(thisdate)
 
-
-                '   MsgBox(validityperiod)
-                '  MsgBox(datediff.Days)
 
                 If (validityperiod - CInt(datediff.Days) > 0) Then
                     Label31.Text = "Days left: " & CStr(validityperiod - CInt(datediff.Days))
@@ -475,32 +524,28 @@ Public Class Form2
                     tvp_cpb.Visible = True
                     tvp_cpb.Maximum = validityperiod
                     tvp_cpb.Value = CInt(datediff.Days)
+                    Dim x As Integer = CInt(datediff.Days) / validityperiod
+                    If x < 50 Then
+                        dbtv_cpb.ProgressColor = Color.FromArgb(255 * x / 50, 255, 0)
+                        tvp_cpb.ProgressColor = Color.FromArgb(255 * x / 50, 255, 0)
+                    ElseIf x <= 100 Then
+                        dbtv_cpb.ProgressColor = Color.FromArgb(255, 255 - 255 * (x - 50) / 50, 0)
+                        tvp_cpb.ProgressColor = Color.FromArgb(255, 255 - 255 * (x - 50) / 50, 0)
+                    End If
 
                 Else
                     Label30.Text = "No active plans"
                     Label33.Text = "No active plans"
-                    'mobileplannumber = 0
+
                     Label31.Text = ""
                     Label34.Text = ""
                     daysleftfortvplan = 0
                     dbtv_cpb.Visible = False
                     tvp_cpb.Visible = False
 
+                    Panel13.Height = 110
 
 
-                    '    dbsource = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\sem4\Software_Lab\assignment2\GeneralUserDB.accdb"
-                    '   conn = New OleDbConnection(dbsource)
-                    '   sql = "Update [GeneralUser] set MobilePlan=" & 0
-                    '  Reset_details()
-
-                    'Try
-                    'cmd = New OleDbCommand(sql, conn)
-                    'cmd.ExecuteNonQuery()
-                    'cmd.Dispose()
-                    'conn.Close()
-                    'Catch ex As Exception
-
-                    'End Try
                 End If
 
                 conn.Close()
@@ -513,8 +558,16 @@ Public Class Form2
 
         Else
             Label30.Text = "No active plans"
+            Label33.Text = "No active plans"
+
             Label31.Text = ""
-            'MsgBox("Plan number is 0")
+            Label34.Text = ""
+            daysleftfortvplan = 0
+            dbtv_cpb.Visible = False
+            tvp_cpb.Visible = False
+            Panel13.Height = 110
+
+
         End If
         conn.Close()
     End Function
@@ -581,7 +634,7 @@ Public Class Form2
     End Sub
 
     Private Sub PhoneNoTextBox_TextChanged(sender As Object, e As EventArgs) Handles PhoneNoTextBox.TextChanged
-        '  PhoneNoTextBox.Text = UserNumber
+
 
     End Sub
 
@@ -589,8 +642,7 @@ Public Class Form2
         Dim cFName As String = FirstNameTextBox.Text
         Dim cSName As String = SecondNameTextBox.Text
         Dim cAddress As String = AddressTextBox.Text
-        'Dim cDOB As String = DOBDateTimePicker.Text
-
+        Dim dob As String = DOBDateTimePicker.Text
         If cFName.Length = 0 Then
             fname_label.Text = "First Name cannot be empty"
         ElseIf cSName.Length = 0 Then
@@ -605,11 +657,11 @@ Public Class Form2
             conn.Open()
             Dim cmd As OleDbCommand
             Dim query As String
-            query = "Update [GeneralUser] set [FirstName]='" & cFName & "',[SecondName]='" & cSName & "',[Address]='" & cAddress & "' Where [PhoneNo] = '" & UserNumber & "'"
+            query = "Update [GeneralUser] set [FirstName]='" & cFName & "',[SecondName]='" & cSName & "',[Address]='" & cAddress & "',[DOB]='" & dob & "' Where [PhoneNo] = '" & UserNumber & "'"
             Try
 
                 cmd = New OleDbCommand(query, conn)
-                'conn.Open()
+
                 cmd.ExecuteNonQuery()
                 cmd.Dispose()
 
@@ -633,7 +685,7 @@ Public Class Form2
         Dim Cost As Integer = TextBox3.Text
         Dim Num As String = UserNumber
         If Num = Pnum Then
-            MsgBox("U Cannot Transfer To Your Own Account")
+            MsgBox("U Cannot Transfer To Your Own Account!!")
             Return
         End If
         If Pnum.Length <> 10 Then
@@ -681,6 +733,8 @@ Public Class Form2
             cmd.Dispose()
             MsgBox("Transfer Success")
             conn.Close()
+            TextBox2.Text = ""
+            TextBox3.Text = ""
             Return
         Else
             MsgBox("U Don't Have Enough Balance")
@@ -757,6 +811,8 @@ Public Class Form2
                 Catch ex As Exception
                     MsgBox("Password update unsuccessful")
                 End Try
+            Else
+                npassword_label.Text = "Incorrect Old password"
             End If
             conn.Close()
 
@@ -817,10 +873,12 @@ Public Class Form2
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-        If e.ColumnIndex = 5 Then
 
-            Dim planname As String = DataGridView1.Rows(e.RowIndex).Cells(2).Value
-            Dim cost As Integer = CInt(DataGridView1.Rows(e.RowIndex).Cells(1).Value)
+        If e.ColumnIndex = 0 Then
+
+            Dim planname As String = DataGridView1.Rows(e.RowIndex).Cells(3).Value
+            Dim cost As Integer = CInt(DataGridView1.Rows(e.RowIndex).Cells(2).Value)
+            Dim nmobileplannmber = CInt(DataGridView1.Rows(e.RowIndex).Cells(1).Value)
             If Tbalance >= cost Then
                 Dim thisday As Date = Today
                 Dim path As String = My.Application.Info.DirectoryPath
@@ -832,11 +890,11 @@ Public Class Form2
                 If mobileplannumber <> 0 Then
                     Dim result As Integer = MessageBox.Show("Are you sure you want to opt for Plan: " & planname & "? You still have " & daysleftformobileplan & " days left for your previous plan to expire", "", MessageBoxButtons.YesNoCancel)
                     If result = DialogResult.Yes Then
-                        'MessageBox.Show("Cancel pressed")
+
                         Try
                             conn.Open()
-                            Dim querry As String = "Update [GeneralUser] set [TBalance]=" & Tbalance - cost & ",[MobilePlan]=" & e.RowIndex + 1 & ",[StartDateofMobilePlan]='" & thisday.ToString & "' Where [PhoneNo]='" & UserNumber & "'"
-                            ' MsgBox(querry)
+                            Dim querry As String = "Update [GeneralUser] set [TBalance]=" & Tbalance - cost & ",[MobilePlan]=" & nmobileplannmber & ",[StartDateofMobilePlan]='" & thisday.ToString & "' Where [PhoneNo]='" & UserNumber & "'"
+
                             Dim cmd As New OleDbCommand(querry, conn)
                             cmd.ExecuteNonQuery()
                             cmd.Dispose()
@@ -857,10 +915,10 @@ Public Class Form2
                 Else
                     Dim result As Integer = MessageBox.Show("Are you sure you want to opt for Plan: " & planname & "?", "", MessageBoxButtons.YesNoCancel)
                     If result = DialogResult.Yes Then
-                        'MessageBox.Show("Cancel pressed")
+
                         conn.Open()
                         Try
-                            Dim querry As String = "Update [GeneralUser] set [TBalance]=" & Tbalance - cost & ",[MobilePlan]=" & e.RowIndex + 1 & ",[StartDateofMobilePlan]='" & thisday.ToString & "' Where [PhoneNo]='" & UserNumber & "'"
+                            Dim querry As String = "Update [GeneralUser] set [TBalance]=" & Tbalance - cost & ",[MobilePlan]=" & nmobileplannmber & ",[StartDateofMobilePlan]='" & thisday.ToString & "' Where [PhoneNo]='" & UserNumber & "'"
                             Dim cmd As New OleDbCommand(querry, conn)
                             cmd.ExecuteNonQuery()
                             cmd.Dispose()
@@ -884,7 +942,8 @@ Public Class Form2
 
             End If
 
-
+        Else
+            MsgBox(e.ColumnIndex)
         End If
     End Sub
 
@@ -896,22 +955,20 @@ Public Class Form2
                 path = path + "\UserRequestDB.accdb"
                 Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
                 Dim conn = New OleDbConnection(dbsource)
-                'Dim count As Integer = bindings
+
                 Dim insert As String = "Insert into UserRequestDB([PhoneNumber],[AmountRequested],[DateofRequest]) Values('" & UserNumber.ToString & "'," & walletrecharge_textbox.Text & ",'" & Today.ToString & "')"
                 Dim cmd As New OleDbCommand(insert, conn)
                 Try
                     conn.Open()
                     cmd.ExecuteNonQuery()
-                    'MsgBox("create success")
+
                     conn.Close()
                     MsgBox("A request has been sent to the admin for your recharge request")
                     walletrecharge_textbox.Text = ""
                 Catch ex As Exception
                     MsgBox("Attempt Unsuccesful")
                 End Try
-                ' conn.Open()
-                'cmd.ExecuteNonQuery()
-                'MsgBox("create success")
+
                 conn.Close()
             Else
                 MsgBox("Recharge Limit Exceeded")
@@ -928,7 +985,7 @@ Public Class Form2
 
     Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
         If e.ColumnIndex = 6 Then
-            '  MsgBox(e.RowIndex)
+
             Dim planname As String = DataGridView2.Rows(e.RowIndex).Cells(2).Value
             Dim cost As Integer = CInt(DataGridView2.Rows(e.RowIndex).Cells(1).Value)
             If Tbalance >= cost Then
@@ -942,11 +999,11 @@ Public Class Form2
                 If internetplannumber <> 0 Then
                     Dim result As Integer = MessageBox.Show("Are you sure you want to opt for Plan: " & planname & "? You still have " & daysleftforinternetplan & " days left for your previous plan to expire", "", MessageBoxButtons.YesNoCancel)
                     If result = DialogResult.Yes Then
-                        'MessageBox.Show("Cancel pressed")
+
                         Try
                             conn.Open()
                             Dim querry As String = "Update [GeneralUser] set [TBalance]=" & Tbalance - cost & ",[InternetPlan]=" & e.RowIndex + 1 & ",[StartDateofInternetPlan]='" & thisday.ToString & "' Where [PhoneNo]='" & UserNumber & "'"
-                            ' MsgBox(querry)
+
                             Dim cmd As New OleDbCommand(querry, conn)
                             cmd.ExecuteNonQuery()
                             cmd.Dispose()
@@ -967,7 +1024,7 @@ Public Class Form2
                 Else
                     Dim result As Integer = MessageBox.Show("Are you sure you want to opt for Plan: " & planname & "?", "", MessageBoxButtons.YesNoCancel)
                     If result = DialogResult.Yes Then
-                        'MessageBox.Show("Cancel pressed")
+
                         conn.Open()
                         Try
                             Dim querry As String = "Update [GeneralUser] set [TBalance]=" & Tbalance - cost & ",[InternetPlan]=" & e.RowIndex + 1 & ",[StartDateofInternetPlan]='" & thisday.ToString & "' Where [PhoneNo]='" & UserNumber & "'"
@@ -1002,10 +1059,11 @@ Public Class Form2
     End Sub
 
     Private Sub DataGridView3_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView3.CellContentClick
-        If e.ColumnIndex = 5 Then
-            '  MsgBox(e.RowIndex)
+        If e.ColumnIndex = 0 Then
+
             Dim planname As String = DataGridView3.Rows(e.RowIndex).Cells(2).Value
-            Dim cost As Integer = CInt(DataGridView3.Rows(e.RowIndex).Cells(1).Value)
+            Dim cost As Integer = CInt(DataGridView3.Rows(e.RowIndex).Cells(3).Value)
+            Dim nplannumber As Integer = CInt(DataGridView3.Rows(e.RowIndex).Cells(1).Value)
             If Tbalance >= cost Then
                 Dim thisday As Date = Today
 
@@ -1018,10 +1076,10 @@ Public Class Form2
                 If tvplannumber <> 0 Then
                     Dim result As Integer = MessageBox.Show("Are you sure you want to opt for Plan: " & planname & "? You still have " & daysleftfortvplan & " days left for your previous plan to expire", "", MessageBoxButtons.YesNoCancel)
                     If result = DialogResult.Yes Then
-                        'MessageBox.Show("Cancel pressed")
+
                         Try
                             conn.Open()
-                            Dim querry As String = "Update [GeneralUser] set [TBalance]=" & Tbalance - cost & ",[TVPlan]=" & e.RowIndex + 1 & ",[StartDateofTvPlan]='" & thisday.ToString & "' Where [PhoneNo]='" & UserNumber & "'"
+                            Dim querry As String = "Update [GeneralUser] set [TBalance]=" & Tbalance - cost & ",[TVPlan]=" & nplannumber & ",[StartDateofTvPlan]='" & thisday.ToString & "' Where [PhoneNo]='" & UserNumber & "'"
                             ' MsgBox(querry)
                             Dim cmd As New OleDbCommand(querry, conn)
                             cmd.ExecuteNonQuery()
@@ -1043,10 +1101,10 @@ Public Class Form2
                 Else
                     Dim result As Integer = MessageBox.Show("Are you sure you want to opt for Plan: " & planname & "?", "", MessageBoxButtons.YesNoCancel)
                     If result = DialogResult.Yes Then
-                        'MessageBox.Show("Cancel pressed")
+
                         conn.Open()
                         Try
-                            Dim querry As String = "Update [GeneralUser] set [TBalance]=" & Tbalance - cost & ",[TVPlan]=" & e.RowIndex + 1 & ",[StartDateofTvPlan]='" & thisday.ToString & "' Where [PhoneNo]='" & UserNumber & "'"
+                            Dim querry As String = "Update [GeneralUser] set [TBalance]=" & Tbalance - cost & ",[TVPlan]=" & nplannumber & ",[StartDateofTvPlan]='" & thisday.ToString & "' Where [PhoneNo]='" & UserNumber & "'"
                             Dim cmd As New OleDbCommand(querry, conn)
                             cmd.ExecuteNonQuery()
                             cmd.Dispose()

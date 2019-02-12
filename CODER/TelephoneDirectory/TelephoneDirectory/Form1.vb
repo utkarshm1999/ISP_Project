@@ -21,7 +21,7 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Form3.Show()
+
         Dim uname As String = ""
         Dim pword As String = ""
         Dim username As String = ""
@@ -54,7 +54,7 @@ Public Class Form1
                 MsgBox("Username does not exit")
             End Try
             If (pword = pass) Then
-                MsgBox("Login success")
+                ' MsgBox("Login success")
                 Dim obj As New Form2
                 obj.UserNumber = uname
                 obj.Show()
