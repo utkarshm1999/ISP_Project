@@ -12,6 +12,7 @@ Public Class Form3
         Panel13.BackColor = Color.SlateGray
         Panel4.BackColor = Color.SlateGray
         Panel17.BackColor = Color.SlateGray
+        Panel9.BackColor = Color.SlateGray
 
 
         Panel6.Location = New Point(Panel3.Width, Panel3.Height)
@@ -34,7 +35,10 @@ Public Class Form3
         Panel17.Width = Panel6.Width
         Panel17.Height = Panel6.Height
 
-        Panel7.Location = New Point(0, 0)
+
+        Panel9.Location = New Point(0, 0)
+        Panel9.Width = Panel6.Width
+        Panel9.Height = Panel6.Height
     End Sub
 
     Private Sub Mobile_button_Click(sender As Object, e As EventArgs) Handles mobile_button.Click
@@ -42,6 +46,7 @@ Public Class Form3
         Panel13.Hide()
         Panel4.Hide()
         Panel17.Hide()
+        Panel9.Hide()
 
 
         mobile_button.BackColor = Color.SlateGray
@@ -49,6 +54,7 @@ Public Class Form3
         tv_button.BackColor = Color.FromKnownColor(KnownColor.Control)
         Button6.BackColor = Color.FromKnownColor(KnownColor.Control)
         Button8.BackColor = Color.FromKnownColor(KnownColor.Control)
+        Button2.BackColor = Color.FromKnownColor(KnownColor.Control)
 
     End Sub
 
@@ -62,6 +68,7 @@ Public Class Form3
         tv_button.BackColor = Color.FromKnownColor(KnownColor.Control)
         mobile_button.BackColor = Color.FromKnownColor(KnownColor.Control)
         Button6.BackColor = Color.FromKnownColor(KnownColor.Control)
+        Button2.BackColor = Color.FromKnownColor(KnownColor.Control)
         Button8.BackColor = Color.FromKnownColor(KnownColor.Control)
     End Sub
 
@@ -70,12 +77,13 @@ Public Class Form3
         Panel13.Show()
         Panel7.Hide()
         Panel17.Hide()
-
+        Panel9.Hide()
 
         tv_button.BackColor = Color.SlateGray
         internet_button.BackColor = Color.FromKnownColor(KnownColor.Control)
         mobile_button.BackColor = Color.FromKnownColor(KnownColor.Control)
         Button6.BackColor = Color.FromKnownColor(KnownColor.Control)
+        Button2.BackColor = Color.FromKnownColor(KnownColor.Control)
         Button8.BackColor = Color.FromKnownColor(KnownColor.Control)
 
     End Sub
@@ -137,12 +145,15 @@ Public Class Form3
         Panel13.Show()
         Panel7.Show()
         Panel17.Hide()
+        Panel9.Hide()
+
 
 
         Button6.BackColor = Color.SlateGray
         tv_button.BackColor = Color.FromKnownColor(KnownColor.Control)
         internet_button.BackColor = Color.FromKnownColor(KnownColor.Control)
         mobile_button.BackColor = Color.FromKnownColor(KnownColor.Control)
+        Button2.BackColor = Color.FromKnownColor(KnownColor.Control)
         Button8.BackColor = Color.FromKnownColor(KnownColor.Control)
 
         Dim dt As New DataTable
@@ -371,10 +382,13 @@ Public Class Form3
         Panel13.Show()
         Panel7.Show()
         Panel17.Show()
+        Panel9.Hide()
+
         Button8.BackColor = Color.SlateGray
         Button6.BackColor = Color.FromKnownColor(KnownColor.Control)
         tv_button.BackColor = Color.FromKnownColor(KnownColor.Control)
         internet_button.BackColor = Color.FromKnownColor(KnownColor.Control)
+        Button2.BackColor = Color.FromKnownColor(KnownColor.Control)
         mobile_button.BackColor = Color.FromKnownColor(KnownColor.Control)
 
 
@@ -537,6 +551,99 @@ Public Class Form3
             MsgBox("Accepted")
             DataGridView1.ClearSelection()
             conn.Close()
+        End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Panel4.Show()
+        Panel13.Show()
+        Panel7.Show()
+        Panel17.Show()
+        Panel9.Show()
+
+        Button2.BackColor = Color.SlateGray
+        Button8.BackColor = Color.FromKnownColor(KnownColor.Control)
+        Button6.BackColor = Color.FromKnownColor(KnownColor.Control)
+        tv_button.BackColor = Color.FromKnownColor(KnownColor.Control)
+        internet_button.BackColor = Color.FromKnownColor(KnownColor.Control)
+        mobile_button.BackColor = Color.FromKnownColor(KnownColor.Control)
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+
+        Dim counter As Integer = 0
+        Dim Check As Integer = 0
+        Dim Pnum As String = TextBox10.Text
+        If Regex.IsMatch(Pnum, "^[0-9 ]+$") Then
+            ' MsgBox("Only Numbers in Phone Number")
+            counter = 0
+        Else
+            counter = 1
+        End If
+        If Pnum = "" Or Pnum.Length <> 10 Then
+            MsgBox("Please Enter A Phone Number of 10 digits")
+            counter = 1
+            Check = 1
+        ElseIf counter <> 1 Then
+            Dim querry As String = "Select PassWord From GeneralUser where PhoneNo= '" & Pnum & "';"
+            'Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\sem4\Software_Lab\assignment2\GeneralUserDB.accdb"
+            Dim path As String = My.Application.Info.DirectoryPath
+
+            path = path + "\GeneralUserDB.accdb"
+
+            Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
+            Dim conn = New OleDbConnection(dbsource)
+            Dim cmd As New OleDbCommand(querry, conn)
+            conn.Open()
+            Dim pass As String = ""
+            Try
+                pass = cmd.ExecuteScalar().ToString
+                Label42.Text = "Sorry Taken"
+                counter = 1
+            Catch ex As Exception
+                Label42.Text = "Available"
+                counter = 0
+            End Try
+        End If
+
+        If counter <> 1 Then
+            Label42.Text = ""
+            If TextBox28.Text = "" Or TextBox29.Text = "" Or TextBox30.Text = "" Or TextBox31.Text = "" Or TextBox32.Text = "" Or TextBox33.Text = "" Then
+                MsgBox("Please Enter All Your Detail Correctly")
+            ElseIf TextBox31.Text <> TextBox32.Text Then
+                MsgBox("Please Enter Both Password Same and Correctly")
+            Else
+                If TextBox33.Text.Length <> 12 Then
+                    MsgBox("Enter Your Aadhar No Correctly")
+                Else
+                    Try
+                        Dim path As String = My.Application.Info.DirectoryPath
+                        path = path + "\GeneralUserDB.accdb"
+                        Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
+                        Dim conn = New OleDbConnection(dbsource)
+                        Dim insert As String = "Insert into GeneralUser([PhoneNo],[FirstName],[SecondName],[UserName],[Password],[Aadhar]) Values('" & TextBox10.Text & "','" & TextBox28.Text & "','" & TextBox29.Text & "','" & TextBox30.Text & "','" & TextBox31.Text & "','" & TextBox33.Text & "');"
+                        Dim cmd As New OleDbCommand(insert, conn)
+                        conn.Open()
+                        cmd.ExecuteNonQuery()
+                        MsgBox("create success")
+                        conn.Close()
+                        TextBox28.Text = ""
+                        TextBox10.Text = ""
+                        TextBox29.Text = ""
+                        TextBox30.Text = ""
+                        TextBox31.Text = ""
+                        TextBox32.Text = ""
+                        TextBox33.Text = ""
+                    Catch ex As Exception
+                        MsgBox("Error please try again")
+                    End Try
+                End If
+            End If
+        Else
+            Label42.Text = ""
+            If Check <> 1 Then
+                MsgBox("That Number Is Not Available")
+            End If
         End If
     End Sub
 End Class

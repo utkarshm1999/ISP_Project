@@ -68,8 +68,12 @@ Public Class Form1
                 End If
                 conn.Close()
             End If
-        Else
-            Form3.Show()
+        ElseIf CheckBox1.Checked = True Then
+            If TextBox2.Text = "GN13" And TextBox1.Text = "Admin" Then
+                Form3.Show()
+            Else
+                MsgBox("Please Enter Correct Details")
+            End If
         End If
     End Sub
 
@@ -125,7 +129,6 @@ Public Class Form1
                         Dim path As String = My.Application.Info.DirectoryPath
                         path = path + "\GeneralUserDB.accdb"
                         Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
-                        'Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\sem4\Software_Lab\assignment2\GeneralUserDB.accdb"
                         Dim conn = New OleDbConnection(dbsource)
                         Dim insert As String = "Insert into GeneralUser([PhoneNo],[FirstName],[SecondName],[UserName],[Password],[Aadhar]) Values('" & PhoneNoTextBox.Text & "','" & FirstNameTextBox.Text & "','" & SecondNameTextBox.Text & "','" & UserNameTextBox.Text & "','" & PasswordTextBox.Text & "','" & AadharTextBox.Text & "');"
                         Dim cmd As New OleDbCommand(insert, conn)
@@ -158,7 +161,6 @@ Public Class Form1
         Me.Validate()
         Me.GeneralUserBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.GeneralUserDBDataSet)
-
     End Sub
 
     Private Sub TextBox1_Click(sender As Object, e As EventArgs) Handles TextBox1.Click

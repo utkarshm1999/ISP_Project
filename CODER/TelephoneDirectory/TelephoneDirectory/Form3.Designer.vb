@@ -28,6 +28,14 @@ Partial Class Form3
         Me.Panel13 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.Label39 = New System.Windows.Forms.Label()
+        Me.Label38 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Label33 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
@@ -57,6 +65,7 @@ Partial Class Form3
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.Label25 = New System.Windows.Forms.Label()
@@ -71,6 +80,7 @@ Partial Class Form3
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
@@ -89,6 +99,7 @@ Partial Class Form3
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.TextBox27 = New System.Windows.Forms.TextBox()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.TextBox26 = New System.Windows.Forms.TextBox()
         Me.TextBox25 = New System.Windows.Forms.TextBox()
@@ -114,6 +125,7 @@ Partial Class Form3
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.tv_button = New System.Windows.Forms.Button()
@@ -121,14 +133,23 @@ Partial Class Form3
         Me.mobile_button = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox27 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.TextBox28 = New System.Windows.Forms.TextBox()
+        Me.TextBox29 = New System.Windows.Forms.TextBox()
+        Me.TextBox30 = New System.Windows.Forms.TextBox()
+        Me.TextBox31 = New System.Windows.Forms.TextBox()
+        Me.TextBox32 = New System.Windows.Forms.TextBox()
+        Me.TextBox33 = New System.Windows.Forms.TextBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label42 = New System.Windows.Forms.Label()
         Me.Panel6.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel13.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel17.SuspendLayout()
+        Me.Panel9.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -209,16 +230,109 @@ Partial Class Form3
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel17.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.Panel17.Controls.Add(Me.Panel9)
         Me.Panel17.Controls.Add(Me.GroupBox3)
         Me.Panel17.Controls.Add(Me.Button12)
         Me.Panel17.Controls.Add(Me.GroupBox2)
         Me.Panel17.Controls.Add(Me.GroupBox1)
         Me.Panel17.Controls.Add(Me.DataGridView2)
-        Me.Panel17.Location = New System.Drawing.Point(108, 294)
+        Me.Panel17.Location = New System.Drawing.Point(4, 4)
         Me.Panel17.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(1400, 736)
         Me.Panel17.TabIndex = 11
+        '
+        'Panel9
+        '
+        Me.Panel9.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel9.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.Panel9.Controls.Add(Me.GroupBox4)
+        Me.Panel9.Location = New System.Drawing.Point(16, 4)
+        Me.Panel9.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(1400, 736)
+        Me.Panel9.TabIndex = 12
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.Label42)
+        Me.GroupBox4.Controls.Add(Me.Button3)
+        Me.GroupBox4.Controls.Add(Me.TextBox33)
+        Me.GroupBox4.Controls.Add(Me.TextBox32)
+        Me.GroupBox4.Controls.Add(Me.TextBox31)
+        Me.GroupBox4.Controls.Add(Me.TextBox30)
+        Me.GroupBox4.Controls.Add(Me.TextBox29)
+        Me.GroupBox4.Controls.Add(Me.TextBox28)
+        Me.GroupBox4.Controls.Add(Me.TextBox10)
+        Me.GroupBox4.Controls.Add(Me.Label41)
+        Me.GroupBox4.Controls.Add(Me.Label40)
+        Me.GroupBox4.Controls.Add(Me.Label39)
+        Me.GroupBox4.Controls.Add(Me.Label38)
+        Me.GroupBox4.Controls.Add(Me.Label23)
+        Me.GroupBox4.Controls.Add(Me.Label11)
+        Me.GroupBox4.Controls.Add(Me.Label9)
+        Me.GroupBox4.Location = New System.Drawing.Point(170, 62)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(699, 473)
+        Me.GroupBox4.TabIndex = 0
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Add User"
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.Location = New System.Drawing.Point(78, 311)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(121, 17)
+        Me.Label40.TabIndex = 5
+        Me.Label40.Text = "Confirm Password"
+        '
+        'Label39
+        '
+        Me.Label39.AutoSize = True
+        Me.Label39.Location = New System.Drawing.Point(79, 263)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(69, 17)
+        Me.Label39.TabIndex = 4
+        Me.Label39.Text = "Password"
+        '
+        'Label38
+        '
+        Me.Label38.AutoSize = True
+        Me.Label38.Location = New System.Drawing.Point(79, 212)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(75, 17)
+        Me.Label38.TabIndex = 3
+        Me.Label38.Text = "UserName"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(78, 165)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(97, 17)
+        Me.Label23.TabIndex = 2
+        Me.Label23.Text = "Second Name"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(78, 122)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(76, 17)
+        Me.Label11.TabIndex = 1
+        Me.Label11.Text = "First Name"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(79, 80)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(103, 17)
+        Me.Label9.TabIndex = 0
+        Me.Label9.Text = "Phone Number"
         '
         'GroupBox3
         '
@@ -535,6 +649,13 @@ Partial Class Form3
         Me.Panel15.Size = New System.Drawing.Size(560, 353)
         Me.Panel15.TabIndex = 4
         '
+        'TextBox8
+        '
+        Me.TextBox8.Location = New System.Drawing.Point(239, 287)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(133, 22)
+        Me.TextBox8.TabIndex = 20
+        '
         'TextBox14
         '
         Me.TextBox14.Location = New System.Drawing.Point(240, 228)
@@ -687,6 +808,13 @@ Partial Class Form3
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(560, 353)
         Me.Panel8.TabIndex = 4
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(241, 304)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(132, 22)
+        Me.TextBox4.TabIndex = 20
         '
         'TextBox7
         '
@@ -880,6 +1008,13 @@ Partial Class Form3
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(560, 417)
         Me.Panel12.TabIndex = 4
+        '
+        'TextBox27
+        '
+        Me.TextBox27.Location = New System.Drawing.Point(275, 204)
+        Me.TextBox27.Name = "TextBox27"
+        Me.TextBox27.Size = New System.Drawing.Size(134, 22)
+        Me.TextBox27.TabIndex = 24
         '
         'Label37
         '
@@ -1112,6 +1247,7 @@ Partial Class Form3
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Button8)
         Me.Panel1.Controls.Add(Me.Button6)
         Me.Panel1.Controls.Add(Me.tv_button)
@@ -1123,6 +1259,18 @@ Partial Class Form3
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(267, 826)
         Me.Panel1.TabIndex = 10
+        '
+        'Button2
+        '
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(0, 451)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(267, 74)
+        Me.Button2.TabIndex = 9
+        Me.Button2.Text = "Add Users"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Button8
         '
@@ -1208,26 +1356,80 @@ Partial Class Form3
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "SERVICES"
         '
-        'TextBox27
+        'Label41
         '
-        Me.TextBox27.Location = New System.Drawing.Point(275, 204)
-        Me.TextBox27.Name = "TextBox27"
-        Me.TextBox27.Size = New System.Drawing.Size(134, 22)
-        Me.TextBox27.TabIndex = 24
+        Me.Label41.AutoSize = True
+        Me.Label41.Location = New System.Drawing.Point(79, 359)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(54, 17)
+        Me.Label41.TabIndex = 6
+        Me.Label41.Text = "Aadhar"
         '
-        'TextBox4
+        'TextBox10
         '
-        Me.TextBox4.Location = New System.Drawing.Point(241, 304)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(132, 22)
-        Me.TextBox4.TabIndex = 20
+        Me.TextBox10.Location = New System.Drawing.Point(236, 74)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(236, 22)
+        Me.TextBox10.TabIndex = 7
         '
-        'TextBox8
+        'TextBox28
         '
-        Me.TextBox8.Location = New System.Drawing.Point(239, 287)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(133, 22)
-        Me.TextBox8.TabIndex = 20
+        Me.TextBox28.Location = New System.Drawing.Point(238, 119)
+        Me.TextBox28.Name = "TextBox28"
+        Me.TextBox28.Size = New System.Drawing.Size(234, 22)
+        Me.TextBox28.TabIndex = 8
+        '
+        'TextBox29
+        '
+        Me.TextBox29.Location = New System.Drawing.Point(238, 161)
+        Me.TextBox29.Name = "TextBox29"
+        Me.TextBox29.Size = New System.Drawing.Size(234, 22)
+        Me.TextBox29.TabIndex = 9
+        '
+        'TextBox30
+        '
+        Me.TextBox30.Location = New System.Drawing.Point(238, 207)
+        Me.TextBox30.Name = "TextBox30"
+        Me.TextBox30.Size = New System.Drawing.Size(234, 22)
+        Me.TextBox30.TabIndex = 10
+        '
+        'TextBox31
+        '
+        Me.TextBox31.Location = New System.Drawing.Point(238, 256)
+        Me.TextBox31.Name = "TextBox31"
+        Me.TextBox31.Size = New System.Drawing.Size(234, 22)
+        Me.TextBox31.TabIndex = 11
+        '
+        'TextBox32
+        '
+        Me.TextBox32.Location = New System.Drawing.Point(238, 308)
+        Me.TextBox32.Name = "TextBox32"
+        Me.TextBox32.Size = New System.Drawing.Size(234, 22)
+        Me.TextBox32.TabIndex = 12
+        '
+        'TextBox33
+        '
+        Me.TextBox33.Location = New System.Drawing.Point(240, 357)
+        Me.TextBox33.Name = "TextBox33"
+        Me.TextBox33.Size = New System.Drawing.Size(232, 22)
+        Me.TextBox33.TabIndex = 13
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(458, 402)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(119, 45)
+        Me.Button3.TabIndex = 14
+        Me.Button3.Text = "Save"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.Location = New System.Drawing.Point(495, 77)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(0, 17)
+        Me.Label42.TabIndex = 15
         '
         'Form3
         '
@@ -1245,6 +1447,9 @@ Partial Class Form3
         Me.Panel13.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         Me.Panel17.ResumeLayout(False)
+        Me.Panel9.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -1372,4 +1577,23 @@ Partial Class Form3
     Friend WithEvents TextBox27 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents Panel9 As System.Windows.Forms.Panel
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label40 As System.Windows.Forms.Label
+    Friend WithEvents Label39 As System.Windows.Forms.Label
+    Friend WithEvents Label38 As System.Windows.Forms.Label
+    Friend WithEvents Label23 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label41 As System.Windows.Forms.Label
+    Friend WithEvents TextBox33 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox32 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox31 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox30 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox29 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox28 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Label42 As System.Windows.Forms.Label
 End Class
