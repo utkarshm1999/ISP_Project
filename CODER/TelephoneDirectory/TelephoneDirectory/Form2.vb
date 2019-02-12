@@ -97,7 +97,7 @@ Public Class Form2
         AddressTextBox.Text = Address
         FirstNameTextBox.Text = Fname
         SecondNameTextBox.Text = Sname
-        dashboardname_label.Text = Fname + Sname
+        dashboardname_label.Text = Fname + " " + Sname
         DOBDateTimePicker.Text = DOB
         Dim dashboardnumber_label = New Label
         dashboardnumber_label.Text = UserNumber
@@ -659,16 +659,12 @@ Public Class Form2
             Dim query As String
             query = "Update [GeneralUser] set [FirstName]='" & cFName & "',[SecondName]='" & cSName & "',[Address]='" & cAddress & "',[DOB]='" & dob & "' Where [PhoneNo] = '" & UserNumber & "'"
             Try
-
                 cmd = New OleDbCommand(query, conn)
-
                 cmd.ExecuteNonQuery()
                 cmd.Dispose()
-
                 MsgBox("Update Successful")
             Catch ex As Exception
-                MsgBox("Update Unsuccesful")
-
+                MsgBox("Update Unsuccesful" + ex.ToString)
             End Try
             conn.Close()
         End If
@@ -1157,6 +1153,11 @@ Public Class Form2
     End Sub
 
     Private Sub Panel26_Paint(sender As Object, e As PaintEventArgs) Handles Panel26.Paint
+
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Me.Close()
 
     End Sub
 End Class
