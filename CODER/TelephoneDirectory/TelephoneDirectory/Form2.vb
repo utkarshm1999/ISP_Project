@@ -159,25 +159,27 @@ Public Class Form2
         Dim da As New OleDbDataAdapter
 
         conn.Open()
+        If DataGridView1.ColumnCount < 6 Then
+            Try
+                da = New OleDbDataAdapter("Select [ID],[Cost],[PlanName],[TT_balance],[M_balance],[Net_balance],[Validity period] From MobilePlans", conn)
+                da.Fill(dt)
+                DataGridView1.DataSource = dt
+                DataGridView1.ClearSelection()
+                Dim btn As DataGridViewButtonColumn = New DataGridViewButtonColumn()
+                If DataGridView1.ColumnCount = 4 Then
+                    btn.HeaderText = "Click to Avail"
+                    btn.Name = "btn"
+                    btn.Text = "Select"
+                    btn.UseColumnTextForButtonValue = True
+                    DataGridView1.Columns.Add(btn)
+                End If
 
-        Try
-            da = New OleDbDataAdapter("Select [ID],[Cost],[PlanName],[TT_balance],[M_balance],[Net_balance],[Validity period] From MobilePlans", conn)
-            da.Fill(dt)
-            DataGridView1.DataSource = dt
-            DataGridView1.ClearSelection()
-            Dim btn As DataGridViewButtonColumn = New DataGridViewButtonColumn()
-            If DataGridView1.ColumnCount = 7 Then
-                btn.HeaderText = "Click to Avail"
-                btn.Name = "btn"
-                btn.Text = "Select"
-                btn.UseColumnTextForButtonValue = True
-                DataGridView1.Columns.Add(btn)
-            End If
 
+            Catch ex As Exception
+                MsgBox("No Users Right Now!!")
+            End Try
+        End If
 
-        Catch ex As Exception
-            MsgBox("No Users Right Now!!")
-        End Try
 
         If mobileplannumber <> "0" Then
             Dim sql As String = "SELECT * FROM MobilePlans WHERE [ID]=" & mobileplannumber
@@ -326,26 +328,28 @@ Public Class Form2
         Dim dt As New DataTable
         Dim da As New OleDbDataAdapter
 
+        If DataGridView2.RowCount <= 1 Then
+            Try
+                da = New OleDbDataAdapter("Select [ID],[PlanName],[Cost],[Speed],[DataLimit],[Validity] From InternetPlans", conn)
 
-        Try
-            da = New OleDbDataAdapter("Select [ID],[PlanName],[Cost],[Speed],[DataLimit],[Validity] From InternetPlans", conn)
-
-            da.Fill(dt)
-            DataGridView2.DataSource = dt
-            DataGridView2.ClearSelection()
-            Dim btn As DataGridViewButtonColumn = New DataGridViewButtonColumn()
-            If DataGridView2.ColumnCount = 6 Then
-                btn.HeaderText = "Click to Avail"
-                btn.Name = "btn"
-                btn.Text = "Select"
-                btn.UseColumnTextForButtonValue = True
-                DataGridView2.Columns.Add(btn)
-            End If
+                da.Fill(dt)
+                DataGridView2.DataSource = dt
+                DataGridView2.ClearSelection()
+                Dim btn As DataGridViewButtonColumn = New DataGridViewButtonColumn()
+                If DataGridView2.ColumnCount = 6 Then
+                    btn.HeaderText = "Click to Avail"
+                    btn.Name = "btn"
+                    btn.Text = "Select"
+                    btn.UseColumnTextForButtonValue = True
+                    DataGridView2.Columns.Add(btn)
+                End If
 
 
-        Catch ex As Exception
-            MsgBox("No Users Right Now!!")
-        End Try
+            Catch ex As Exception
+                MsgBox("No Users Right Now!!")
+            End Try
+        End If
+        
 
         If internetplannumber <> "0" Then
             Dim sql As String = "SELECT * FROM InternetPlans WHERE [ID]=" & internetplannumber
@@ -467,26 +471,30 @@ Public Class Form2
         Dim da As New OleDbDataAdapter
 
 
-        Try
-            da = New OleDbDataAdapter("Select [ID],[PlanName],[Cost],[AvailableChannels(Image)],[Validity] From TVPlans", conn)
+        If DataGridView3.RowCount = 1 Then
+            Try
+                da = New OleDbDataAdapter("Select [ID],[PlanName],[Cost],[AvailableChannels(Image)],[Validity] From TVPlans", conn)
 
-            da.Fill(dt)
-            DataGridView3.DataSource = dt
-            DataGridView3.ClearSelection()
-            Dim btn As DataGridViewButtonColumn = New DataGridViewButtonColumn()
-            If DataGridView3.ColumnCount = 5 Then
-                btn.HeaderText = "Click to Avail"
-                btn.Name = "btn"
-                btn.Text = "Select"
-                btn.UseColumnTextForButtonValue = True
-                DataGridView3.Columns.Add(btn)
-            End If
+                da.Fill(dt)
+                DataGridView3.DataSource = dt
+                DataGridView3.ClearSelection()
+                Dim btn As DataGridViewButtonColumn = New DataGridViewButtonColumn()
+                If DataGridView3.ColumnCount = 5 Then
+                    btn.HeaderText = "Click to Avail"
+                    btn.Name = "btn"
+                    btn.Text = "Select"
+                    btn.UseColumnTextForButtonValue = True
+                    DataGridView3.Columns.Add(btn)
+                End If
 
 
-        Catch ex As Exception
-            MsgBox("No Users Right Now!!")
-        End Try
+            Catch ex As Exception
+                MsgBox("No Users Right Now!!")
+            End Try
+        End If
+        
 
+        
         If tvplannumber <> "0" Then
             Dim sql As String = "SELECT * FROM TVPlans WHERE [ID]=" & tvplannumber
 
@@ -809,6 +817,7 @@ Public Class Form2
                 End Try
             Else
                 npassword_label.Text = "Incorrect Old password"
+                
             End If
             conn.Close()
 
@@ -870,11 +879,11 @@ Public Class Form2
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
-        If e.ColumnIndex = 0 Then
+        If e.ColumnIndex = 4 Then
 
-            Dim planname As String = DataGridView1.Rows(e.RowIndex).Cells(3).Value
-            Dim cost As Integer = CInt(DataGridView1.Rows(e.RowIndex).Cells(2).Value)
-            Dim nmobileplannmber = CInt(DataGridView1.Rows(e.RowIndex).Cells(1).Value)
+            Dim planname As String = DataGridView1.Rows(e.RowIndex).Cells(2).Value
+            Dim cost As Integer = CInt(DataGridView1.Rows(e.RowIndex).Cells(1).Value)
+            Dim nmobileplannmber = CInt(DataGridView1.Rows(e.RowIndex).Cells(0).Value)
             If Tbalance >= cost Then
                 Dim thisday As Date = Today
                 Dim path As String = My.Application.Info.DirectoryPath
@@ -1055,10 +1064,10 @@ Public Class Form2
     End Sub
 
     Private Sub DataGridView3_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView3.CellContentClick
-        If e.ColumnIndex = 0 Then
+        If e.ColumnIndex = 5 Then
             Dim planname As String = DataGridView3.Rows(e.RowIndex).Cells(2).Value
-            Dim cost As Integer = CInt(DataGridView3.Rows(e.RowIndex).Cells(3).Value)
-            Dim nplannumber As Integer = CInt(DataGridView3.Rows(e.RowIndex).Cells(1).Value)
+            Dim cost As Integer = CInt(DataGridView3.Rows(e.RowIndex).Cells(1).Value)
+            Dim nplannumber As Integer = CInt(DataGridView3.Rows(e.RowIndex).Cells(0).Value)
             If Tbalance >= cost Then
                 Dim thisday As Date = Today
 
@@ -1120,6 +1129,7 @@ Public Class Form2
                 MsgBox("Please recharge Rs. " & cost - Tbalance & " into your account!")
 
             End If
+
         ElseIf e.ColumnIndex = 4 Then
 
 
@@ -1159,5 +1169,49 @@ Public Class Form2
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
         Me.Close()
 
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Form4.Show()
+        Form4.BackColor = Color.FromArgb(247, 204, 76)
+
+        Dim path As String = My.Application.Info.DirectoryPath
+        path = path + "\UserRequestDB.accdb"
+        Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
+        Dim conn = New OleDbConnection(dbsource)
+        Dim adapter As New OleDbDataAdapter()
+        Dim reader As OleDbDataReader
+        Dim tuser As String = UserNumber
+        Dim cmd As OleDbCommand
+        conn.Open()
+        Dim F As Integer = 1
+        Dim sql As String = "SELECT * FROM UserRequestDB WHERE PhoneNumber='" & tuser & "'"
+        Try
+            cmd = New OleDbCommand(sql, conn)
+            reader = cmd.ExecuteReader()
+            Dim left As Integer = 10
+            Dim top As Integer = 0
+            While reader.Read
+                Dim lb As Label = New Label
+                If reader.GetInt32(4) = 1 Then
+                    lb.Text = "Your Request For " + reader.GetInt32(2).ToString + " On " + reader.GetDateTime(3).ToString + " Has Been Approved!"
+                    
+
+
+                ElseIf reader.GetInt32(4) = 2 Then
+                    lb.Text = "Your Request For " + reader.GetInt32(2).ToString + " On " + reader.GetDateTime(3).ToString + " Has Been Rejected!"
+                End If
+                lb.Width = 2000
+                lb.Height = 30
+                lb.Top = top
+                lb.Left = left
+                top = top + 40
+                Form4.Controls.Add(lb)
+                lb.Show()
+            End While
+        Catch ex As Exception
+            MsgBox("No Notificatiosn Right Now !!" + ex.ToString)
+        End Try
+        conn.Close()
     End Sub
 End Class

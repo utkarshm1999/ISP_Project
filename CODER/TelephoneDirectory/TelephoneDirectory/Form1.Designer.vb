@@ -45,10 +45,12 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.CustomRoundedPanel5 = New TelephoneDirectory.CustomRoundedPanel()
-        Me.AadharTextBox = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.status_label = New System.Windows.Forms.Label()
+        Me.register_button = New System.Windows.Forms.Button()
+        Me.CustomRoundedPanel5 = New TelephoneDirectory.CustomRoundedPanel()
+        Me.AadharTextBox = New System.Windows.Forms.TextBox()
         Me.CustomRoundedPanel6 = New TelephoneDirectory.CustomRoundedPanel()
         Me.cpasswordtxtbox = New System.Windows.Forms.TextBox()
         Me.CustomRoundedPanel7 = New TelephoneDirectory.CustomRoundedPanel()
@@ -61,8 +63,6 @@ Partial Class Form1
         Me.SecondNameTextBox = New System.Windows.Forms.TextBox()
         Me.CustomRoundedPanel1 = New TelephoneDirectory.CustomRoundedPanel()
         Me.PhoneNoTextBox = New System.Windows.Forms.TextBox()
-        Me.status_label = New System.Windows.Forms.Label()
-        Me.register_button = New System.Windows.Forms.Button()
         AadharLabel = New System.Windows.Forms.Label()
         PasswordLabel = New System.Windows.Forms.Label()
         UserNameLabel = New System.Windows.Forms.Label()
@@ -231,6 +231,7 @@ Partial Class Form1
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(259, 49)
         Me.Panel4.TabIndex = 2
+        Me.Panel4.TabStop = True
         '
         'PictureBox2
         '
@@ -253,7 +254,6 @@ Partial Class Form1
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(180, 21)
         Me.TextBox2.TabIndex = 2
-        Me.TextBox2.TabStop = False
         Me.TextBox2.Text = "Password"
         '
         'Panel3
@@ -289,7 +289,6 @@ Partial Class Form1
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(180, 21)
         Me.TextBox1.TabIndex = 0
-        Me.TextBox1.TabStop = False
         Me.TextBox1.Text = "Phone No."
         '
         'Button1
@@ -304,7 +303,6 @@ Partial Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(138, 49)
         Me.Button1.TabIndex = 2
-        Me.Button1.TabStop = False
         Me.Button1.Text = "Login"
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -353,30 +351,6 @@ Partial Class Form1
         Me.Panel2.Size = New System.Drawing.Size(637, 797)
         Me.Panel2.TabIndex = 0
         '
-        'CustomRoundedPanel5
-        '
-        Me.CustomRoundedPanel5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel5.BackColor = System.Drawing.Color.Gainsboro
-        Me.CustomRoundedPanel5.Controls.Add(Me.AadharTextBox)
-        Me.CustomRoundedPanel5.Location = New System.Drawing.Point(137, 537)
-        Me.CustomRoundedPanel5.Name = "CustomRoundedPanel5"
-        Me.CustomRoundedPanel5.Size = New System.Drawing.Size(359, 48)
-        Me.CustomRoundedPanel5.TabIndex = 9
-        '
-        'AadharTextBox
-        '
-        Me.AadharTextBox.BackColor = System.Drawing.Color.Gainsboro
-        Me.AadharTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.AadharTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "Aadhar", True))
-        Me.AadharTextBox.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AadharTextBox.Location = New System.Drawing.Point(16, 15)
-        Me.AadharTextBox.Name = "AadharTextBox"
-        Me.AadharTextBox.Size = New System.Drawing.Size(330, 21)
-        Me.AadharTextBox.TabIndex = 9
-        Me.AadharTextBox.TabStop = False
-        Me.AadharTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'Label3
         '
         Me.Label3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -406,151 +380,6 @@ Partial Class Form1
         Me.Label4.TabIndex = 15
         Me.Label4.Text = "Confirm Password"
         '
-        'CustomRoundedPanel6
-        '
-        Me.CustomRoundedPanel6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel6.BackColor = System.Drawing.Color.Gainsboro
-        Me.CustomRoundedPanel6.Controls.Add(Me.cpasswordtxtbox)
-        Me.CustomRoundedPanel6.Location = New System.Drawing.Point(137, 472)
-        Me.CustomRoundedPanel6.Name = "CustomRoundedPanel6"
-        Me.CustomRoundedPanel6.Size = New System.Drawing.Size(359, 48)
-        Me.CustomRoundedPanel6.TabIndex = 8
-        '
-        'cpasswordtxtbox
-        '
-        Me.cpasswordtxtbox.BackColor = System.Drawing.Color.Gainsboro
-        Me.cpasswordtxtbox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.cpasswordtxtbox.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cpasswordtxtbox.Location = New System.Drawing.Point(16, 15)
-        Me.cpasswordtxtbox.Name = "cpasswordtxtbox"
-        Me.cpasswordtxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.cpasswordtxtbox.Size = New System.Drawing.Size(330, 21)
-        Me.cpasswordtxtbox.TabIndex = 8
-        Me.cpasswordtxtbox.TabStop = False
-        Me.cpasswordtxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'CustomRoundedPanel7
-        '
-        Me.CustomRoundedPanel7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel7.BackColor = System.Drawing.Color.Gainsboro
-        Me.CustomRoundedPanel7.Controls.Add(Me.PasswordTextBox)
-        Me.CustomRoundedPanel7.Location = New System.Drawing.Point(137, 406)
-        Me.CustomRoundedPanel7.Name = "CustomRoundedPanel7"
-        Me.CustomRoundedPanel7.Size = New System.Drawing.Size(359, 48)
-        Me.CustomRoundedPanel7.TabIndex = 7
-        '
-        'PasswordTextBox
-        '
-        Me.PasswordTextBox.BackColor = System.Drawing.Color.Gainsboro
-        Me.PasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.PasswordTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "Password", True))
-        Me.PasswordTextBox.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PasswordTextBox.Location = New System.Drawing.Point(17, 14)
-        Me.PasswordTextBox.Name = "PasswordTextBox"
-        Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.PasswordTextBox.Size = New System.Drawing.Size(330, 21)
-        Me.PasswordTextBox.TabIndex = 7
-        Me.PasswordTextBox.TabStop = False
-        Me.PasswordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'CustomRoundedPanel2
-        '
-        Me.CustomRoundedPanel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel2.BackColor = System.Drawing.Color.Gainsboro
-        Me.CustomRoundedPanel2.Controls.Add(Me.FirstNameTextBox)
-        Me.CustomRoundedPanel2.Location = New System.Drawing.Point(137, 212)
-        Me.CustomRoundedPanel2.Name = "CustomRoundedPanel2"
-        Me.CustomRoundedPanel2.Size = New System.Drawing.Size(359, 48)
-        Me.CustomRoundedPanel2.TabIndex = 4
-        '
-        'FirstNameTextBox
-        '
-        Me.FirstNameTextBox.BackColor = System.Drawing.Color.Gainsboro
-        Me.FirstNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.FirstNameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "FirstName", True))
-        Me.FirstNameTextBox.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FirstNameTextBox.Location = New System.Drawing.Point(17, 15)
-        Me.FirstNameTextBox.Name = "FirstNameTextBox"
-        Me.FirstNameTextBox.Size = New System.Drawing.Size(330, 21)
-        Me.FirstNameTextBox.TabIndex = 4
-        Me.FirstNameTextBox.TabStop = False
-        Me.FirstNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'CustomRoundedPanel3
-        '
-        Me.CustomRoundedPanel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel3.BackColor = System.Drawing.Color.Gainsboro
-        Me.CustomRoundedPanel3.Controls.Add(Me.UserNameTextBox)
-        Me.CustomRoundedPanel3.Location = New System.Drawing.Point(137, 342)
-        Me.CustomRoundedPanel3.Name = "CustomRoundedPanel3"
-        Me.CustomRoundedPanel3.Size = New System.Drawing.Size(359, 48)
-        Me.CustomRoundedPanel3.TabIndex = 6
-        '
-        'UserNameTextBox
-        '
-        Me.UserNameTextBox.BackColor = System.Drawing.Color.Gainsboro
-        Me.UserNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.UserNameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "UserName", True))
-        Me.UserNameTextBox.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UserNameTextBox.Location = New System.Drawing.Point(17, 15)
-        Me.UserNameTextBox.Name = "UserNameTextBox"
-        Me.UserNameTextBox.Size = New System.Drawing.Size(330, 21)
-        Me.UserNameTextBox.TabIndex = 6
-        Me.UserNameTextBox.TabStop = False
-        Me.UserNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'CustomRoundedPanel4
-        '
-        Me.CustomRoundedPanel4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel4.BackColor = System.Drawing.Color.Gainsboro
-        Me.CustomRoundedPanel4.Controls.Add(Me.SecondNameTextBox)
-        Me.CustomRoundedPanel4.Location = New System.Drawing.Point(137, 277)
-        Me.CustomRoundedPanel4.Name = "CustomRoundedPanel4"
-        Me.CustomRoundedPanel4.Size = New System.Drawing.Size(359, 48)
-        Me.CustomRoundedPanel4.TabIndex = 5
-        '
-        'SecondNameTextBox
-        '
-        Me.SecondNameTextBox.BackColor = System.Drawing.Color.Gainsboro
-        Me.SecondNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.SecondNameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "SecondName", True))
-        Me.SecondNameTextBox.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SecondNameTextBox.Location = New System.Drawing.Point(17, 15)
-        Me.SecondNameTextBox.Name = "SecondNameTextBox"
-        Me.SecondNameTextBox.Size = New System.Drawing.Size(330, 21)
-        Me.SecondNameTextBox.TabIndex = 5
-        Me.SecondNameTextBox.TabStop = False
-        Me.SecondNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'CustomRoundedPanel1
-        '
-        Me.CustomRoundedPanel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel1.BackColor = System.Drawing.Color.Gainsboro
-        Me.CustomRoundedPanel1.Controls.Add(Me.PhoneNoTextBox)
-        Me.CustomRoundedPanel1.Location = New System.Drawing.Point(137, 147)
-        Me.CustomRoundedPanel1.Name = "CustomRoundedPanel1"
-        Me.CustomRoundedPanel1.Size = New System.Drawing.Size(359, 48)
-        Me.CustomRoundedPanel1.TabIndex = 3
-        '
-        'PhoneNoTextBox
-        '
-        Me.PhoneNoTextBox.BackColor = System.Drawing.Color.Gainsboro
-        Me.PhoneNoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.PhoneNoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "PhoneNo", True))
-        Me.PhoneNoTextBox.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PhoneNoTextBox.Location = New System.Drawing.Point(17, 14)
-        Me.PhoneNoTextBox.Name = "PhoneNoTextBox"
-        Me.PhoneNoTextBox.Size = New System.Drawing.Size(330, 21)
-        Me.PhoneNoTextBox.TabIndex = 3
-        Me.PhoneNoTextBox.TabStop = False
-        Me.PhoneNoTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'status_label
         '
         Me.status_label.AutoSize = True
@@ -572,9 +401,177 @@ Partial Class Form1
         Me.register_button.Name = "register_button"
         Me.register_button.Size = New System.Drawing.Size(359, 48)
         Me.register_button.TabIndex = 10
-        Me.register_button.TabStop = False
         Me.register_button.Text = "Sign Up"
         Me.register_button.UseVisualStyleBackColor = False
+        '
+        'CustomRoundedPanel5
+        '
+        Me.CustomRoundedPanel5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CustomRoundedPanel5.BackColor = System.Drawing.Color.Gainsboro
+        Me.CustomRoundedPanel5.Controls.Add(Me.AadharTextBox)
+        Me.CustomRoundedPanel5.Location = New System.Drawing.Point(137, 537)
+        Me.CustomRoundedPanel5.Name = "CustomRoundedPanel5"
+        Me.CustomRoundedPanel5.Size = New System.Drawing.Size(359, 48)
+        Me.CustomRoundedPanel5.TabIndex = 9
+        Me.CustomRoundedPanel5.TabStop = True
+        '
+        'AadharTextBox
+        '
+        Me.AadharTextBox.BackColor = System.Drawing.Color.Gainsboro
+        Me.AadharTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.AadharTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "Aadhar", True))
+        Me.AadharTextBox.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AadharTextBox.Location = New System.Drawing.Point(16, 15)
+        Me.AadharTextBox.Name = "AadharTextBox"
+        Me.AadharTextBox.Size = New System.Drawing.Size(330, 21)
+        Me.AadharTextBox.TabIndex = 9
+        Me.AadharTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'CustomRoundedPanel6
+        '
+        Me.CustomRoundedPanel6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CustomRoundedPanel6.BackColor = System.Drawing.Color.Gainsboro
+        Me.CustomRoundedPanel6.Controls.Add(Me.cpasswordtxtbox)
+        Me.CustomRoundedPanel6.Location = New System.Drawing.Point(137, 472)
+        Me.CustomRoundedPanel6.Name = "CustomRoundedPanel6"
+        Me.CustomRoundedPanel6.Size = New System.Drawing.Size(359, 48)
+        Me.CustomRoundedPanel6.TabIndex = 8
+        Me.CustomRoundedPanel6.TabStop = True
+        '
+        'cpasswordtxtbox
+        '
+        Me.cpasswordtxtbox.BackColor = System.Drawing.Color.Gainsboro
+        Me.cpasswordtxtbox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.cpasswordtxtbox.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cpasswordtxtbox.Location = New System.Drawing.Point(16, 15)
+        Me.cpasswordtxtbox.Name = "cpasswordtxtbox"
+        Me.cpasswordtxtbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.cpasswordtxtbox.Size = New System.Drawing.Size(330, 21)
+        Me.cpasswordtxtbox.TabIndex = 8
+        Me.cpasswordtxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'CustomRoundedPanel7
+        '
+        Me.CustomRoundedPanel7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CustomRoundedPanel7.BackColor = System.Drawing.Color.Gainsboro
+        Me.CustomRoundedPanel7.Controls.Add(Me.PasswordTextBox)
+        Me.CustomRoundedPanel7.Location = New System.Drawing.Point(137, 406)
+        Me.CustomRoundedPanel7.Name = "CustomRoundedPanel7"
+        Me.CustomRoundedPanel7.Size = New System.Drawing.Size(359, 48)
+        Me.CustomRoundedPanel7.TabIndex = 7
+        Me.CustomRoundedPanel7.TabStop = True
+        '
+        'PasswordTextBox
+        '
+        Me.PasswordTextBox.BackColor = System.Drawing.Color.Gainsboro
+        Me.PasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.PasswordTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "Password", True))
+        Me.PasswordTextBox.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PasswordTextBox.Location = New System.Drawing.Point(17, 14)
+        Me.PasswordTextBox.Name = "PasswordTextBox"
+        Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.PasswordTextBox.Size = New System.Drawing.Size(330, 21)
+        Me.PasswordTextBox.TabIndex = 7
+        Me.PasswordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'CustomRoundedPanel2
+        '
+        Me.CustomRoundedPanel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CustomRoundedPanel2.BackColor = System.Drawing.Color.Gainsboro
+        Me.CustomRoundedPanel2.Controls.Add(Me.FirstNameTextBox)
+        Me.CustomRoundedPanel2.Location = New System.Drawing.Point(137, 212)
+        Me.CustomRoundedPanel2.Name = "CustomRoundedPanel2"
+        Me.CustomRoundedPanel2.Size = New System.Drawing.Size(359, 48)
+        Me.CustomRoundedPanel2.TabIndex = 4
+        Me.CustomRoundedPanel2.TabStop = True
+        '
+        'FirstNameTextBox
+        '
+        Me.FirstNameTextBox.BackColor = System.Drawing.Color.Gainsboro
+        Me.FirstNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.FirstNameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "FirstName", True))
+        Me.FirstNameTextBox.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FirstNameTextBox.Location = New System.Drawing.Point(17, 15)
+        Me.FirstNameTextBox.Name = "FirstNameTextBox"
+        Me.FirstNameTextBox.Size = New System.Drawing.Size(330, 21)
+        Me.FirstNameTextBox.TabIndex = 4
+        Me.FirstNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'CustomRoundedPanel3
+        '
+        Me.CustomRoundedPanel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CustomRoundedPanel3.BackColor = System.Drawing.Color.Gainsboro
+        Me.CustomRoundedPanel3.Controls.Add(Me.UserNameTextBox)
+        Me.CustomRoundedPanel3.Location = New System.Drawing.Point(137, 342)
+        Me.CustomRoundedPanel3.Name = "CustomRoundedPanel3"
+        Me.CustomRoundedPanel3.Size = New System.Drawing.Size(359, 48)
+        Me.CustomRoundedPanel3.TabIndex = 6
+        Me.CustomRoundedPanel3.TabStop = True
+        '
+        'UserNameTextBox
+        '
+        Me.UserNameTextBox.BackColor = System.Drawing.Color.Gainsboro
+        Me.UserNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.UserNameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "UserName", True))
+        Me.UserNameTextBox.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UserNameTextBox.Location = New System.Drawing.Point(17, 15)
+        Me.UserNameTextBox.Name = "UserNameTextBox"
+        Me.UserNameTextBox.Size = New System.Drawing.Size(330, 21)
+        Me.UserNameTextBox.TabIndex = 6
+        Me.UserNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'CustomRoundedPanel4
+        '
+        Me.CustomRoundedPanel4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CustomRoundedPanel4.BackColor = System.Drawing.Color.Gainsboro
+        Me.CustomRoundedPanel4.Controls.Add(Me.SecondNameTextBox)
+        Me.CustomRoundedPanel4.Location = New System.Drawing.Point(137, 277)
+        Me.CustomRoundedPanel4.Name = "CustomRoundedPanel4"
+        Me.CustomRoundedPanel4.Size = New System.Drawing.Size(359, 48)
+        Me.CustomRoundedPanel4.TabIndex = 5
+        Me.CustomRoundedPanel4.TabStop = True
+        '
+        'SecondNameTextBox
+        '
+        Me.SecondNameTextBox.BackColor = System.Drawing.Color.Gainsboro
+        Me.SecondNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.SecondNameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "SecondName", True))
+        Me.SecondNameTextBox.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SecondNameTextBox.Location = New System.Drawing.Point(17, 15)
+        Me.SecondNameTextBox.Name = "SecondNameTextBox"
+        Me.SecondNameTextBox.Size = New System.Drawing.Size(330, 21)
+        Me.SecondNameTextBox.TabIndex = 5
+        Me.SecondNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'CustomRoundedPanel1
+        '
+        Me.CustomRoundedPanel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CustomRoundedPanel1.BackColor = System.Drawing.Color.Gainsboro
+        Me.CustomRoundedPanel1.Controls.Add(Me.PhoneNoTextBox)
+        Me.CustomRoundedPanel1.Location = New System.Drawing.Point(137, 147)
+        Me.CustomRoundedPanel1.Name = "CustomRoundedPanel1"
+        Me.CustomRoundedPanel1.Size = New System.Drawing.Size(359, 48)
+        Me.CustomRoundedPanel1.TabIndex = 3
+        Me.CustomRoundedPanel1.TabStop = True
+        '
+        'PhoneNoTextBox
+        '
+        Me.PhoneNoTextBox.BackColor = System.Drawing.Color.Gainsboro
+        Me.PhoneNoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.PhoneNoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "PhoneNo", True))
+        Me.PhoneNoTextBox.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PhoneNoTextBox.Location = New System.Drawing.Point(17, 14)
+        Me.PhoneNoTextBox.Name = "PhoneNoTextBox"
+        Me.PhoneNoTextBox.Size = New System.Drawing.Size(330, 21)
+        Me.PhoneNoTextBox.TabIndex = 3
+        Me.PhoneNoTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Form1
         '

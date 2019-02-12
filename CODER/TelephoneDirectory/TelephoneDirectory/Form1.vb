@@ -21,51 +21,55 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-        Dim uname As String = ""
-        Dim pword As String = ""
-        Dim username As String = ""
-        Dim pass As String = ""
-        Dim counter As Integer = 0
-        Dim Pnum As String = TextBox1.Text
-        If Regex.IsMatch(Pnum, "^[0-9 ]+$") Then
-            counter = 0
-        Else
-            counter = 1
-        End If
-
-        If Pnum = "" Or Pnum.Length <> 10 Or TextBox2.Text = "" Or counter = 1 Then
-            MsgBox("Invalid Login Details")
-            counter = 1
-        ElseIf counter <> 1 Then
-            uname = TextBox1.Text
-            pword = TextBox2.Text
-            Dim querry As String = "Select Password From GeneralUser where PhoneNo= '" & uname & "';"
-            'Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\sem4\Software_Lab\assignment2\GeneralUserDB.accdb"
-            Dim path As String = My.Application.Info.DirectoryPath
-            path = path + "\GeneralUserDB.accdb"
-            Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
-            Dim conn = New OleDbConnection(dbsource)
-            Dim cmd As New OleDbCommand(querry, conn)
-            conn.Open()
-            Try
-                pass = cmd.ExecuteScalar().ToString
-            Catch ex As Exception
-                MsgBox("Username does not exit")
-            End Try
-            If (pword = pass) Then
-                ' MsgBox("Login success")
-                Dim obj As New Form2
-                obj.UserNumber = uname
-                obj.Show()
-                If obj.Visible Then
-                    Me.Hide()
-                End If
+        If CheckBox1.Checked = False Then
+            Dim uname As String = ""
+            Dim pword As String = ""
+            Dim username As String = ""
+            Dim pass As String = ""
+            Dim counter As Integer = 0
+            Dim Pnum As String = TextBox1.Text
+            If Regex.IsMatch(Pnum, "^[0-9 ]+$") Then
+                counter = 0
             Else
-                MsgBox("login Failed")
-                TextBox1.Clear()
-                TextBox2.Clear()
+                counter = 1
             End If
+
+            If Pnum = "" Or Pnum.Length <> 10 Or TextBox2.Text = "" Or counter = 1 Then
+                MsgBox("Invalid Login Details")
+                counter = 1
+            ElseIf counter <> 1 Then
+                uname = TextBox1.Text
+                pword = TextBox2.Text
+                Dim querry As String = "Select Password From GeneralUser where PhoneNo= '" & uname & "';"
+                'Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\sem4\Software_Lab\assignment2\GeneralUserDB.accdb"
+                Dim path As String = My.Application.Info.DirectoryPath
+                path = path + "\GeneralUserDB.accdb"
+                Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
+                Dim conn = New OleDbConnection(dbsource)
+                Dim cmd As New OleDbCommand(querry, conn)
+                conn.Open()
+                Try
+                    pass = cmd.ExecuteScalar().ToString
+                Catch ex As Exception
+                    MsgBox("Username does not exit")
+                End Try
+                If (pword = pass) Then
+                    ' MsgBox("Login success")
+                    Dim obj As New Form2
+                    obj.UserNumber = uname
+                    obj.Show()
+                    If obj.Visible Then
+                        Me.Hide()
+                    End If
+                Else
+                    MsgBox("login Failed")
+                    TextBox1.Clear()
+                    TextBox2.Clear()
+                End If
+                conn.Close()
+            End If
+        Else
+            Form3.Show()
         End If
     End Sub
 
@@ -91,7 +95,7 @@ Public Class Form1
             Dim path As String = My.Application.Info.DirectoryPath
 
             path = path + "\GeneralUserDB.accdb"
-            MsgBox(path)
+
             Dim dbsource As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + path
             Dim conn = New OleDbConnection(dbsource)
             Dim cmd As New OleDbCommand(querry, conn)
@@ -128,7 +132,15 @@ Public Class Form1
                         conn.Open()
                         cmd.ExecuteNonQuery()
                         MsgBox("create success")
-                        Me.Close()
+                        conn.Close()
+                        FirstNameTextBox.Text = ""
+                        SecondNameTextBox.Text = ""
+                        PhoneNoTextBox.Text = ""
+                        AadharTextBox.Text = ""
+                        PasswordTextBox.Text = ""
+                        cpasswordtxtbox.Text = ""
+                        UserNameTextBox.Text = ""
+
                     Catch ex As Exception
                         MsgBox("Error please try again")
                     End Try
@@ -158,3 +170,4 @@ Public Class Form1
     End Sub
 
 End Class
+
