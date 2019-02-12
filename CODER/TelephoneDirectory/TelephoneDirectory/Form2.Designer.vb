@@ -30,88 +30,28 @@ Partial Class Form2
         Dim DOBLabel As System.Windows.Forms.Label
         Dim PhoneNoLabel As System.Windows.Forms.Label
         Dim PasswordLabel As System.Windows.Forms.Label
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.mobile_button = New System.Windows.Forms.Button()
-        Me.dashboard_button = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.dashboardname_label = New System.Windows.Forms.Label()
-        Me.myprofile_button = New System.Windows.Forms.Button()
-        Me.td_button = New System.Windows.Forms.Button()
-        Me.tv_button = New System.Windows.Forms.Button()
-        Me.internet_button = New System.Windows.Forms.Button()
-        Me.myprofile_panel = New System.Windows.Forms.Panel()
-        Me.passwordchange_panel = New System.Windows.Forms.Panel()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.CustomRoundedPanel15 = New TelephoneDirectory.CustomRoundedPanel()
-        Me.confrimnewpassword = New System.Windows.Forms.TextBox()
-        Me.Label51 = New System.Windows.Forms.Label()
-        Me.CustomRoundedPanel14 = New TelephoneDirectory.CustomRoundedPanel()
-        Me.newpassword_textbox = New System.Windows.Forms.TextBox()
-        Me.CustomRoundedPanel13 = New TelephoneDirectory.CustomRoundedPanel()
-        Me.ChangePasswordTextBox = New System.Windows.Forms.TextBox()
-        Me.GeneralUserBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.GeneralUserDBDataSet = New TelephoneDirectory.GeneralUserDBDataSet()
-        Me.oldpassword_label = New System.Windows.Forms.Label()
-        Me.npassword_label = New System.Windows.Forms.Label()
-        Me.Label53 = New System.Windows.Forms.Label()
-        Me.updatepassword = New System.Windows.Forms.Button()
-        Me.backtoprofile_button = New System.Windows.Forms.Button()
-        Me.Panel25 = New System.Windows.Forms.Panel()
-        Me.Label37 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
-        Me.CustomRoundedPanel8 = New TelephoneDirectory.CustomRoundedPanel()
-        Me.AddressTextBox = New System.Windows.Forms.TextBox()
-        Me.CustomRoundedPanel9 = New TelephoneDirectory.CustomRoundedPanel()
-        Me.DOBDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.CustomRoundedPanel10 = New TelephoneDirectory.CustomRoundedPanel()
-        Me.PhoneNoTextBox = New System.Windows.Forms.TextBox()
-        Me.CustomRoundedPanel7 = New TelephoneDirectory.CustomRoundedPanel()
-        Me.UserNameTextBox = New System.Windows.Forms.TextBox()
-        Me.CustomRoundedPanel12 = New TelephoneDirectory.CustomRoundedPanel()
-        Me.SecondNameTextBox = New System.Windows.Forms.TextBox()
-        Me.CustomRoundedPanel11 = New TelephoneDirectory.CustomRoundedPanel()
-        Me.FirstNameTextBox = New System.Windows.Forms.TextBox()
-        Me.restore_button = New System.Windows.Forms.Button()
-        Me.save_button = New System.Windows.Forms.Button()
-        Me.Button26 = New System.Windows.Forms.Button()
-        Me.password_change = New System.Windows.Forms.Button()
-        Me.sname_label = New System.Windows.Forms.Label()
-        Me.fname_label = New System.Windows.Forms.Label()
-        Me.edit_button = New System.Windows.Forms.Button()
-        Me.tv_panel = New System.Windows.Forms.Panel()
         Me.td_panel = New System.Windows.Forms.Panel()
         Me.Button23 = New System.Windows.Forms.Button()
         Me.Panel27 = New System.Windows.Forms.Panel()
-        Me.CustomRoundedPanel6 = New TelephoneDirectory.CustomRoundedPanel()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Panel23 = New System.Windows.Forms.Panel()
-        Me.CustomRoundedPanel5 = New TelephoneDirectory.CustomRoundedPanel()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label47 = New System.Windows.Forms.Label()
         Me.Button21 = New System.Windows.Forms.Button()
         Me.Label45 = New System.Windows.Forms.Label()
         Me.Label46 = New System.Windows.Forms.Label()
         Me.Panel26 = New System.Windows.Forms.Panel()
-        Me.CustomRoundedPanel4 = New TelephoneDirectory.CustomRoundedPanel()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Panel22 = New System.Windows.Forms.Panel()
         Me.Button20 = New System.Windows.Forms.Button()
         Me.Label40 = New System.Windows.Forms.Label()
         Me.Label39 = New System.Windows.Forms.Label()
+        Me.tv_panel = New System.Windows.Forms.Panel()
         Me.DataGridView3 = New System.Windows.Forms.DataGridView()
         Me.IDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CostDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -127,7 +67,6 @@ Partial Class Form2
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.mobile_panel = New System.Windows.Forms.Panel()
         Me.internet_panel = New System.Windows.Forms.Panel()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.IDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -145,6 +84,12 @@ Partial Class Form2
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label36 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
+        Me.mobile_panel = New System.Windows.Forms.Panel()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CostDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -152,23 +97,23 @@ Partial Class Form2
         Me.ValidityPeriodDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MobilePlansBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MobilePlansDBDataSet1 = New TelephoneDirectory.MobilePlansDBDataSet1()
-        Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.CustomRoundedPanel3 = New TelephoneDirectory.CustomRoundedPanel()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.CustomRoundedPanel2 = New TelephoneDirectory.CustomRoundedPanel()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel20 = New System.Windows.Forms.Panel()
         Me.mp_cpb = New CircularProgressBar.CircularProgressBar()
         Me.planname_label = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.dashboard_panel = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel16 = New System.Windows.Forms.Panel()
+        Me.Panel24 = New System.Windows.Forms.Panel()
+        Me.recharge_button = New System.Windows.Forms.Button()
+        Me.Label44 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel13 = New System.Windows.Forms.Panel()
@@ -204,15 +149,39 @@ Partial Class Form2
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel24 = New System.Windows.Forms.Panel()
-        Me.CustomRoundedPanel1 = New TelephoneDirectory.CustomRoundedPanel()
-        Me.walletrecharge_textbox = New System.Windows.Forms.TextBox()
-        Me.recharge_button = New System.Windows.Forms.Button()
-        Me.Label44 = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.mobile_button = New System.Windows.Forms.Button()
+        Me.dashboard_button = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.dashboardname_label = New System.Windows.Forms.Label()
+        Me.myprofile_button = New System.Windows.Forms.Button()
+        Me.td_button = New System.Windows.Forms.Button()
+        Me.tv_button = New System.Windows.Forms.Button()
+        Me.internet_button = New System.Windows.Forms.Button()
+        Me.myprofile_panel = New System.Windows.Forms.Panel()
+        Me.passwordchange_panel = New System.Windows.Forms.Panel()
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.Label51 = New System.Windows.Forms.Label()
+        Me.GeneralUserBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GeneralUserDBDataSet = New TelephoneDirectory.GeneralUserDBDataSet()
+        Me.oldpassword_label = New System.Windows.Forms.Label()
+        Me.npassword_label = New System.Windows.Forms.Label()
+        Me.Label53 = New System.Windows.Forms.Label()
+        Me.updatepassword = New System.Windows.Forms.Button()
+        Me.backtoprofile_button = New System.Windows.Forms.Button()
+        Me.Panel25 = New System.Windows.Forms.Panel()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.restore_button = New System.Windows.Forms.Button()
+        Me.save_button = New System.Windows.Forms.Button()
+        Me.Button26 = New System.Windows.Forms.Button()
+        Me.password_change = New System.Windows.Forms.Button()
+        Me.sname_label = New System.Windows.Forms.Label()
+        Me.fname_label = New System.Windows.Forms.Label()
+        Me.edit_button = New System.Windows.Forms.Button()
         Me.TVPlansBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TVPlansDataSet = New TelephoneDirectory.TVPlansDataSet()
         Me.InternetPlansBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -234,6 +203,36 @@ Partial Class Form2
         Me.InternetPlansTableAdapter1 = New TelephoneDirectory.InternetPlansDataSet1TableAdapters.InternetPlansTableAdapter()
         Me.InternetPlansTableAdapter2 = New TelephoneDirectory.InternetPlansDataSet2TableAdapters.InternetPlansTableAdapter()
         Me.TVPlansTableAdapter1 = New TelephoneDirectory.TVPlansDataSet1TableAdapters.TVPlansTableAdapter()
+        Me.CustomRoundedPanel15 = New TelephoneDirectory.CustomRoundedPanel()
+        Me.confrimnewpassword = New System.Windows.Forms.TextBox()
+        Me.CustomRoundedPanel14 = New TelephoneDirectory.CustomRoundedPanel()
+        Me.newpassword_textbox = New System.Windows.Forms.TextBox()
+        Me.CustomRoundedPanel13 = New TelephoneDirectory.CustomRoundedPanel()
+        Me.ChangePasswordTextBox = New System.Windows.Forms.TextBox()
+        Me.CustomRoundedPanel8 = New TelephoneDirectory.CustomRoundedPanel()
+        Me.AddressTextBox = New System.Windows.Forms.TextBox()
+        Me.CustomRoundedPanel9 = New TelephoneDirectory.CustomRoundedPanel()
+        Me.DOBDateTimePicker = New System.Windows.Forms.DateTimePicker()
+        Me.CustomRoundedPanel10 = New TelephoneDirectory.CustomRoundedPanel()
+        Me.PhoneNoTextBox = New System.Windows.Forms.TextBox()
+        Me.CustomRoundedPanel7 = New TelephoneDirectory.CustomRoundedPanel()
+        Me.UserNameTextBox = New System.Windows.Forms.TextBox()
+        Me.CustomRoundedPanel12 = New TelephoneDirectory.CustomRoundedPanel()
+        Me.SecondNameTextBox = New System.Windows.Forms.TextBox()
+        Me.CustomRoundedPanel11 = New TelephoneDirectory.CustomRoundedPanel()
+        Me.FirstNameTextBox = New System.Windows.Forms.TextBox()
+        Me.CustomRoundedPanel6 = New TelephoneDirectory.CustomRoundedPanel()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.CustomRoundedPanel5 = New TelephoneDirectory.CustomRoundedPanel()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.CustomRoundedPanel4 = New TelephoneDirectory.CustomRoundedPanel()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.CustomRoundedPanel3 = New TelephoneDirectory.CustomRoundedPanel()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.CustomRoundedPanel2 = New TelephoneDirectory.CustomRoundedPanel()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.CustomRoundedPanel1 = New TelephoneDirectory.CustomRoundedPanel()
+        Me.walletrecharge_textbox = New System.Windows.Forms.TextBox()
         FirstNameLabel = New System.Windows.Forms.Label()
         SecondNameLabel = New System.Windows.Forms.Label()
         UserNameLabel = New System.Windows.Forms.Label()
@@ -242,52 +241,31 @@ Partial Class Form2
         PhoneNoLabel = New System.Windows.Forms.Label()
         PasswordLabel = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel3.SuspendLayout()
-        Me.myprofile_panel.SuspendLayout()
-        Me.passwordchange_panel.SuspendLayout()
-        Me.CustomRoundedPanel15.SuspendLayout()
-        Me.CustomRoundedPanel14.SuspendLayout()
-        Me.CustomRoundedPanel13.SuspendLayout()
-        CType(Me.GeneralUserBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GeneralUserDBDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel25.SuspendLayout()
-        Me.CustomRoundedPanel8.SuspendLayout()
-        Me.CustomRoundedPanel9.SuspendLayout()
-        Me.CustomRoundedPanel10.SuspendLayout()
-        Me.CustomRoundedPanel7.SuspendLayout()
-        Me.CustomRoundedPanel12.SuspendLayout()
-        Me.CustomRoundedPanel11.SuspendLayout()
-        Me.tv_panel.SuspendLayout()
         Me.td_panel.SuspendLayout()
         Me.Panel27.SuspendLayout()
-        Me.CustomRoundedPanel6.SuspendLayout()
-        Me.CustomRoundedPanel5.SuspendLayout()
         Me.Panel26.SuspendLayout()
-        Me.CustomRoundedPanel4.SuspendLayout()
+        Me.tv_panel.SuspendLayout()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TVPlansBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TVPlansDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel11.SuspendLayout()
-        Me.mobile_panel.SuspendLayout()
         Me.internet_panel.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.InternetPlansBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.InternetPlansDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel21.SuspendLayout()
+        Me.mobile_panel.SuspendLayout()
+        Me.Panel12.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MobilePlansBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MobilePlansDBDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel12.SuspendLayout()
-        Me.CustomRoundedPanel3.SuspendLayout()
-        Me.CustomRoundedPanel2.SuspendLayout()
         Me.Panel9.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.dashboard_panel.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.Panel24.SuspendLayout()
         Me.Panel13.SuspendLayout()
         Me.Panel18.SuspendLayout()
         Me.Panel10.SuspendLayout()
@@ -296,10 +274,15 @@ Partial Class Form2
         Me.Panel15.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel17.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel24.SuspendLayout()
-        Me.CustomRoundedPanel1.SuspendLayout()
-        Me.Panel5.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel3.SuspendLayout()
+        Me.myprofile_panel.SuspendLayout()
+        Me.passwordchange_panel.SuspendLayout()
+        CType(Me.GeneralUserBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GeneralUserDBDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel25.SuspendLayout()
         CType(Me.TVPlansBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TVPlansDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.InternetPlansBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -309,6 +292,21 @@ Partial Class Form2
         CType(Me.GeneralUserBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.InternetPlansBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.InternetPlansDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.CustomRoundedPanel15.SuspendLayout()
+        Me.CustomRoundedPanel14.SuspendLayout()
+        Me.CustomRoundedPanel13.SuspendLayout()
+        Me.CustomRoundedPanel8.SuspendLayout()
+        Me.CustomRoundedPanel9.SuspendLayout()
+        Me.CustomRoundedPanel10.SuspendLayout()
+        Me.CustomRoundedPanel7.SuspendLayout()
+        Me.CustomRoundedPanel12.SuspendLayout()
+        Me.CustomRoundedPanel11.SuspendLayout()
+        Me.CustomRoundedPanel6.SuspendLayout()
+        Me.CustomRoundedPanel5.SuspendLayout()
+        Me.CustomRoundedPanel4.SuspendLayout()
+        Me.CustomRoundedPanel3.SuspendLayout()
+        Me.CustomRoundedPanel2.SuspendLayout()
+        Me.CustomRoundedPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'FirstNameLabel
@@ -328,7 +326,7 @@ Partial Class Form2
         SecondNameLabel.AutoSize = True
         SecondNameLabel.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         SecondNameLabel.ForeColor = System.Drawing.SystemColors.WindowFrame
-        SecondNameLabel.Location = New System.Drawing.Point(838, 82)
+        SecondNameLabel.Location = New System.Drawing.Point(1076, 81)
         SecondNameLabel.Name = "SecondNameLabel"
         SecondNameLabel.Size = New System.Drawing.Size(134, 21)
         SecondNameLabel.TabIndex = 14
@@ -363,7 +361,7 @@ Partial Class Form2
         DOBLabel.AutoSize = True
         DOBLabel.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DOBLabel.ForeColor = System.Drawing.SystemColors.WindowFrame
-        DOBLabel.Location = New System.Drawing.Point(809, 155)
+        DOBLabel.Location = New System.Drawing.Point(1079, 157)
         DOBLabel.Name = "DOBLabel"
         DOBLabel.Size = New System.Drawing.Size(48, 21)
         DOBLabel.TabIndex = 17
@@ -394,6 +392,8 @@ Partial Class Form2
         '
         'Panel1
         '
+        Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Panel1.Controls.Add(Me.PictureBox6)
         Me.Panel1.Controls.Add(Me.PictureBox5)
@@ -411,693 +411,8 @@ Partial Class Form2
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(278, 859)
+        Me.Panel1.Size = New System.Drawing.Size(278, 1057)
         Me.Panel1.TabIndex = 0
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(34, 120)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(25, 25)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox6.TabIndex = 20
-        Me.PictureBox6.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(32, 466)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(25, 25)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox5.TabIndex = 19
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(34, 397)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(25, 25)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 18
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(34, 329)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(25, 25)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 17
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(34, 258)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(25, 25)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 16
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(34, 188)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(25, 25)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 15
-        Me.PictureBox1.TabStop = False
-        '
-        'mobile_button
-        '
-        Me.mobile_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.mobile_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.mobile_button.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mobile_button.ForeColor = System.Drawing.Color.White
-        Me.mobile_button.Location = New System.Drawing.Point(0, 167)
-        Me.mobile_button.Margin = New System.Windows.Forms.Padding(0)
-        Me.mobile_button.Name = "mobile_button"
-        Me.mobile_button.Size = New System.Drawing.Size(278, 70)
-        Me.mobile_button.TabIndex = 4
-        Me.mobile_button.Text = "Mobile           "
-        Me.mobile_button.UseVisualStyleBackColor = False
-        '
-        'dashboard_button
-        '
-        Me.dashboard_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.dashboard_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.dashboard_button.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dashboard_button.ForeColor = System.Drawing.Color.White
-        Me.dashboard_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.dashboard_button.Location = New System.Drawing.Point(0, 98)
-        Me.dashboard_button.Margin = New System.Windows.Forms.Padding(0)
-        Me.dashboard_button.Name = "dashboard_button"
-        Me.dashboard_button.Size = New System.Drawing.Size(278, 70)
-        Me.dashboard_button.TabIndex = 3
-        Me.dashboard_button.Text = "Dashboard     "
-        Me.dashboard_button.UseVisualStyleBackColor = False
-        '
-        'Panel3
-        '
-        Me.Panel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel3.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.Panel3.Controls.Add(Me.dashboardname_label)
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(278, 100)
-        Me.Panel3.TabIndex = 2
-        '
-        'dashboardname_label
-        '
-        Me.dashboardname_label.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.dashboardname_label.AutoSize = True
-        Me.dashboardname_label.Font = New System.Drawing.Font("Century Gothic", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dashboardname_label.ForeColor = System.Drawing.Color.White
-        Me.dashboardname_label.Location = New System.Drawing.Point(75, 37)
-        Me.dashboardname_label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.dashboardname_label.Name = "dashboardname_label"
-        Me.dashboardname_label.Size = New System.Drawing.Size(141, 23)
-        Me.dashboardname_label.TabIndex = 0
-        Me.dashboardname_label.Text = "Hardik Katyal "
-        '
-        'myprofile_button
-        '
-        Me.myprofile_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.myprofile_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.myprofile_button.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.myprofile_button.ForeColor = System.Drawing.Color.White
-        Me.myprofile_button.Location = New System.Drawing.Point(0, 443)
-        Me.myprofile_button.Margin = New System.Windows.Forms.Padding(0)
-        Me.myprofile_button.Name = "myprofile_button"
-        Me.myprofile_button.Size = New System.Drawing.Size(278, 70)
-        Me.myprofile_button.TabIndex = 9
-        Me.myprofile_button.Text = "My Profile    "
-        Me.myprofile_button.UseVisualStyleBackColor = False
-        '
-        'td_button
-        '
-        Me.td_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.td_button.Enabled = False
-        Me.td_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.td_button.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.td_button.ForeColor = System.Drawing.Color.White
-        Me.td_button.Location = New System.Drawing.Point(0, 374)
-        Me.td_button.Margin = New System.Windows.Forms.Padding(0)
-        Me.td_button.Name = "td_button"
-        Me.td_button.Size = New System.Drawing.Size(278, 70)
-        Me.td_button.TabIndex = 8
-        Me.td_button.Text = "Directory      "
-        Me.td_button.UseVisualStyleBackColor = False
-        '
-        'tv_button
-        '
-        Me.tv_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.tv_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.tv_button.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tv_button.ForeColor = System.Drawing.Color.White
-        Me.tv_button.Location = New System.Drawing.Point(0, 305)
-        Me.tv_button.Margin = New System.Windows.Forms.Padding(0)
-        Me.tv_button.Name = "tv_button"
-        Me.tv_button.Size = New System.Drawing.Size(278, 70)
-        Me.tv_button.TabIndex = 6
-        Me.tv_button.Text = "TV                 "
-        Me.tv_button.UseVisualStyleBackColor = False
-        '
-        'internet_button
-        '
-        Me.internet_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.internet_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.internet_button.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.internet_button.ForeColor = System.Drawing.Color.White
-        Me.internet_button.Location = New System.Drawing.Point(0, 236)
-        Me.internet_button.Margin = New System.Windows.Forms.Padding(0)
-        Me.internet_button.Name = "internet_button"
-        Me.internet_button.Size = New System.Drawing.Size(278, 70)
-        Me.internet_button.TabIndex = 5
-        Me.internet_button.Text = "Internet          "
-        Me.internet_button.UseVisualStyleBackColor = False
-        '
-        'myprofile_panel
-        '
-        Me.myprofile_panel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.myprofile_panel.BackColor = System.Drawing.Color.White
-        Me.myprofile_panel.Controls.Add(Me.passwordchange_panel)
-        Me.myprofile_panel.Controls.Add(Me.Panel25)
-        Me.myprofile_panel.Controls.Add(UserNameLabel)
-        Me.myprofile_panel.Controls.Add(AddressLabel)
-        Me.myprofile_panel.Controls.Add(Me.CustomRoundedPanel8)
-        Me.myprofile_panel.Controls.Add(DOBLabel)
-        Me.myprofile_panel.Controls.Add(Me.CustomRoundedPanel9)
-        Me.myprofile_panel.Controls.Add(PhoneNoLabel)
-        Me.myprofile_panel.Controls.Add(Me.CustomRoundedPanel10)
-        Me.myprofile_panel.Controls.Add(Me.CustomRoundedPanel7)
-        Me.myprofile_panel.Controls.Add(SecondNameLabel)
-        Me.myprofile_panel.Controls.Add(Me.CustomRoundedPanel12)
-        Me.myprofile_panel.Controls.Add(FirstNameLabel)
-        Me.myprofile_panel.Controls.Add(Me.CustomRoundedPanel11)
-        Me.myprofile_panel.Controls.Add(Me.restore_button)
-        Me.myprofile_panel.Controls.Add(Me.save_button)
-        Me.myprofile_panel.Controls.Add(Me.Button26)
-        Me.myprofile_panel.Controls.Add(Me.password_change)
-        Me.myprofile_panel.Controls.Add(Me.sname_label)
-        Me.myprofile_panel.Controls.Add(Me.fname_label)
-        Me.myprofile_panel.Controls.Add(Me.edit_button)
-        Me.myprofile_panel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.myprofile_panel.Location = New System.Drawing.Point(4, 4)
-        Me.myprofile_panel.Margin = New System.Windows.Forms.Padding(4)
-        Me.myprofile_panel.Name = "myprofile_panel"
-        Me.myprofile_panel.Size = New System.Drawing.Size(1094, 770)
-        Me.myprofile_panel.TabIndex = 0
-        '
-        'passwordchange_panel
-        '
-        Me.passwordchange_panel.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(76, Byte), Integer))
-        Me.passwordchange_panel.Controls.Add(Me.Label52)
-        Me.passwordchange_panel.Controls.Add(Me.CustomRoundedPanel15)
-        Me.passwordchange_panel.Controls.Add(Me.Label51)
-        Me.passwordchange_panel.Controls.Add(Me.CustomRoundedPanel14)
-        Me.passwordchange_panel.Controls.Add(PasswordLabel)
-        Me.passwordchange_panel.Controls.Add(Me.CustomRoundedPanel13)
-        Me.passwordchange_panel.Controls.Add(Me.oldpassword_label)
-        Me.passwordchange_panel.Controls.Add(Me.npassword_label)
-        Me.passwordchange_panel.Controls.Add(Me.Label53)
-        Me.passwordchange_panel.Controls.Add(Me.updatepassword)
-        Me.passwordchange_panel.Controls.Add(Me.backtoprofile_button)
-        Me.passwordchange_panel.Location = New System.Drawing.Point(9, 3)
-        Me.passwordchange_panel.Name = "passwordchange_panel"
-        Me.passwordchange_panel.Size = New System.Drawing.Size(527, 602)
-        Me.passwordchange_panel.TabIndex = 23
-        '
-        'Label52
-        '
-        Me.Label52.AutoSize = True
-        Me.Label52.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label52.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.Label52.Location = New System.Drawing.Point(95, 279)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(201, 21)
-        Me.Label52.TabIndex = 3
-        Me.Label52.Text = "Confirm New password"
-        '
-        'CustomRoundedPanel15
-        '
-        Me.CustomRoundedPanel15.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel15.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(76, Byte), Integer))
-        Me.CustomRoundedPanel15.Controls.Add(Me.confrimnewpassword)
-        Me.CustomRoundedPanel15.Location = New System.Drawing.Point(88, 293)
-        Me.CustomRoundedPanel15.Name = "CustomRoundedPanel15"
-        Me.CustomRoundedPanel15.Size = New System.Drawing.Size(331, 55)
-        Me.CustomRoundedPanel15.TabIndex = 28
-        '
-        'confrimnewpassword
-        '
-        Me.confrimnewpassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(76, Byte), Integer))
-        Me.confrimnewpassword.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.confrimnewpassword.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.confrimnewpassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.confrimnewpassword.Location = New System.Drawing.Point(11, 14)
-        Me.confrimnewpassword.Name = "confrimnewpassword"
-        Me.confrimnewpassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.confrimnewpassword.Size = New System.Drawing.Size(312, 25)
-        Me.confrimnewpassword.TabIndex = 5
-        Me.confrimnewpassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label51
-        '
-        Me.Label51.AutoSize = True
-        Me.Label51.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label51.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.Label51.Location = New System.Drawing.Point(96, 199)
-        Me.Label51.Name = "Label51"
-        Me.Label51.Size = New System.Drawing.Size(133, 21)
-        Me.Label51.TabIndex = 2
-        Me.Label51.Text = "New password"
-        '
-        'CustomRoundedPanel14
-        '
-        Me.CustomRoundedPanel14.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel14.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(76, Byte), Integer))
-        Me.CustomRoundedPanel14.Controls.Add(Me.newpassword_textbox)
-        Me.CustomRoundedPanel14.Location = New System.Drawing.Point(89, 210)
-        Me.CustomRoundedPanel14.Name = "CustomRoundedPanel14"
-        Me.CustomRoundedPanel14.Size = New System.Drawing.Size(331, 55)
-        Me.CustomRoundedPanel14.TabIndex = 27
-        '
-        'newpassword_textbox
-        '
-        Me.newpassword_textbox.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(76, Byte), Integer))
-        Me.newpassword_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.newpassword_textbox.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.newpassword_textbox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.newpassword_textbox.Location = New System.Drawing.Point(9, 17)
-        Me.newpassword_textbox.Name = "newpassword_textbox"
-        Me.newpassword_textbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.newpassword_textbox.Size = New System.Drawing.Size(313, 25)
-        Me.newpassword_textbox.TabIndex = 4
-        Me.newpassword_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'CustomRoundedPanel13
-        '
-        Me.CustomRoundedPanel13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel13.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(76, Byte), Integer))
-        Me.CustomRoundedPanel13.Controls.Add(Me.ChangePasswordTextBox)
-        Me.CustomRoundedPanel13.Location = New System.Drawing.Point(89, 135)
-        Me.CustomRoundedPanel13.Name = "CustomRoundedPanel13"
-        Me.CustomRoundedPanel13.Size = New System.Drawing.Size(331, 55)
-        Me.CustomRoundedPanel13.TabIndex = 26
-        '
-        'ChangePasswordTextBox
-        '
-        Me.ChangePasswordTextBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(76, Byte), Integer))
-        Me.ChangePasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.ChangePasswordTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "Password", True))
-        Me.ChangePasswordTextBox.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ChangePasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.ChangePasswordTextBox.Location = New System.Drawing.Point(10, 16)
-        Me.ChangePasswordTextBox.Name = "ChangePasswordTextBox"
-        Me.ChangePasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.ChangePasswordTextBox.Size = New System.Drawing.Size(312, 25)
-        Me.ChangePasswordTextBox.TabIndex = 1
-        Me.ChangePasswordTextBox.TabStop = False
-        Me.ChangePasswordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'GeneralUserBindingSource
-        '
-        Me.GeneralUserBindingSource.DataMember = "GeneralUser"
-        Me.GeneralUserBindingSource.DataSource = Me.GeneralUserDBDataSet
-        '
-        'GeneralUserDBDataSet
-        '
-        Me.GeneralUserDBDataSet.DataSetName = "GeneralUserDBDataSet"
-        Me.GeneralUserDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'oldpassword_label
-        '
-        Me.oldpassword_label.AutoSize = True
-        Me.oldpassword_label.Location = New System.Drawing.Point(423, 91)
-        Me.oldpassword_label.Name = "oldpassword_label"
-        Me.oldpassword_label.Size = New System.Drawing.Size(0, 16)
-        Me.oldpassword_label.TabIndex = 10
-        '
-        'npassword_label
-        '
-        Me.npassword_label.AutoSize = True
-        Me.npassword_label.Location = New System.Drawing.Point(452, 180)
-        Me.npassword_label.Name = "npassword_label"
-        Me.npassword_label.Size = New System.Drawing.Size(0, 16)
-        Me.npassword_label.TabIndex = 9
-        '
-        'Label53
-        '
-        Me.Label53.AutoSize = True
-        Me.Label53.Location = New System.Drawing.Point(452, 90)
-        Me.Label53.Name = "Label53"
-        Me.Label53.Size = New System.Drawing.Size(0, 16)
-        Me.Label53.TabIndex = 8
-        '
-        'updatepassword
-        '
-        Me.updatepassword.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.updatepassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.updatepassword.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.updatepassword.ForeColor = System.Drawing.Color.White
-        Me.updatepassword.Location = New System.Drawing.Point(115, 393)
-        Me.updatepassword.Name = "updatepassword"
-        Me.updatepassword.Size = New System.Drawing.Size(261, 57)
-        Me.updatepassword.TabIndex = 7
-        Me.updatepassword.Text = "Update Password"
-        Me.updatepassword.UseVisualStyleBackColor = False
-        '
-        'backtoprofile_button
-        '
-        Me.backtoprofile_button.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.backtoprofile_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.backtoprofile_button.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.backtoprofile_button.ForeColor = System.Drawing.Color.White
-        Me.backtoprofile_button.Location = New System.Drawing.Point(88, 60)
-        Me.backtoprofile_button.Name = "backtoprofile_button"
-        Me.backtoprofile_button.Size = New System.Drawing.Size(156, 41)
-        Me.backtoprofile_button.TabIndex = 6
-        Me.backtoprofile_button.Text = "Back to profile"
-        Me.backtoprofile_button.UseVisualStyleBackColor = False
-        '
-        'Panel25
-        '
-        Me.Panel25.BackColor = System.Drawing.Color.White
-        Me.Panel25.BackgroundImage = CType(resources.GetObject("Panel25.BackgroundImage"), System.Drawing.Image)
-        Me.Panel25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel25.Controls.Add(Me.Label37)
-        Me.Panel25.Controls.Add(Me.Label29)
-        Me.Panel25.Controls.Add(Me.Label28)
-        Me.Panel25.Location = New System.Drawing.Point(32, 22)
-        Me.Panel25.Name = "Panel25"
-        Me.Panel25.Size = New System.Drawing.Size(504, 767)
-        Me.Panel25.TabIndex = 23
-        '
-        'Label37
-        '
-        Me.Label37.AutoSize = True
-        Me.Label37.BackColor = System.Drawing.Color.Transparent
-        Me.Label37.Font = New System.Drawing.Font("Century Gothic", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.ForeColor = System.Drawing.Color.White
-        Me.Label37.Location = New System.Drawing.Point(424, 253)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(73, 56)
-        Me.Label37.TabIndex = 2
-        Me.Label37.Text = "IN"
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.BackColor = System.Drawing.Color.Transparent
-        Me.Label29.Font = New System.Drawing.Font("Century Gothic", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.ForeColor = System.Drawing.Color.White
-        Me.Label29.Location = New System.Drawing.Point(250, 309)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(247, 56)
-        Me.Label29.TabIndex = 1
-        Me.Label29.Text = "YOURSELF"
-        '
-        'Label28
-        '
-        Me.Label28.AutoSize = True
-        Me.Label28.BackColor = System.Drawing.Color.Transparent
-        Me.Label28.Font = New System.Drawing.Font("Century Gothic", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.ForeColor = System.Drawing.Color.White
-        Me.Label28.Location = New System.Drawing.Point(305, 197)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(195, 56)
-        Me.Label28.TabIndex = 0
-        Me.Label28.Text = "BELIEVE"
-        '
-        'CustomRoundedPanel8
-        '
-        Me.CustomRoundedPanel8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel8.BackColor = System.Drawing.Color.White
-        Me.CustomRoundedPanel8.Controls.Add(Me.AddressTextBox)
-        Me.CustomRoundedPanel8.Location = New System.Drawing.Point(559, 243)
-        Me.CustomRoundedPanel8.Name = "CustomRoundedPanel8"
-        Me.CustomRoundedPanel8.Size = New System.Drawing.Size(1047, 55)
-        Me.CustomRoundedPanel8.TabIndex = 27
-        '
-        'AddressTextBox
-        '
-        Me.AddressTextBox.BackColor = System.Drawing.Color.White
-        Me.AddressTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.AddressTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "Address", True))
-        Me.AddressTextBox.Font = New System.Drawing.Font("Century Gothic", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AddressTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.AddressTextBox.Location = New System.Drawing.Point(15, 13)
-        Me.AddressTextBox.Name = "AddressTextBox"
-        Me.AddressTextBox.ReadOnly = True
-        Me.AddressTextBox.Size = New System.Drawing.Size(412, 31)
-        Me.AddressTextBox.TabIndex = 17
-        '
-        'CustomRoundedPanel9
-        '
-        Me.CustomRoundedPanel9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel9.BackColor = System.Drawing.Color.White
-        Me.CustomRoundedPanel9.Controls.Add(Me.DOBDateTimePicker)
-        Me.CustomRoundedPanel9.Location = New System.Drawing.Point(788, 166)
-        Me.CustomRoundedPanel9.Name = "CustomRoundedPanel9"
-        Me.CustomRoundedPanel9.Size = New System.Drawing.Size(1047, 55)
-        Me.CustomRoundedPanel9.TabIndex = 27
-        '
-        'DOBDateTimePicker
-        '
-        Me.DOBDateTimePicker.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.DOBDateTimePicker.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.DOBDateTimePicker.Checked = False
-        Me.DOBDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.GeneralUserBindingSource, "DOB", True))
-        Me.DOBDateTimePicker.Enabled = False
-        Me.DOBDateTimePicker.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DOBDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DOBDateTimePicker.Location = New System.Drawing.Point(3, 11)
-        Me.DOBDateTimePicker.Name = "DOBDateTimePicker"
-        Me.DOBDateTimePicker.Size = New System.Drawing.Size(292, 32)
-        Me.DOBDateTimePicker.TabIndex = 18
-        '
-        'CustomRoundedPanel10
-        '
-        Me.CustomRoundedPanel10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel10.BackColor = System.Drawing.Color.White
-        Me.CustomRoundedPanel10.Controls.Add(Me.PhoneNoTextBox)
-        Me.CustomRoundedPanel10.Location = New System.Drawing.Point(558, 166)
-        Me.CustomRoundedPanel10.Name = "CustomRoundedPanel10"
-        Me.CustomRoundedPanel10.Size = New System.Drawing.Size(1047, 55)
-        Me.CustomRoundedPanel10.TabIndex = 27
-        '
-        'PhoneNoTextBox
-        '
-        Me.PhoneNoTextBox.BackColor = System.Drawing.Color.White
-        Me.PhoneNoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.PhoneNoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "PhoneNo", True))
-        Me.PhoneNoTextBox.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PhoneNoTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.PhoneNoTextBox.Location = New System.Drawing.Point(15, 15)
-        Me.PhoneNoTextBox.Name = "PhoneNoTextBox"
-        Me.PhoneNoTextBox.ReadOnly = True
-        Me.PhoneNoTextBox.Size = New System.Drawing.Size(170, 29)
-        Me.PhoneNoTextBox.TabIndex = 19
-        '
-        'CustomRoundedPanel7
-        '
-        Me.CustomRoundedPanel7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel7.BackColor = System.Drawing.Color.White
-        Me.CustomRoundedPanel7.Controls.Add(Me.UserNameTextBox)
-        Me.CustomRoundedPanel7.Location = New System.Drawing.Point(558, 319)
-        Me.CustomRoundedPanel7.Name = "CustomRoundedPanel7"
-        Me.CustomRoundedPanel7.Size = New System.Drawing.Size(1047, 55)
-        Me.CustomRoundedPanel7.TabIndex = 26
-        '
-        'UserNameTextBox
-        '
-        Me.UserNameTextBox.BackColor = System.Drawing.Color.White
-        Me.UserNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.UserNameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "UserName", True))
-        Me.UserNameTextBox.Font = New System.Drawing.Font("Century Gothic", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.UserNameTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.UserNameTextBox.Location = New System.Drawing.Point(16, 11)
-        Me.UserNameTextBox.Name = "UserNameTextBox"
-        Me.UserNameTextBox.ReadOnly = True
-        Me.UserNameTextBox.Size = New System.Drawing.Size(224, 31)
-        Me.UserNameTextBox.TabIndex = 16
-        '
-        'CustomRoundedPanel12
-        '
-        Me.CustomRoundedPanel12.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel12.BackColor = System.Drawing.Color.White
-        Me.CustomRoundedPanel12.Controls.Add(Me.SecondNameTextBox)
-        Me.CustomRoundedPanel12.Location = New System.Drawing.Point(828, 90)
-        Me.CustomRoundedPanel12.Name = "CustomRoundedPanel12"
-        Me.CustomRoundedPanel12.Size = New System.Drawing.Size(1047, 55)
-        Me.CustomRoundedPanel12.TabIndex = 26
-        '
-        'SecondNameTextBox
-        '
-        Me.SecondNameTextBox.BackColor = System.Drawing.Color.White
-        Me.SecondNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.SecondNameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "SecondName", True))
-        Me.SecondNameTextBox.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SecondNameTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.SecondNameTextBox.Location = New System.Drawing.Point(14, 16)
-        Me.SecondNameTextBox.Name = "SecondNameTextBox"
-        Me.SecondNameTextBox.ReadOnly = True
-        Me.SecondNameTextBox.Size = New System.Drawing.Size(241, 29)
-        Me.SecondNameTextBox.TabIndex = 15
-        '
-        'CustomRoundedPanel11
-        '
-        Me.CustomRoundedPanel11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel11.BackColor = System.Drawing.Color.White
-        Me.CustomRoundedPanel11.Controls.Add(Me.FirstNameTextBox)
-        Me.CustomRoundedPanel11.Location = New System.Drawing.Point(558, 90)
-        Me.CustomRoundedPanel11.Name = "CustomRoundedPanel11"
-        Me.CustomRoundedPanel11.Size = New System.Drawing.Size(1047, 55)
-        Me.CustomRoundedPanel11.TabIndex = 25
-        '
-        'FirstNameTextBox
-        '
-        Me.FirstNameTextBox.BackColor = System.Drawing.Color.White
-        Me.FirstNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.FirstNameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "FirstName", True))
-        Me.FirstNameTextBox.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FirstNameTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.FirstNameTextBox.Location = New System.Drawing.Point(16, 16)
-        Me.FirstNameTextBox.Name = "FirstNameTextBox"
-        Me.FirstNameTextBox.ReadOnly = True
-        Me.FirstNameTextBox.Size = New System.Drawing.Size(241, 29)
-        Me.FirstNameTextBox.TabIndex = 14
-        '
-        'restore_button
-        '
-        Me.restore_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.restore_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.restore_button.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.restore_button.ForeColor = System.Drawing.Color.White
-        Me.restore_button.Location = New System.Drawing.Point(836, 328)
-        Me.restore_button.Name = "restore_button"
-        Me.restore_button.Size = New System.Drawing.Size(153, 38)
-        Me.restore_button.TabIndex = 22
-        Me.restore_button.Text = "Restore"
-        Me.restore_button.UseVisualStyleBackColor = False
-        '
-        'save_button
-        '
-        Me.save_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.save_button.Enabled = False
-        Me.save_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.save_button.Font = New System.Drawing.Font("Century Gothic", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.save_button.ForeColor = System.Drawing.Color.White
-        Me.save_button.Location = New System.Drawing.Point(560, 393)
-        Me.save_button.Margin = New System.Windows.Forms.Padding(4)
-        Me.save_button.Name = "save_button"
-        Me.save_button.Size = New System.Drawing.Size(143, 41)
-        Me.save_button.TabIndex = 7
-        Me.save_button.Text = "Save"
-        Me.save_button.UseVisualStyleBackColor = False
-        '
-        'Button26
-        '
-        Me.Button26.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button26.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button26.ForeColor = System.Drawing.Color.White
-        Me.Button26.Location = New System.Drawing.Point(558, 450)
-        Me.Button26.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button26.Name = "Button26"
-        Me.Button26.Size = New System.Drawing.Size(234, 45)
-        Me.Button26.TabIndex = 13
-        Me.Button26.Text = "Blocked Numbers"
-        Me.Button26.UseVisualStyleBackColor = False
-        '
-        'password_change
-        '
-        Me.password_change.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.password_change.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.password_change.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.password_change.ForeColor = System.Drawing.Color.White
-        Me.password_change.Location = New System.Drawing.Point(817, 450)
-        Me.password_change.Margin = New System.Windows.Forms.Padding(4)
-        Me.password_change.Name = "password_change"
-        Me.password_change.Size = New System.Drawing.Size(215, 45)
-        Me.password_change.TabIndex = 12
-        Me.password_change.Text = "Change Password"
-        Me.password_change.UseVisualStyleBackColor = False
-        '
-        'sname_label
-        '
-        Me.sname_label.AutoSize = True
-        Me.sname_label.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.sname_label.Location = New System.Drawing.Point(981, 233)
-        Me.sname_label.Name = "sname_label"
-        Me.sname_label.Size = New System.Drawing.Size(0, 19)
-        Me.sname_label.TabIndex = 21
-        '
-        'fname_label
-        '
-        Me.fname_label.AutoSize = True
-        Me.fname_label.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fname_label.Location = New System.Drawing.Point(967, 184)
-        Me.fname_label.Name = "fname_label"
-        Me.fname_label.Size = New System.Drawing.Size(0, 19)
-        Me.fname_label.TabIndex = 20
-        '
-        'edit_button
-        '
-        Me.edit_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.edit_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.edit_button.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.edit_button.ForeColor = System.Drawing.Color.White
-        Me.edit_button.Location = New System.Drawing.Point(1015, 48)
-        Me.edit_button.Margin = New System.Windows.Forms.Padding(4)
-        Me.edit_button.Name = "edit_button"
-        Me.edit_button.Size = New System.Drawing.Size(71, 35)
-        Me.edit_button.TabIndex = 6
-        Me.edit_button.Text = "Edit"
-        Me.edit_button.UseVisualStyleBackColor = False
-        '
-        'tv_panel
-        '
-        Me.tv_panel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.tv_panel.BackColor = System.Drawing.Color.White
-        Me.tv_panel.Controls.Add(Me.td_panel)
-        Me.tv_panel.Controls.Add(Me.DataGridView3)
-        Me.tv_panel.Controls.Add(Me.Panel11)
-        Me.tv_panel.Location = New System.Drawing.Point(0, 0)
-        Me.tv_panel.Margin = New System.Windows.Forms.Padding(4)
-        Me.tv_panel.Name = "tv_panel"
-        Me.tv_panel.Size = New System.Drawing.Size(1123, 770)
-        Me.tv_panel.TabIndex = 9
         '
         'td_panel
         '
@@ -1112,7 +427,7 @@ Partial Class Form2
         Me.td_panel.Location = New System.Drawing.Point(0, 0)
         Me.td_panel.Margin = New System.Windows.Forms.Padding(4)
         Me.td_panel.Name = "td_panel"
-        Me.td_panel.Size = New System.Drawing.Size(1123, 770)
+        Me.td_panel.Size = New System.Drawing.Size(1648, 959)
         Me.td_panel.TabIndex = 8
         '
         'Button23
@@ -1121,7 +436,7 @@ Partial Class Form2
         Me.Button23.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button23.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button23.ForeColor = System.Drawing.Color.White
-        Me.Button23.Location = New System.Drawing.Point(96, 437)
+        Me.Button23.Location = New System.Drawing.Point(96, 586)
         Me.Button23.Margin = New System.Windows.Forms.Padding(4)
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(408, 67)
@@ -1139,36 +454,11 @@ Partial Class Form2
         Me.Panel27.Controls.Add(Me.Button21)
         Me.Panel27.Controls.Add(Me.Label45)
         Me.Panel27.Controls.Add(Me.Label46)
-        Me.Panel27.Location = New System.Drawing.Point(568, 69)
+        Me.Panel27.Location = New System.Drawing.Point(779, 86)
         Me.Panel27.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel27.Name = "Panel27"
-        Me.Panel27.Size = New System.Drawing.Size(442, 290)
+        Me.Panel27.Size = New System.Drawing.Size(676, 448)
         Me.Panel27.TabIndex = 1
-        '
-        'CustomRoundedPanel6
-        '
-        Me.CustomRoundedPanel6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.CustomRoundedPanel6.Controls.Add(Me.TextBox8)
-        Me.CustomRoundedPanel6.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CustomRoundedPanel6.Location = New System.Drawing.Point(187, 151)
-        Me.CustomRoundedPanel6.Name = "CustomRoundedPanel6"
-        Me.CustomRoundedPanel6.Size = New System.Drawing.Size(181, 38)
-        Me.CustomRoundedPanel6.TabIndex = 7
-        '
-        'TextBox8
-        '
-        Me.TextBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox8.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.TextBox8.Location = New System.Drawing.Point(11, 9)
-        Me.TextBox8.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(158, 21)
-        Me.TextBox8.TabIndex = 5
-        Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Panel23
         '
@@ -1176,41 +466,17 @@ Partial Class Form2
         Me.Panel23.Location = New System.Drawing.Point(0, 0)
         Me.Panel23.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel23.Name = "Panel23"
-        Me.Panel23.Size = New System.Drawing.Size(442, 13)
+        Me.Panel23.Size = New System.Drawing.Size(676, 13)
         Me.Panel23.TabIndex = 5
-        '
-        'CustomRoundedPanel5
-        '
-        Me.CustomRoundedPanel5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.CustomRoundedPanel5.Controls.Add(Me.TextBox7)
-        Me.CustomRoundedPanel5.Location = New System.Drawing.Point(187, 101)
-        Me.CustomRoundedPanel5.Name = "CustomRoundedPanel5"
-        Me.CustomRoundedPanel5.Size = New System.Drawing.Size(181, 38)
-        Me.CustomRoundedPanel5.TabIndex = 6
-        '
-        'TextBox7
-        '
-        Me.TextBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer))
-        Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox7.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.TextBox7.Location = New System.Drawing.Point(11, 9)
-        Me.TextBox7.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(158, 21)
-        Me.TextBox7.TabIndex = 2
-        Me.TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label47
         '
         Me.Label47.AutoSize = True
-        Me.Label47.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label47.Location = New System.Drawing.Point(72, 159)
+        Me.Label47.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label47.Location = New System.Drawing.Point(107, 244)
         Me.Label47.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(52, 21)
+        Me.Label47.Size = New System.Drawing.Size(74, 30)
         Me.Label47.TabIndex = 4
         Me.Label47.Text = "City :"
         '
@@ -1220,7 +486,7 @@ Partial Class Form2
         Me.Button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button21.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button21.ForeColor = System.Drawing.Color.White
-        Me.Button21.Location = New System.Drawing.Point(144, 207)
+        Me.Button21.Location = New System.Drawing.Point(255, 351)
         Me.Button21.Margin = New System.Windows.Forms.Padding(4)
         Me.Button21.Name = "Button21"
         Me.Button21.Size = New System.Drawing.Size(139, 48)
@@ -1231,22 +497,24 @@ Partial Class Form2
         'Label45
         '
         Me.Label45.AutoSize = True
-        Me.Label45.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label45.Location = New System.Drawing.Point(59, 112)
+        Me.Label45.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label45.Location = New System.Drawing.Point(96, 167)
         Me.Label45.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(65, 21)
+        Me.Label45.Size = New System.Drawing.Size(87, 30)
         Me.Label45.TabIndex = 1
         Me.Label45.Text = "State :"
         '
         'Label46
         '
+        Me.Label46.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label46.AutoSize = True
-        Me.Label46.Font = New System.Drawing.Font("Century Gothic", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label46.Location = New System.Drawing.Point(65, 30)
+        Me.Label46.Font = New System.Drawing.Font("Century Gothic", 25.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label46.Location = New System.Drawing.Point(139, 52)
         Me.Label46.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(293, 40)
+        Me.Label46.Size = New System.Drawing.Size(383, 52)
         Me.Label46.TabIndex = 0
         Me.Label46.Text = "STD Code Search"
         '
@@ -1258,35 +526,11 @@ Partial Class Form2
         Me.Panel26.Controls.Add(Me.Button20)
         Me.Panel26.Controls.Add(Me.Label40)
         Me.Panel26.Controls.Add(Me.Label39)
-        Me.Panel26.Location = New System.Drawing.Point(96, 71)
+        Me.Panel26.Location = New System.Drawing.Point(96, 86)
         Me.Panel26.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel26.Name = "Panel26"
-        Me.Panel26.Size = New System.Drawing.Size(442, 290)
+        Me.Panel26.Size = New System.Drawing.Size(624, 449)
         Me.Panel26.TabIndex = 0
-        '
-        'CustomRoundedPanel4
-        '
-        Me.CustomRoundedPanel4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel4.BackColor = System.Drawing.Color.Lavender
-        Me.CustomRoundedPanel4.Controls.Add(Me.TextBox5)
-        Me.CustomRoundedPanel4.Location = New System.Drawing.Point(188, 128)
-        Me.CustomRoundedPanel4.Name = "CustomRoundedPanel4"
-        Me.CustomRoundedPanel4.Size = New System.Drawing.Size(195, 38)
-        Me.CustomRoundedPanel4.TabIndex = 5
-        '
-        'TextBox5
-        '
-        Me.TextBox5.BackColor = System.Drawing.Color.Lavender
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox5.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.TextBox5.Location = New System.Drawing.Point(13, 8)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(158, 21)
-        Me.TextBox5.TabIndex = 2
-        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Panel22
         '
@@ -1294,7 +538,7 @@ Partial Class Form2
         Me.Panel22.Location = New System.Drawing.Point(0, 0)
         Me.Panel22.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel22.Name = "Panel22"
-        Me.Panel22.Size = New System.Drawing.Size(442, 11)
+        Me.Panel22.Size = New System.Drawing.Size(624, 13)
         Me.Panel22.TabIndex = 4
         '
         'Button20
@@ -1303,7 +547,7 @@ Partial Class Form2
         Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button20.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button20.ForeColor = System.Drawing.Color.White
-        Me.Button20.Location = New System.Drawing.Point(152, 199)
+        Me.Button20.Location = New System.Drawing.Point(227, 334)
         Me.Button20.Margin = New System.Windows.Forms.Padding(4)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(140, 48)
@@ -1314,24 +558,41 @@ Partial Class Form2
         'Label40
         '
         Me.Label40.AutoSize = True
-        Me.Label40.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label40.Location = New System.Drawing.Point(58, 135)
+        Me.Label40.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label40.Location = New System.Drawing.Point(64, 221)
         Me.Label40.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(85, 21)
+        Me.Label40.Size = New System.Drawing.Size(121, 30)
         Me.Label40.TabIndex = 1
         Me.Label40.Text = "Country :"
         '
         'Label39
         '
+        Me.Label39.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label39.AutoSize = True
-        Me.Label39.Font = New System.Drawing.Font("Century Gothic", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label39.Location = New System.Drawing.Point(73, 51)
+        Me.Label39.Font = New System.Drawing.Font("Century Gothic", 25.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label39.Location = New System.Drawing.Point(103, 76)
         Me.Label39.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(288, 40)
+        Me.Label39.Size = New System.Drawing.Size(376, 52)
         Me.Label39.TabIndex = 0
         Me.Label39.Text = "ISD Code Search"
+        '
+        'tv_panel
+        '
+        Me.tv_panel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.tv_panel.BackColor = System.Drawing.Color.White
+        Me.tv_panel.Controls.Add(Me.td_panel)
+        Me.tv_panel.Controls.Add(Me.DataGridView3)
+        Me.tv_panel.Controls.Add(Me.Panel11)
+        Me.tv_panel.Location = New System.Drawing.Point(0, 0)
+        Me.tv_panel.Margin = New System.Windows.Forms.Padding(4)
+        Me.tv_panel.Name = "tv_panel"
+        Me.tv_panel.Size = New System.Drawing.Size(1648, 964)
+        Me.tv_panel.TabIndex = 9
         '
         'DataGridView3
         '
@@ -1339,21 +600,21 @@ Partial Class Form2
         Me.DataGridView3.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.DataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridView3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Mistral", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView3.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Mistral", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView3.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView3.ColumnHeadersHeight = 70
         Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn2, Me.CostDataGridViewTextBoxColumn2, Me.PlanNameDataGridViewTextBoxColumn2, Me.ValidityDataGridViewTextBoxColumn1, Me.AvailableChannelsImageDataGridViewTextBoxColumn, Me.Column3})
         Me.DataGridView3.DataSource = Me.TVPlansBindingSource1
-        Me.DataGridView3.Location = New System.Drawing.Point(39, 371)
+        Me.DataGridView3.Location = New System.Drawing.Point(108, 540)
         Me.DataGridView3.Name = "DataGridView3"
         Me.DataGridView3.RowTemplate.Height = 24
-        Me.DataGridView3.Size = New System.Drawing.Size(1070, 229)
+        Me.DataGridView3.Size = New System.Drawing.Size(1190, 229)
         Me.DataGridView3.TabIndex = 5
         '
         'IDDataGridViewTextBoxColumn2
@@ -1420,15 +681,15 @@ Partial Class Form2
         '
         'Panel11
         '
-        Me.Panel11.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel11.BackColor = System.Drawing.Color.Gainsboro
         Me.Panel11.Controls.Add(Me.Panel14)
         Me.Panel11.Controls.Add(Me.tvp_cpb)
         Me.Panel11.Controls.Add(Me.Label31)
         Me.Panel11.Controls.Add(Me.Label30)
         Me.Panel11.Controls.Add(Me.Label16)
-        Me.Panel11.Location = New System.Drawing.Point(96, 101)
+        Me.Panel11.Location = New System.Drawing.Point(96, 86)
         Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(877, 208)
+        Me.Panel11.Size = New System.Drawing.Size(1202, 415)
         Me.Panel11.TabIndex = 8
         '
         'Panel14
@@ -1436,20 +697,20 @@ Partial Class Form2
         Me.Panel14.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.Panel14.Location = New System.Drawing.Point(2, 1)
         Me.Panel14.Name = "Panel14"
-        Me.Panel14.Size = New System.Drawing.Size(913, 10)
+        Me.Panel14.Size = New System.Drawing.Size(1200, 11)
         Me.Panel14.TabIndex = 16
         '
         'tvp_cpb
         '
         Me.tvp_cpb.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner
         Me.tvp_cpb.AnimationSpeed = 500
-        Me.tvp_cpb.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.tvp_cpb.BackColor = System.Drawing.Color.Gainsboro
         Me.tvp_cpb.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tvp_cpb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.tvp_cpb.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.tvp_cpb.InnerMargin = -10
         Me.tvp_cpb.InnerWidth = -10
-        Me.tvp_cpb.Location = New System.Drawing.Point(645, 39)
+        Me.tvp_cpb.Location = New System.Drawing.Point(792, 101)
         Me.tvp_cpb.MarqueeAnimationSpeed = 2000
         Me.tvp_cpb.Name = "tvp_cpb"
         Me.tvp_cpb.OuterColor = System.Drawing.Color.Gray
@@ -1458,7 +719,7 @@ Partial Class Form2
         Me.tvp_cpb.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.tvp_cpb.ProgressWidth = 25
         Me.tvp_cpb.SecondaryFont = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tvp_cpb.Size = New System.Drawing.Size(133, 137)
+        Me.tvp_cpb.Size = New System.Drawing.Size(200, 200)
         Me.tvp_cpb.StartAngle = 270
         Me.tvp_cpb.SubscriptColor = System.Drawing.Color.FromArgb(CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer))
         Me.tvp_cpb.SubscriptMargin = New System.Windows.Forms.Padding(10, -35, 0, 0)
@@ -1474,51 +735,35 @@ Partial Class Form2
         'Label31
         '
         Me.Label31.AutoSize = True
-        Me.Label31.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label31.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Label31.Location = New System.Drawing.Point(99, 141)
+        Me.Label31.Location = New System.Drawing.Point(74, 234)
         Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(65, 20)
+        Me.Label31.Size = New System.Drawing.Size(104, 30)
         Me.Label31.TabIndex = 2
         Me.Label31.Text = "Label31"
         '
         'Label30
         '
         Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Label30.Location = New System.Drawing.Point(93, 118)
+        Me.Label30.Location = New System.Drawing.Point(74, 189)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(87, 23)
+        Me.Label30.Size = New System.Drawing.Size(104, 30)
         Me.Label30.TabIndex = 1
         Me.Label30.Text = "Label30"
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Font = New System.Drawing.Font("Century Gothic", 25.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Label16.Location = New System.Drawing.Point(72, 54)
+        Me.Label16.Location = New System.Drawing.Point(44, 56)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(194, 37)
+        Me.Label16.Size = New System.Drawing.Size(279, 52)
         Me.Label16.TabIndex = 0
         Me.Label16.Text = "Current Plan"
-        '
-        'mobile_panel
-        '
-        Me.mobile_panel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.mobile_panel.BackColor = System.Drawing.Color.White
-        Me.mobile_panel.Controls.Add(Me.internet_panel)
-        Me.mobile_panel.Controls.Add(Me.DataGridView1)
-        Me.mobile_panel.Controls.Add(Me.Panel12)
-        Me.mobile_panel.Controls.Add(Me.Panel9)
-        Me.mobile_panel.Location = New System.Drawing.Point(0, 0)
-        Me.mobile_panel.Margin = New System.Windows.Forms.Padding(4)
-        Me.mobile_panel.Name = "mobile_panel"
-        Me.mobile_panel.Size = New System.Drawing.Size(1123, 770)
-        Me.mobile_panel.TabIndex = 5
         '
         'internet_panel
         '
@@ -1532,7 +777,7 @@ Partial Class Form2
         Me.internet_panel.Location = New System.Drawing.Point(0, 0)
         Me.internet_panel.Margin = New System.Windows.Forms.Padding(4)
         Me.internet_panel.Name = "internet_panel"
-        Me.internet_panel.Size = New System.Drawing.Size(1123, 770)
+        Me.internet_panel.Size = New System.Drawing.Size(1648, 959)
         Me.internet_panel.TabIndex = 8
         '
         'DataGridView2
@@ -1540,24 +785,24 @@ Partial Class Form2
         Me.DataGridView2.AutoGenerateColumns = False
         Me.DataGridView2.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.DataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Mistral", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Mistral", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridView2.ColumnHeadersHeight = 70
         Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn1, Me.CostDataGridViewTextBoxColumn1, Me.PlanNameDataGridViewTextBoxColumn1, Me.SpeedDataGridViewTextBoxColumn, Me.DataLimitDataGridViewTextBoxColumn, Me.ValidityDataGridViewTextBoxColumn, Me.Column2})
         Me.DataGridView2.DataSource = Me.InternetPlansBindingSource2
         Me.DataGridView2.GridColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.DataGridView2.Location = New System.Drawing.Point(32, 315)
+        Me.DataGridView2.Location = New System.Drawing.Point(97, 530)
         Me.DataGridView2.Name = "DataGridView2"
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Century Gothic", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridView2.RowsDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Century Gothic", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridView2.RowsDefaultCellStyle = DataGridViewCellStyle3
         Me.DataGridView2.RowTemplate.Height = 24
-        Me.DataGridView2.Size = New System.Drawing.Size(1049, 248)
+        Me.DataGridView2.Size = New System.Drawing.Size(1201, 296)
         Me.DataGridView2.TabIndex = 5
         '
         'IDDataGridViewTextBoxColumn1
@@ -1628,16 +873,16 @@ Partial Class Form2
         '
         'Panel21
         '
-        Me.Panel21.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel21.BackColor = System.Drawing.Color.Gainsboro
         Me.Panel21.Controls.Add(Me.Panel19)
         Me.Panel21.Controls.Add(Me.ip_cpb)
         Me.Panel21.Controls.Add(Me.Label35)
         Me.Panel21.Controls.Add(Me.Label36)
         Me.Panel21.Controls.Add(Me.Label38)
-        Me.Panel21.Location = New System.Drawing.Point(96, 67)
+        Me.Panel21.Location = New System.Drawing.Point(96, 86)
         Me.Panel21.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel21.Name = "Panel21"
-        Me.Panel21.Size = New System.Drawing.Size(877, 208)
+        Me.Panel21.Size = New System.Drawing.Size(1202, 415)
         Me.Panel21.TabIndex = 3
         '
         'Panel19
@@ -1646,20 +891,20 @@ Partial Class Form2
         Me.Panel19.Location = New System.Drawing.Point(1, 1)
         Me.Panel19.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel19.Name = "Panel19"
-        Me.Panel19.Size = New System.Drawing.Size(877, 10)
+        Me.Panel19.Size = New System.Drawing.Size(1201, 11)
         Me.Panel19.TabIndex = 15
         '
         'ip_cpb
         '
         Me.ip_cpb.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner
         Me.ip_cpb.AnimationSpeed = 500
-        Me.ip_cpb.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.ip_cpb.BackColor = System.Drawing.Color.Gainsboro
         Me.ip_cpb.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ip_cpb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ip_cpb.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.ip_cpb.InnerColor = System.Drawing.Color.Gainsboro
         Me.ip_cpb.InnerMargin = -10
         Me.ip_cpb.InnerWidth = -10
-        Me.ip_cpb.Location = New System.Drawing.Point(678, 42)
+        Me.ip_cpb.Location = New System.Drawing.Point(792, 101)
         Me.ip_cpb.MarqueeAnimationSpeed = 2000
         Me.ip_cpb.Name = "ip_cpb"
         Me.ip_cpb.OuterColor = System.Drawing.Color.Gray
@@ -1668,7 +913,7 @@ Partial Class Form2
         Me.ip_cpb.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ip_cpb.ProgressWidth = 25
         Me.ip_cpb.SecondaryFont = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ip_cpb.Size = New System.Drawing.Size(133, 137)
+        Me.ip_cpb.Size = New System.Drawing.Size(200, 200)
         Me.ip_cpb.StartAngle = 270
         Me.ip_cpb.SubscriptColor = System.Drawing.Color.FromArgb(CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer))
         Me.ip_cpb.SubscriptMargin = New System.Windows.Forms.Padding(10, -35, 0, 0)
@@ -1684,63 +929,144 @@ Partial Class Form2
         'Label35
         '
         Me.Label35.AutoSize = True
-        Me.Label35.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label35.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label35.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label35.Location = New System.Drawing.Point(48, 104)
+        Me.Label35.Location = New System.Drawing.Point(74, 189)
         Me.Label35.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(224, 21)
+        Me.Label35.Size = New System.Drawing.Size(316, 30)
         Me.Label35.TabIndex = 3
         Me.Label35.Text = "Active Plan : 1.5 GB / Day"
         '
         'Label36
         '
         Me.Label36.AutoSize = True
-        Me.Label36.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label36.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label36.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label36.Location = New System.Drawing.Point(48, 125)
+        Me.Label36.Location = New System.Drawing.Point(74, 239)
         Me.Label36.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(124, 20)
+        Me.Label36.Size = New System.Drawing.Size(203, 30)
         Me.Label36.TabIndex = 2
         Me.Label36.Text = "Expires in 2 days"
         '
         'Label38
         '
         Me.Label38.AutoSize = True
-        Me.Label38.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label38.Font = New System.Drawing.Font("Century Gothic", 25.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label38.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label38.Location = New System.Drawing.Point(43, 52)
+        Me.Label38.Location = New System.Drawing.Point(44, 56)
         Me.Label38.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(194, 37)
+        Me.Label38.Size = New System.Drawing.Size(279, 52)
         Me.Label38.TabIndex = 0
         Me.Label38.Text = "Current Plan"
+        '
+        'mobile_panel
+        '
+        Me.mobile_panel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.mobile_panel.BackColor = System.Drawing.Color.White
+        Me.mobile_panel.Controls.Add(Me.internet_panel)
+        Me.mobile_panel.Controls.Add(Me.Panel12)
+        Me.mobile_panel.Controls.Add(Me.DataGridView1)
+        Me.mobile_panel.Controls.Add(Me.Panel9)
+        Me.mobile_panel.Location = New System.Drawing.Point(0, 0)
+        Me.mobile_panel.Margin = New System.Windows.Forms.Padding(4)
+        Me.mobile_panel.Name = "mobile_panel"
+        Me.mobile_panel.Size = New System.Drawing.Size(1648, 968)
+        Me.mobile_panel.TabIndex = 5
+        '
+        'Panel12
+        '
+        Me.Panel12.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel12.Controls.Add(Me.CustomRoundedPanel3)
+        Me.Panel12.Controls.Add(Me.Label27)
+        Me.Panel12.Controls.Add(Me.CustomRoundedPanel2)
+        Me.Panel12.Controls.Add(Me.Button14)
+        Me.Panel12.Controls.Add(Me.Label23)
+        Me.Panel12.Controls.Add(Me.Label26)
+        Me.Panel12.Location = New System.Drawing.Point(883, 86)
+        Me.Panel12.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(693, 415)
+        Me.Panel12.TabIndex = 5
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Label27.Location = New System.Drawing.Point(127, 240)
+        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(108, 30)
+        Me.Label27.TabIndex = 4
+        Me.Label27.Text = "Amount"
+        '
+        'Button14
+        '
+        Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button14.Font = New System.Drawing.Font("Century Gothic", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button14.ForeColor = System.Drawing.Color.White
+        Me.Button14.Location = New System.Drawing.Point(338, 306)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(276, 79)
+        Me.Button14.TabIndex = 3
+        Me.Button14.Text = "Transfer"
+        Me.Button14.UseVisualStyleBackColor = False
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Label23.Location = New System.Drawing.Point(98, 151)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(137, 30)
+        Me.Label23.TabIndex = 1
+        Me.Label23.Text = "Mobile No"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Label26.Location = New System.Drawing.Point(63, 42)
+        Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(341, 49)
+        Me.Label26.TabIndex = 0
+        Me.Label26.Text = "Balance Transfer"
         '
         'DataGridView1
         '
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Mistral", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Mistral", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridView1.ColumnHeadersHeight = 70
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn, Me.CostDataGridViewTextBoxColumn, Me.PlanNameDataGridViewTextBoxColumn, Me.ValidityPeriodDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.MobilePlansBindingSource
         Me.DataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.DataGridView1.Location = New System.Drawing.Point(96, 386)
+        Me.DataGridView1.Location = New System.Drawing.Point(96, 563)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 40
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle6
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(942, 221)
+        Me.DataGridView1.Size = New System.Drawing.Size(1088, 221)
         Me.DataGridView1.TabIndex = 5
         '
         'IDDataGridViewTextBoxColumn
@@ -1752,10 +1078,10 @@ Partial Class Form2
         'CostDataGridViewTextBoxColumn
         '
         Me.CostDataGridViewTextBoxColumn.DataPropertyName = "Cost"
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle11.NullValue = Nothing
-        Me.CostDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.NullValue = Nothing
+        Me.CostDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle5
         Me.CostDataGridViewTextBoxColumn.FillWeight = 200.0!
         Me.CostDataGridViewTextBoxColumn.HeaderText = "Cost"
         Me.CostDataGridViewTextBoxColumn.Name = "CostDataGridViewTextBoxColumn"
@@ -1787,119 +1113,6 @@ Partial Class Form2
         Me.MobilePlansDBDataSet1.DataSetName = "MobilePlansDBDataSet1"
         Me.MobilePlansDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'Panel12
-        '
-        Me.Panel12.BackColor = System.Drawing.Color.Gainsboro
-        Me.Panel12.Controls.Add(Me.CustomRoundedPanel3)
-        Me.Panel12.Controls.Add(Me.Label27)
-        Me.Panel12.Controls.Add(Me.CustomRoundedPanel2)
-        Me.Panel12.Controls.Add(Me.Button14)
-        Me.Panel12.Controls.Add(Me.Label23)
-        Me.Panel12.Controls.Add(Me.Label26)
-        Me.Panel12.Location = New System.Drawing.Point(633, 87)
-        Me.Panel12.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(432, 237)
-        Me.Panel12.TabIndex = 5
-        '
-        'CustomRoundedPanel3
-        '
-        Me.CustomRoundedPanel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel3.BackColor = System.Drawing.Color.Gainsboro
-        Me.CustomRoundedPanel3.Controls.Add(Me.TextBox3)
-        Me.CustomRoundedPanel3.Location = New System.Drawing.Point(202, 124)
-        Me.CustomRoundedPanel3.Name = "CustomRoundedPanel3"
-        Me.CustomRoundedPanel3.Size = New System.Drawing.Size(203, 36)
-        Me.CustomRoundedPanel3.TabIndex = 7
-        '
-        'TextBox3
-        '
-        Me.TextBox3.BackColor = System.Drawing.Color.Gainsboro
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.TextBox3.Location = New System.Drawing.Point(15, 8)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(174, 21)
-        Me.TextBox3.TabIndex = 5
-        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = True
-        Me.Label27.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label27.Location = New System.Drawing.Point(41, 132)
-        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(76, 21)
-        Me.Label27.TabIndex = 4
-        Me.Label27.Text = "Amount"
-        '
-        'CustomRoundedPanel2
-        '
-        Me.CustomRoundedPanel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel2.BackColor = System.Drawing.Color.Gainsboro
-        Me.CustomRoundedPanel2.Controls.Add(Me.TextBox2)
-        Me.CustomRoundedPanel2.Location = New System.Drawing.Point(202, 80)
-        Me.CustomRoundedPanel2.Name = "CustomRoundedPanel2"
-        Me.CustomRoundedPanel2.Size = New System.Drawing.Size(203, 33)
-        Me.CustomRoundedPanel2.TabIndex = 6
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.Color.Gainsboro
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.TextBox2.Location = New System.Drawing.Point(15, 6)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(174, 21)
-        Me.TextBox2.TabIndex = 2
-        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Button14
-        '
-        Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button14.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button14.ForeColor = System.Drawing.Color.White
-        Me.Button14.Location = New System.Drawing.Point(145, 175)
-        Me.Button14.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(146, 44)
-        Me.Button14.TabIndex = 3
-        Me.Button14.Text = "Transfer"
-        Me.Button14.UseVisualStyleBackColor = False
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label23.Location = New System.Drawing.Point(41, 84)
-        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(96, 21)
-        Me.Label23.TabIndex = 1
-        Me.Label23.Text = "Mobile No"
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label26.Location = New System.Drawing.Point(38, 15)
-        Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(253, 37)
-        Me.Label26.TabIndex = 0
-        Me.Label26.Text = "Balance Transfer"
-        '
         'Panel9
         '
         Me.Panel9.BackColor = System.Drawing.Color.Gainsboro
@@ -1911,7 +1124,7 @@ Partial Class Form2
         Me.Panel9.Location = New System.Drawing.Point(96, 86)
         Me.Panel9.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(516, 238)
+        Me.Panel9.Size = New System.Drawing.Size(742, 415)
         Me.Panel9.TabIndex = 3
         '
         'Panel20
@@ -1919,7 +1132,7 @@ Partial Class Form2
         Me.Panel20.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.Panel20.Location = New System.Drawing.Point(0, 1)
         Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(516, 10)
+        Me.Panel20.Size = New System.Drawing.Size(834, 24)
         Me.Panel20.TabIndex = 14
         '
         'mp_cpb
@@ -1932,7 +1145,7 @@ Partial Class Form2
         Me.mp_cpb.InnerColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.mp_cpb.InnerMargin = -10
         Me.mp_cpb.InnerWidth = -10
-        Me.mp_cpb.Location = New System.Drawing.Point(327, 54)
+        Me.mp_cpb.Location = New System.Drawing.Point(454, 138)
         Me.mp_cpb.MarqueeAnimationSpeed = 2000
         Me.mp_cpb.Name = "mp_cpb"
         Me.mp_cpb.OuterColor = System.Drawing.Color.Gray
@@ -1941,7 +1154,7 @@ Partial Class Form2
         Me.mp_cpb.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.mp_cpb.ProgressWidth = 25
         Me.mp_cpb.SecondaryFont = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.mp_cpb.Size = New System.Drawing.Size(133, 137)
+        Me.mp_cpb.Size = New System.Drawing.Size(200, 200)
         Me.mp_cpb.StartAngle = 270
         Me.mp_cpb.SubscriptColor = System.Drawing.Color.FromArgb(CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer))
         Me.mp_cpb.SubscriptMargin = New System.Windows.Forms.Padding(10, -35, 0, 0)
@@ -1957,38 +1170,71 @@ Partial Class Form2
         'planname_label
         '
         Me.planname_label.AutoSize = True
-        Me.planname_label.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.planname_label.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.planname_label.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.planname_label.Location = New System.Drawing.Point(47, 115)
+        Me.planname_label.Location = New System.Drawing.Point(74, 189)
         Me.planname_label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.planname_label.Name = "planname_label"
-        Me.planname_label.Size = New System.Drawing.Size(166, 23)
+        Me.planname_label.Size = New System.Drawing.Size(201, 30)
         Me.planname_label.TabIndex = 3
         Me.planname_label.Text = "No active plans"
         '
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label19.Location = New System.Drawing.Point(47, 133)
+        Me.Label19.Location = New System.Drawing.Point(74, 239)
         Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(124, 20)
+        Me.Label19.Size = New System.Drawing.Size(203, 30)
         Me.Label19.TabIndex = 2
         Me.Label19.Text = "Expires in 2 days"
         '
         'Label21
         '
         Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Font = New System.Drawing.Font("Century Gothic", 25.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label21.Location = New System.Drawing.Point(33, 39)
+        Me.Label21.Location = New System.Drawing.Point(44, 56)
         Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(194, 37)
+        Me.Label21.Size = New System.Drawing.Size(279, 52)
         Me.Label21.TabIndex = 0
         Me.Label21.Text = "Current Plan"
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(34, 120)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox6.TabIndex = 20
+        Me.PictureBox6.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(32, 466)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 19
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(34, 397)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 18
+        Me.PictureBox4.TabStop = False
         '
         'dashboard_panel
         '
@@ -1997,7 +1243,8 @@ Partial Class Form2
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dashboard_panel.BackColor = System.Drawing.Color.White
         Me.dashboard_panel.Controls.Add(Me.mobile_panel)
-        Me.dashboard_panel.Controls.Add(Me.Panel16)
+        Me.dashboard_panel.Controls.Add(Me.Panel5)
+        Me.dashboard_panel.Controls.Add(Me.Panel24)
         Me.dashboard_panel.Controls.Add(Me.Label2)
         Me.dashboard_panel.Controls.Add(Me.Label1)
         Me.dashboard_panel.Controls.Add(Me.Panel13)
@@ -2005,27 +1252,99 @@ Partial Class Form2
         Me.dashboard_panel.Controls.Add(Me.Panel8)
         Me.dashboard_panel.Controls.Add(Me.Panel7)
         Me.dashboard_panel.Controls.Add(Me.Panel6)
-        Me.dashboard_panel.Controls.Add(Me.Panel4)
         Me.dashboard_panel.Font = New System.Drawing.Font("Mistral", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dashboard_panel.Location = New System.Drawing.Point(0, 98)
         Me.dashboard_panel.Margin = New System.Windows.Forms.Padding(4)
         Me.dashboard_panel.Name = "dashboard_panel"
-        Me.dashboard_panel.Size = New System.Drawing.Size(1123, 761)
+        Me.dashboard_panel.Size = New System.Drawing.Size(1648, 959)
         Me.dashboard_panel.TabIndex = 1
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel5.Controls.Add(Me.Label6)
+        Me.Panel5.Controls.Add(Me.Label5)
+        Me.Panel5.Controls.Add(Me.Panel16)
+        Me.Panel5.Location = New System.Drawing.Point(111, 88)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(596, 287)
+        Me.Panel5.TabIndex = 2
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Label6.Location = New System.Drawing.Point(403, 132)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(94, 34)
+        Me.Label6.TabIndex = 1
+        Me.Label6.Text = "$ 1.50"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(30, 122)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(184, 49)
+        Me.Label5.TabIndex = 0
+        Me.Label5.Text = "Balance"
         '
         'Panel16
         '
         Me.Panel16.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Panel16.Location = New System.Drawing.Point(96, 88)
+        Me.Panel16.Location = New System.Drawing.Point(0, 0)
         Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(418, 10)
+        Me.Panel16.Size = New System.Drawing.Size(596, 13)
         Me.Panel16.TabIndex = 14
+        '
+        'Panel24
+        '
+        Me.Panel24.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel24.Controls.Add(Me.recharge_button)
+        Me.Panel24.Controls.Add(Me.CustomRoundedPanel1)
+        Me.Panel24.Controls.Add(Me.Label44)
+        Me.Panel24.Location = New System.Drawing.Point(740, 86)
+        Me.Panel24.Margin = New System.Windows.Forms.Padding(4)
+        Me.Panel24.Name = "Panel24"
+        Me.Panel24.Size = New System.Drawing.Size(891, 287)
+        Me.Panel24.TabIndex = 3
+        '
+        'recharge_button
+        '
+        Me.recharge_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.recharge_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.recharge_button.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.recharge_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.recharge_button.Location = New System.Drawing.Point(629, 156)
+        Me.recharge_button.Name = "recharge_button"
+        Me.recharge_button.Size = New System.Drawing.Size(226, 64)
+        Me.recharge_button.TabIndex = 5
+        Me.recharge_button.Text = "Add Money"
+        Me.recharge_button.UseVisualStyleBackColor = False
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.Font = New System.Drawing.Font("Century Gothic", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label44.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Label44.Location = New System.Drawing.Point(70, 54)
+        Me.Label44.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(334, 45)
+        Me.Label44.TabIndex = 0
+        Me.Label44.Text = "Wallet Recharge"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(100, 276)
+        Me.Label2.Location = New System.Drawing.Point(100, 394)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(131, 45)
         Me.Label2.TabIndex = 13
@@ -2050,9 +1369,9 @@ Partial Class Form2
         Me.Panel13.Controls.Add(Me.Label34)
         Me.Panel13.Controls.Add(Me.Label33)
         Me.Panel13.Controls.Add(Me.Label32)
-        Me.Panel13.Location = New System.Drawing.Point(687, 338)
+        Me.Panel13.Location = New System.Drawing.Point(1152, 456)
         Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(285, 332)
+        Me.Panel13.Size = New System.Drawing.Size(512, 512)
         Me.Panel13.TabIndex = 11
         '
         'Panel18
@@ -2061,7 +1380,7 @@ Partial Class Form2
         Me.Panel18.Controls.Add(Me.Label9)
         Me.Panel18.Location = New System.Drawing.Point(0, 1)
         Me.Panel18.Name = "Panel18"
-        Me.Panel18.Size = New System.Drawing.Size(289, 48)
+        Me.Panel18.Size = New System.Drawing.Size(512, 48)
         Me.Panel18.TabIndex = 14
         '
         'Label9
@@ -2069,7 +1388,7 @@ Partial Class Form2
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(124, 9)
+        Me.Label9.Location = New System.Drawing.Point(236, 10)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(41, 30)
         Me.Label9.TabIndex = 0
@@ -2085,7 +1404,7 @@ Partial Class Form2
         Me.dbtv_cpb.InnerColor = System.Drawing.Color.Moccasin
         Me.dbtv_cpb.InnerMargin = -10
         Me.dbtv_cpb.InnerWidth = -10
-        Me.dbtv_cpb.Location = New System.Drawing.Point(68, 145)
+        Me.dbtv_cpb.Location = New System.Drawing.Point(159, 249)
         Me.dbtv_cpb.MarqueeAnimationSpeed = 2000
         Me.dbtv_cpb.Name = "dbtv_cpb"
         Me.dbtv_cpb.OuterColor = System.Drawing.Color.White
@@ -2094,7 +1413,7 @@ Partial Class Form2
         Me.dbtv_cpb.ProgressColor = System.Drawing.Color.Coral
         Me.dbtv_cpb.ProgressWidth = 25
         Me.dbtv_cpb.SecondaryFont = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dbtv_cpb.Size = New System.Drawing.Size(148, 148)
+        Me.dbtv_cpb.Size = New System.Drawing.Size(200, 200)
         Me.dbtv_cpb.StartAngle = 270
         Me.dbtv_cpb.SubscriptColor = System.Drawing.Color.FromArgb(CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer))
         Me.dbtv_cpb.SubscriptMargin = New System.Windows.Forms.Padding(10, -35, 0, 0)
@@ -2109,10 +1428,12 @@ Partial Class Form2
         '
         'Label34
         '
+        Me.Label34.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label34.AutoSize = True
         Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label34.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label34.Location = New System.Drawing.Point(197, 79)
+        Me.Label34.Location = New System.Drawing.Point(204, 164)
         Me.Label34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(54, 20)
@@ -2121,22 +1442,26 @@ Partial Class Form2
         '
         'Label33
         '
+        Me.Label33.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label33.AutoSize = True
-        Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label33.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label33.Location = New System.Drawing.Point(26, 94)
+        Me.Label33.Location = New System.Drawing.Point(293, 103)
         Me.Label33.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(115, 17)
+        Me.Label33.Size = New System.Drawing.Size(119, 18)
         Me.Label33.TabIndex = 5
         Me.Label33.Text = "Expires in 2 days"
         '
         'Label32
         '
+        Me.Label32.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label32.AutoSize = True
         Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label32.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Label32.Location = New System.Drawing.Point(22, 69)
+        Me.Label32.Location = New System.Drawing.Point(101, 98)
         Me.Label32.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label32.Name = "Label32"
         Me.Label32.Size = New System.Drawing.Size(126, 25)
@@ -2281,10 +1606,10 @@ Partial Class Form2
         Me.Panel7.Controls.Add(Me.Label11)
         Me.Panel7.Controls.Add(Me.dbmobile_cpb)
         Me.Panel7.Controls.Add(Me.Label12)
-        Me.Panel7.Location = New System.Drawing.Point(96, 338)
+        Me.Panel7.Location = New System.Drawing.Point(96, 456)
         Me.Panel7.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(285, 332)
+        Me.Panel7.Size = New System.Drawing.Size(512, 512)
         Me.Panel7.TabIndex = 3
         '
         'Panel15
@@ -2293,7 +1618,7 @@ Partial Class Form2
         Me.Panel15.Controls.Add(Me.Label13)
         Me.Panel15.Location = New System.Drawing.Point(0, 0)
         Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(285, 52)
+        Me.Panel15.Size = New System.Drawing.Size(510, 52)
         Me.Panel15.TabIndex = 13
         '
         'Label13
@@ -2301,7 +1626,7 @@ Partial Class Form2
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(94, 11)
+        Me.Label13.Location = New System.Drawing.Point(207, 11)
         Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(96, 30)
@@ -2313,7 +1638,7 @@ Partial Class Form2
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Label14.Location = New System.Drawing.Point(22, 69)
+        Me.Label14.Location = New System.Drawing.Point(74, 108)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(126, 25)
@@ -2323,12 +1648,12 @@ Partial Class Form2
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label11.Location = New System.Drawing.Point(26, 94)
+        Me.Label11.Location = New System.Drawing.Point(314, 107)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(115, 17)
+        Me.Label11.Size = New System.Drawing.Size(119, 18)
         Me.Label11.TabIndex = 2
         Me.Label11.Text = "Expires in 2 days"
         '
@@ -2342,7 +1667,7 @@ Partial Class Form2
         Me.dbmobile_cpb.InnerColor = System.Drawing.Color.PaleGreen
         Me.dbmobile_cpb.InnerMargin = -10
         Me.dbmobile_cpb.InnerWidth = -10
-        Me.dbmobile_cpb.Location = New System.Drawing.Point(68, 145)
+        Me.dbmobile_cpb.Location = New System.Drawing.Point(144, 249)
         Me.dbmobile_cpb.MarqueeAnimationSpeed = 2000
         Me.dbmobile_cpb.Name = "dbmobile_cpb"
         Me.dbmobile_cpb.OuterColor = System.Drawing.Color.White
@@ -2351,7 +1676,7 @@ Partial Class Form2
         Me.dbmobile_cpb.ProgressColor = System.Drawing.Color.MediumSeaGreen
         Me.dbmobile_cpb.ProgressWidth = 25
         Me.dbmobile_cpb.SecondaryFont = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dbmobile_cpb.Size = New System.Drawing.Size(148, 148)
+        Me.dbmobile_cpb.Size = New System.Drawing.Size(200, 200)
         Me.dbmobile_cpb.StartAngle = 270
         Me.dbmobile_cpb.SubscriptColor = System.Drawing.Color.FromArgb(CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer))
         Me.dbmobile_cpb.SubscriptMargin = New System.Windows.Forms.Padding(10, -35, 0, 0)
@@ -2369,7 +1694,7 @@ Partial Class Form2
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label12.Location = New System.Drawing.Point(197, 79)
+        Me.Label12.Location = New System.Drawing.Point(175, 169)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(54, 20)
@@ -2384,10 +1709,10 @@ Partial Class Form2
         Me.Panel6.Controls.Add(Me.Label17)
         Me.Panel6.Controls.Add(Me.Label15)
         Me.Panel6.Controls.Add(Me.Label10)
-        Me.Panel6.Location = New System.Drawing.Point(391, 338)
+        Me.Panel6.Location = New System.Drawing.Point(624, 456)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(285, 332)
+        Me.Panel6.Size = New System.Drawing.Size(512, 512)
         Me.Panel6.TabIndex = 3
         '
         'Panel17
@@ -2396,7 +1721,7 @@ Partial Class Form2
         Me.Panel17.Controls.Add(Me.Label8)
         Me.Panel17.Location = New System.Drawing.Point(-1, 1)
         Me.Panel17.Name = "Panel17"
-        Me.Panel17.Size = New System.Drawing.Size(286, 48)
+        Me.Panel17.Size = New System.Drawing.Size(513, 48)
         Me.Panel17.TabIndex = 14
         '
         'Label8
@@ -2404,7 +1729,7 @@ Partial Class Form2
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(91, 9)
+        Me.Label8.Location = New System.Drawing.Point(204, 9)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(104, 30)
@@ -2421,7 +1746,7 @@ Partial Class Form2
         Me.dbinternet_cpb.InnerColor = System.Drawing.Color.Lavender
         Me.dbinternet_cpb.InnerMargin = -10
         Me.dbinternet_cpb.InnerWidth = -10
-        Me.dbinternet_cpb.Location = New System.Drawing.Point(68, 145)
+        Me.dbinternet_cpb.Location = New System.Drawing.Point(158, 249)
         Me.dbinternet_cpb.MarqueeAnimationSpeed = 2000
         Me.dbinternet_cpb.Name = "dbinternet_cpb"
         Me.dbinternet_cpb.OuterColor = System.Drawing.Color.White
@@ -2430,7 +1755,7 @@ Partial Class Form2
         Me.dbinternet_cpb.ProgressColor = System.Drawing.Color.LightSeaGreen
         Me.dbinternet_cpb.ProgressWidth = 25
         Me.dbinternet_cpb.SecondaryFont = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dbinternet_cpb.Size = New System.Drawing.Size(148, 148)
+        Me.dbinternet_cpb.Size = New System.Drawing.Size(200, 200)
         Me.dbinternet_cpb.StartAngle = 270
         Me.dbinternet_cpb.SubscriptColor = System.Drawing.Color.FromArgb(CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer), CType(CType(166, Byte), Integer))
         Me.dbinternet_cpb.SubscriptMargin = New System.Windows.Forms.Padding(10, -35, 0, 0)
@@ -2439,7 +1764,7 @@ Partial Class Form2
         Me.dbinternet_cpb.SuperscriptMargin = New System.Windows.Forms.Padding(10, 35, 0, 0)
         Me.dbinternet_cpb.SuperscriptText = ""
         Me.dbinternet_cpb.TabIndex = 13
-        Me.dbinternet_cpb.Text = "Days left"
+        Me.dbinternet_cpb.Text = "Days Used                                "
         Me.dbinternet_cpb.TextMargin = New System.Windows.Forms.Padding(8, 8, 0, 0)
         Me.dbinternet_cpb.Value = 68
         '
@@ -2448,7 +1773,7 @@ Partial Class Form2
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label17.Location = New System.Drawing.Point(179, 79)
+        Me.Label17.Location = New System.Drawing.Point(170, 169)
         Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(88, 20)
@@ -2460,7 +1785,7 @@ Partial Class Form2
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Label15.Location = New System.Drawing.Point(22, 69)
+        Me.Label15.Location = New System.Drawing.Point(60, 100)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(126, 25)
@@ -2470,121 +1795,441 @@ Partial Class Form2
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(26, 94)
+        Me.Label10.Location = New System.Drawing.Point(281, 105)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(115, 17)
+        Me.Label10.Size = New System.Drawing.Size(119, 18)
         Me.Label10.TabIndex = 3
         Me.Label10.Text = "Expires in 2 days"
         '
-        'Panel4
+        'PictureBox3
         '
-        Me.Panel4.AutoSize = True
-        Me.Panel4.Controls.Add(Me.Panel24)
-        Me.Panel4.Controls.Add(Me.Panel5)
-        Me.Panel4.Location = New System.Drawing.Point(96, 72)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(897, 166)
-        Me.Panel4.TabIndex = 1
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(34, 329)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 17
+        Me.PictureBox3.TabStop = False
         '
-        'Panel24
+        'PictureBox2
         '
-        Me.Panel24.BackColor = System.Drawing.Color.Gainsboro
-        Me.Panel24.Controls.Add(Me.CustomRoundedPanel1)
-        Me.Panel24.Controls.Add(Me.recharge_button)
-        Me.Panel24.Controls.Add(Me.Label44)
-        Me.Panel24.Location = New System.Drawing.Point(434, 16)
-        Me.Panel24.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel24.Name = "Panel24"
-        Me.Panel24.Size = New System.Drawing.Size(459, 135)
-        Me.Panel24.TabIndex = 3
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(34, 258)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 16
+        Me.PictureBox2.TabStop = False
         '
-        'CustomRoundedPanel1
+        'PictureBox1
         '
-        Me.CustomRoundedPanel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(34, 188)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 15
+        Me.PictureBox1.TabStop = False
+        '
+        'mobile_button
+        '
+        Me.mobile_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.mobile_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.mobile_button.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mobile_button.ForeColor = System.Drawing.Color.White
+        Me.mobile_button.Location = New System.Drawing.Point(0, 167)
+        Me.mobile_button.Margin = New System.Windows.Forms.Padding(0)
+        Me.mobile_button.Name = "mobile_button"
+        Me.mobile_button.Size = New System.Drawing.Size(278, 70)
+        Me.mobile_button.TabIndex = 4
+        Me.mobile_button.Text = "Mobile           "
+        Me.mobile_button.UseVisualStyleBackColor = False
+        '
+        'dashboard_button
+        '
+        Me.dashboard_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.dashboard_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.dashboard_button.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dashboard_button.ForeColor = System.Drawing.Color.White
+        Me.dashboard_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.dashboard_button.Location = New System.Drawing.Point(0, 98)
+        Me.dashboard_button.Margin = New System.Windows.Forms.Padding(0)
+        Me.dashboard_button.Name = "dashboard_button"
+        Me.dashboard_button.Size = New System.Drawing.Size(278, 70)
+        Me.dashboard_button.TabIndex = 3
+        Me.dashboard_button.Text = "Dashboard     "
+        Me.dashboard_button.UseVisualStyleBackColor = False
+        '
+        'Panel3
+        '
+        Me.Panel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.CustomRoundedPanel1.BackColor = System.Drawing.Color.Gainsboro
-        Me.CustomRoundedPanel1.Controls.Add(Me.walletrecharge_textbox)
-        Me.CustomRoundedPanel1.Location = New System.Drawing.Point(28, 66)
-        Me.CustomRoundedPanel1.Name = "CustomRoundedPanel1"
-        Me.CustomRoundedPanel1.Size = New System.Drawing.Size(217, 40)
-        Me.CustomRoundedPanel1.TabIndex = 14
+        Me.Panel3.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.Panel3.Controls.Add(Me.dashboardname_label)
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(278, 100)
+        Me.Panel3.TabIndex = 2
         '
-        'walletrecharge_textbox
+        'dashboardname_label
         '
-        Me.walletrecharge_textbox.BackColor = System.Drawing.Color.Gainsboro
-        Me.walletrecharge_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.walletrecharge_textbox.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.walletrecharge_textbox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.walletrecharge_textbox.Location = New System.Drawing.Point(8, 10)
-        Me.walletrecharge_textbox.Name = "walletrecharge_textbox"
-        Me.walletrecharge_textbox.Size = New System.Drawing.Size(185, 19)
-        Me.walletrecharge_textbox.TabIndex = 4
-        Me.walletrecharge_textbox.Text = "Enter Amount (Rs.)"
-        Me.walletrecharge_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.dashboardname_label.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.dashboardname_label.AutoSize = True
+        Me.dashboardname_label.Font = New System.Drawing.Font("Century Gothic", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dashboardname_label.ForeColor = System.Drawing.Color.White
+        Me.dashboardname_label.Location = New System.Drawing.Point(75, 37)
+        Me.dashboardname_label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.dashboardname_label.Name = "dashboardname_label"
+        Me.dashboardname_label.Size = New System.Drawing.Size(141, 23)
+        Me.dashboardname_label.TabIndex = 0
+        Me.dashboardname_label.Text = "Hardik Katyal "
         '
-        'recharge_button
+        'myprofile_button
         '
-        Me.recharge_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.recharge_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.recharge_button.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.recharge_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.recharge_button.Location = New System.Drawing.Point(274, 68)
-        Me.recharge_button.Name = "recharge_button"
-        Me.recharge_button.Size = New System.Drawing.Size(149, 37)
-        Me.recharge_button.TabIndex = 5
-        Me.recharge_button.Text = "Add Money"
-        Me.recharge_button.UseVisualStyleBackColor = False
+        Me.myprofile_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.myprofile_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.myprofile_button.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.myprofile_button.ForeColor = System.Drawing.Color.White
+        Me.myprofile_button.Location = New System.Drawing.Point(0, 443)
+        Me.myprofile_button.Margin = New System.Windows.Forms.Padding(0)
+        Me.myprofile_button.Name = "myprofile_button"
+        Me.myprofile_button.Size = New System.Drawing.Size(278, 70)
+        Me.myprofile_button.TabIndex = 9
+        Me.myprofile_button.Text = "My Profile    "
+        Me.myprofile_button.UseVisualStyleBackColor = False
         '
-        'Label44
+        'td_button
         '
-        Me.Label44.AutoSize = True
-        Me.Label44.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label44.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label44.Location = New System.Drawing.Point(33, 17)
-        Me.Label44.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(212, 30)
-        Me.Label44.TabIndex = 0
-        Me.Label44.Text = "Wallet Recharge"
+        Me.td_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.td_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.td_button.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.td_button.ForeColor = System.Drawing.Color.White
+        Me.td_button.Location = New System.Drawing.Point(0, 374)
+        Me.td_button.Margin = New System.Windows.Forms.Padding(0)
+        Me.td_button.Name = "td_button"
+        Me.td_button.Size = New System.Drawing.Size(278, 70)
+        Me.td_button.TabIndex = 8
+        Me.td_button.Text = "Directory      "
+        Me.td_button.UseVisualStyleBackColor = False
         '
-        'Panel5
+        'tv_button
         '
-        Me.Panel5.BackColor = System.Drawing.Color.Gainsboro
-        Me.Panel5.Controls.Add(Me.Label6)
-        Me.Panel5.Controls.Add(Me.Label5)
-        Me.Panel5.Location = New System.Drawing.Point(0, 16)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(418, 135)
-        Me.Panel5.TabIndex = 2
+        Me.tv_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.tv_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.tv_button.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tv_button.ForeColor = System.Drawing.Color.White
+        Me.tv_button.Location = New System.Drawing.Point(0, 305)
+        Me.tv_button.Margin = New System.Windows.Forms.Padding(0)
+        Me.tv_button.Name = "tv_button"
+        Me.tv_button.Size = New System.Drawing.Size(278, 70)
+        Me.tv_button.TabIndex = 6
+        Me.tv_button.Text = "TV                 "
+        Me.tv_button.UseVisualStyleBackColor = False
         '
-        'Label6
+        'internet_button
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(318, 55)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(56, 21)
-        Me.Label6.TabIndex = 1
-        Me.Label6.Text = "$ 1.50"
+        Me.internet_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.internet_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.internet_button.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.internet_button.ForeColor = System.Drawing.Color.White
+        Me.internet_button.Location = New System.Drawing.Point(0, 236)
+        Me.internet_button.Margin = New System.Windows.Forms.Padding(0)
+        Me.internet_button.Name = "internet_button"
+        Me.internet_button.Size = New System.Drawing.Size(278, 70)
+        Me.internet_button.TabIndex = 5
+        Me.internet_button.Text = "Internet          "
+        Me.internet_button.UseVisualStyleBackColor = False
         '
-        'Label5
+        'myprofile_panel
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(22, 39)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(136, 37)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "Balance"
+        Me.myprofile_panel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.myprofile_panel.BackColor = System.Drawing.Color.White
+        Me.myprofile_panel.Controls.Add(Me.passwordchange_panel)
+        Me.myprofile_panel.Controls.Add(DOBLabel)
+        Me.myprofile_panel.Controls.Add(SecondNameLabel)
+        Me.myprofile_panel.Controls.Add(Me.Panel25)
+        Me.myprofile_panel.Controls.Add(UserNameLabel)
+        Me.myprofile_panel.Controls.Add(AddressLabel)
+        Me.myprofile_panel.Controls.Add(Me.CustomRoundedPanel8)
+        Me.myprofile_panel.Controls.Add(Me.CustomRoundedPanel9)
+        Me.myprofile_panel.Controls.Add(PhoneNoLabel)
+        Me.myprofile_panel.Controls.Add(Me.CustomRoundedPanel10)
+        Me.myprofile_panel.Controls.Add(Me.CustomRoundedPanel7)
+        Me.myprofile_panel.Controls.Add(Me.CustomRoundedPanel12)
+        Me.myprofile_panel.Controls.Add(FirstNameLabel)
+        Me.myprofile_panel.Controls.Add(Me.CustomRoundedPanel11)
+        Me.myprofile_panel.Controls.Add(Me.restore_button)
+        Me.myprofile_panel.Controls.Add(Me.save_button)
+        Me.myprofile_panel.Controls.Add(Me.Button26)
+        Me.myprofile_panel.Controls.Add(Me.password_change)
+        Me.myprofile_panel.Controls.Add(Me.sname_label)
+        Me.myprofile_panel.Controls.Add(Me.fname_label)
+        Me.myprofile_panel.Controls.Add(Me.edit_button)
+        Me.myprofile_panel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.myprofile_panel.Location = New System.Drawing.Point(0, 0)
+        Me.myprofile_panel.Margin = New System.Windows.Forms.Padding(4)
+        Me.myprofile_panel.Name = "myprofile_panel"
+        Me.myprofile_panel.Size = New System.Drawing.Size(1648, 964)
+        Me.myprofile_panel.TabIndex = 0
+        '
+        'passwordchange_panel
+        '
+        Me.passwordchange_panel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.passwordchange_panel.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.passwordchange_panel.Controls.Add(Me.Label52)
+        Me.passwordchange_panel.Controls.Add(Me.CustomRoundedPanel15)
+        Me.passwordchange_panel.Controls.Add(Me.Label51)
+        Me.passwordchange_panel.Controls.Add(Me.CustomRoundedPanel14)
+        Me.passwordchange_panel.Controls.Add(PasswordLabel)
+        Me.passwordchange_panel.Controls.Add(Me.CustomRoundedPanel13)
+        Me.passwordchange_panel.Controls.Add(Me.oldpassword_label)
+        Me.passwordchange_panel.Controls.Add(Me.npassword_label)
+        Me.passwordchange_panel.Controls.Add(Me.Label53)
+        Me.passwordchange_panel.Controls.Add(Me.updatepassword)
+        Me.passwordchange_panel.Controls.Add(Me.backtoprofile_button)
+        Me.passwordchange_panel.Location = New System.Drawing.Point(-1, 0)
+        Me.passwordchange_panel.Name = "passwordchange_panel"
+        Me.passwordchange_panel.Size = New System.Drawing.Size(537, 983)
+        Me.passwordchange_panel.TabIndex = 23
+        '
+        'Label52
+        '
+        Me.Label52.AutoSize = True
+        Me.Label52.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label52.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.Label52.Location = New System.Drawing.Point(95, 279)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(201, 21)
+        Me.Label52.TabIndex = 3
+        Me.Label52.Text = "Confirm New password"
+        '
+        'Label51
+        '
+        Me.Label51.AutoSize = True
+        Me.Label51.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label51.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.Label51.Location = New System.Drawing.Point(96, 199)
+        Me.Label51.Name = "Label51"
+        Me.Label51.Size = New System.Drawing.Size(133, 21)
+        Me.Label51.TabIndex = 2
+        Me.Label51.Text = "New password"
+        '
+        'GeneralUserBindingSource
+        '
+        Me.GeneralUserBindingSource.DataMember = "GeneralUser"
+        Me.GeneralUserBindingSource.DataSource = Me.GeneralUserDBDataSet
+        '
+        'GeneralUserDBDataSet
+        '
+        Me.GeneralUserDBDataSet.DataSetName = "GeneralUserDBDataSet"
+        Me.GeneralUserDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'oldpassword_label
+        '
+        Me.oldpassword_label.AutoSize = True
+        Me.oldpassword_label.Location = New System.Drawing.Point(86, 492)
+        Me.oldpassword_label.Name = "oldpassword_label"
+        Me.oldpassword_label.Size = New System.Drawing.Size(0, 16)
+        Me.oldpassword_label.TabIndex = 10
+        '
+        'npassword_label
+        '
+        Me.npassword_label.AutoSize = True
+        Me.npassword_label.Location = New System.Drawing.Point(103, 358)
+        Me.npassword_label.Name = "npassword_label"
+        Me.npassword_label.Size = New System.Drawing.Size(0, 16)
+        Me.npassword_label.TabIndex = 9
+        '
+        'Label53
+        '
+        Me.Label53.AutoSize = True
+        Me.Label53.Location = New System.Drawing.Point(452, 90)
+        Me.Label53.Name = "Label53"
+        Me.Label53.Size = New System.Drawing.Size(0, 16)
+        Me.Label53.TabIndex = 8
+        '
+        'updatepassword
+        '
+        Me.updatepassword.BackColor = System.Drawing.SystemColors.WindowFrame
+        Me.updatepassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.updatepassword.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.updatepassword.ForeColor = System.Drawing.Color.White
+        Me.updatepassword.Location = New System.Drawing.Point(115, 393)
+        Me.updatepassword.Name = "updatepassword"
+        Me.updatepassword.Size = New System.Drawing.Size(261, 57)
+        Me.updatepassword.TabIndex = 7
+        Me.updatepassword.Text = "Update Password"
+        Me.updatepassword.UseVisualStyleBackColor = False
+        '
+        'backtoprofile_button
+        '
+        Me.backtoprofile_button.BackColor = System.Drawing.SystemColors.WindowFrame
+        Me.backtoprofile_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.backtoprofile_button.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.backtoprofile_button.ForeColor = System.Drawing.Color.White
+        Me.backtoprofile_button.Location = New System.Drawing.Point(88, 60)
+        Me.backtoprofile_button.Name = "backtoprofile_button"
+        Me.backtoprofile_button.Size = New System.Drawing.Size(156, 41)
+        Me.backtoprofile_button.TabIndex = 6
+        Me.backtoprofile_button.Text = "Back to profile"
+        Me.backtoprofile_button.UseVisualStyleBackColor = False
+        '
+        'Panel25
+        '
+        Me.Panel25.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Panel25.BackColor = System.Drawing.Color.White
+        Me.Panel25.BackgroundImage = CType(resources.GetObject("Panel25.BackgroundImage"), System.Drawing.Image)
+        Me.Panel25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel25.Controls.Add(Me.Label37)
+        Me.Panel25.Controls.Add(Me.Label29)
+        Me.Panel25.Controls.Add(Me.Label28)
+        Me.Panel25.Location = New System.Drawing.Point(0, 0)
+        Me.Panel25.Name = "Panel25"
+        Me.Panel25.Size = New System.Drawing.Size(536, 986)
+        Me.Panel25.TabIndex = 23
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.BackColor = System.Drawing.Color.Transparent
+        Me.Label37.Font = New System.Drawing.Font("Century Gothic", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label37.ForeColor = System.Drawing.Color.White
+        Me.Label37.Location = New System.Drawing.Point(424, 253)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(73, 56)
+        Me.Label37.TabIndex = 2
+        Me.Label37.Text = "IN"
+        '
+        'Label29
+        '
+        Me.Label29.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label29.AutoSize = True
+        Me.Label29.BackColor = System.Drawing.Color.Transparent
+        Me.Label29.Font = New System.Drawing.Font("Century Gothic", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.ForeColor = System.Drawing.Color.White
+        Me.Label29.Location = New System.Drawing.Point(250, 309)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(247, 56)
+        Me.Label29.TabIndex = 1
+        Me.Label29.Text = "YOURSELF"
+        '
+        'Label28
+        '
+        Me.Label28.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label28.AutoSize = True
+        Me.Label28.BackColor = System.Drawing.Color.Transparent
+        Me.Label28.Font = New System.Drawing.Font("Century Gothic", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.ForeColor = System.Drawing.Color.White
+        Me.Label28.Location = New System.Drawing.Point(305, 197)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(195, 56)
+        Me.Label28.TabIndex = 0
+        Me.Label28.Text = "BELIEVE"
+        '
+        'restore_button
+        '
+        Me.restore_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.restore_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.restore_button.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.restore_button.ForeColor = System.Drawing.Color.White
+        Me.restore_button.Location = New System.Drawing.Point(1196, 315)
+        Me.restore_button.Name = "restore_button"
+        Me.restore_button.Size = New System.Drawing.Size(209, 55)
+        Me.restore_button.TabIndex = 22
+        Me.restore_button.Text = "Restore"
+        Me.restore_button.UseVisualStyleBackColor = False
+        '
+        'save_button
+        '
+        Me.save_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.save_button.Enabled = False
+        Me.save_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.save_button.Font = New System.Drawing.Font("Century Gothic", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.save_button.ForeColor = System.Drawing.Color.White
+        Me.save_button.Location = New System.Drawing.Point(558, 398)
+        Me.save_button.Margin = New System.Windows.Forms.Padding(4)
+        Me.save_button.Name = "save_button"
+        Me.save_button.Size = New System.Drawing.Size(262, 55)
+        Me.save_button.TabIndex = 7
+        Me.save_button.Text = "Save"
+        Me.save_button.UseVisualStyleBackColor = False
+        '
+        'Button26
+        '
+        Me.Button26.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button26.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button26.ForeColor = System.Drawing.Color.White
+        Me.Button26.Location = New System.Drawing.Point(556, 481)
+        Me.Button26.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button26.Name = "Button26"
+        Me.Button26.Size = New System.Drawing.Size(264, 55)
+        Me.Button26.TabIndex = 13
+        Me.Button26.Text = "Blocked Numbers"
+        Me.Button26.UseVisualStyleBackColor = False
+        '
+        'password_change
+        '
+        Me.password_change.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.password_change.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.password_change.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.password_change.ForeColor = System.Drawing.Color.White
+        Me.password_change.Location = New System.Drawing.Point(865, 481)
+        Me.password_change.Margin = New System.Windows.Forms.Padding(4)
+        Me.password_change.Name = "password_change"
+        Me.password_change.Size = New System.Drawing.Size(299, 55)
+        Me.password_change.TabIndex = 12
+        Me.password_change.Text = "Change Password"
+        Me.password_change.UseVisualStyleBackColor = False
+        '
+        'sname_label
+        '
+        Me.sname_label.AutoSize = True
+        Me.sname_label.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sname_label.Location = New System.Drawing.Point(981, 233)
+        Me.sname_label.Name = "sname_label"
+        Me.sname_label.Size = New System.Drawing.Size(0, 19)
+        Me.sname_label.TabIndex = 21
+        '
+        'fname_label
+        '
+        Me.fname_label.AutoSize = True
+        Me.fname_label.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.fname_label.Location = New System.Drawing.Point(967, 184)
+        Me.fname_label.Name = "fname_label"
+        Me.fname_label.Size = New System.Drawing.Size(0, 19)
+        Me.fname_label.TabIndex = 20
+        '
+        'edit_button
+        '
+        Me.edit_button.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.edit_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.edit_button.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.edit_button.ForeColor = System.Drawing.Color.White
+        Me.edit_button.Location = New System.Drawing.Point(1493, 48)
+        Me.edit_button.Margin = New System.Windows.Forms.Padding(4)
+        Me.edit_button.Name = "edit_button"
+        Me.edit_button.Size = New System.Drawing.Size(71, 35)
+        Me.edit_button.TabIndex = 6
+        Me.edit_button.Text = "Edit"
+        Me.edit_button.UseVisualStyleBackColor = False
         '
         'TVPlansBindingSource
         '
@@ -2608,7 +2253,8 @@ Partial Class Form2
         '
         'Panel2
         '
-        Me.Panel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.Panel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Panel2.Controls.Add(Me.Button11)
@@ -2618,11 +2264,12 @@ Partial Class Form2
         Me.Panel2.Location = New System.Drawing.Point(278, 0)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1123, 859)
+        Me.Panel2.Size = New System.Drawing.Size(1648, 1057)
         Me.Panel2.TabIndex = 2
         '
         'Button11
         '
+        Me.Button11.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button11.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -2637,6 +2284,7 @@ Partial Class Form2
         '
         'Button10
         '
+        Me.Button10.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Button10.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button10.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -2651,17 +2299,19 @@ Partial Class Form2
         '
         'Button9
         '
+        Me.Button9.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Button9.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Button9.BackgroundImage = CType(resources.GetObject("Button9.BackgroundImage"), System.Drawing.Image)
         Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button9.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.ForeColor = System.Drawing.Color.White
         Me.Button9.ImageIndex = 1
         Me.Button9.Location = New System.Drawing.Point(985, 26)
         Me.Button9.Margin = New System.Windows.Forms.Padding(4)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(47, 47)
+        Me.Button9.Size = New System.Drawing.Size(151, 47)
         Me.Button9.TabIndex = 2
+        Me.Button9.Text = "Logout"
         Me.Button9.UseVisualStyleBackColor = False
         '
         'GeneralUserTableAdapter
@@ -2722,87 +2372,402 @@ Partial Class Form2
         '
         Me.TVPlansTableAdapter1.ClearBeforeFill = True
         '
+        'CustomRoundedPanel15
+        '
+        Me.CustomRoundedPanel15.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CustomRoundedPanel15.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.CustomRoundedPanel15.Controls.Add(Me.confrimnewpassword)
+        Me.CustomRoundedPanel15.Location = New System.Drawing.Point(88, 293)
+        Me.CustomRoundedPanel15.Name = "CustomRoundedPanel15"
+        Me.CustomRoundedPanel15.Size = New System.Drawing.Size(341, 55)
+        Me.CustomRoundedPanel15.TabIndex = 28
+        '
+        'confrimnewpassword
+        '
+        Me.confrimnewpassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.confrimnewpassword.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.confrimnewpassword.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.confrimnewpassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.confrimnewpassword.Location = New System.Drawing.Point(11, 14)
+        Me.confrimnewpassword.Name = "confrimnewpassword"
+        Me.confrimnewpassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.confrimnewpassword.Size = New System.Drawing.Size(312, 25)
+        Me.confrimnewpassword.TabIndex = 5
+        Me.confrimnewpassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'CustomRoundedPanel14
+        '
+        Me.CustomRoundedPanel14.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CustomRoundedPanel14.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.CustomRoundedPanel14.Controls.Add(Me.newpassword_textbox)
+        Me.CustomRoundedPanel14.Location = New System.Drawing.Point(89, 210)
+        Me.CustomRoundedPanel14.Name = "CustomRoundedPanel14"
+        Me.CustomRoundedPanel14.Size = New System.Drawing.Size(341, 55)
+        Me.CustomRoundedPanel14.TabIndex = 27
+        '
+        'newpassword_textbox
+        '
+        Me.newpassword_textbox.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.newpassword_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.newpassword_textbox.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.newpassword_textbox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.newpassword_textbox.Location = New System.Drawing.Point(9, 17)
+        Me.newpassword_textbox.Name = "newpassword_textbox"
+        Me.newpassword_textbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.newpassword_textbox.Size = New System.Drawing.Size(313, 25)
+        Me.newpassword_textbox.TabIndex = 4
+        Me.newpassword_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'CustomRoundedPanel13
+        '
+        Me.CustomRoundedPanel13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CustomRoundedPanel13.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.CustomRoundedPanel13.Controls.Add(Me.ChangePasswordTextBox)
+        Me.CustomRoundedPanel13.Location = New System.Drawing.Point(89, 135)
+        Me.CustomRoundedPanel13.Name = "CustomRoundedPanel13"
+        Me.CustomRoundedPanel13.Size = New System.Drawing.Size(341, 55)
+        Me.CustomRoundedPanel13.TabIndex = 26
+        '
+        'ChangePasswordTextBox
+        '
+        Me.ChangePasswordTextBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.ChangePasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ChangePasswordTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "Password", True))
+        Me.ChangePasswordTextBox.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ChangePasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.ChangePasswordTextBox.Location = New System.Drawing.Point(10, 16)
+        Me.ChangePasswordTextBox.Name = "ChangePasswordTextBox"
+        Me.ChangePasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.ChangePasswordTextBox.Size = New System.Drawing.Size(312, 25)
+        Me.ChangePasswordTextBox.TabIndex = 1
+        Me.ChangePasswordTextBox.TabStop = False
+        Me.ChangePasswordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'CustomRoundedPanel8
+        '
+        Me.CustomRoundedPanel8.BackColor = System.Drawing.Color.White
+        Me.CustomRoundedPanel8.Controls.Add(Me.AddressTextBox)
+        Me.CustomRoundedPanel8.Location = New System.Drawing.Point(559, 243)
+        Me.CustomRoundedPanel8.Name = "CustomRoundedPanel8"
+        Me.CustomRoundedPanel8.Size = New System.Drawing.Size(1000, 55)
+        Me.CustomRoundedPanel8.TabIndex = 27
+        '
+        'AddressTextBox
+        '
+        Me.AddressTextBox.BackColor = System.Drawing.Color.White
+        Me.AddressTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.AddressTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "Address", True))
+        Me.AddressTextBox.Font = New System.Drawing.Font("Century Gothic", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddressTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.AddressTextBox.Location = New System.Drawing.Point(15, 13)
+        Me.AddressTextBox.Name = "AddressTextBox"
+        Me.AddressTextBox.ReadOnly = True
+        Me.AddressTextBox.Size = New System.Drawing.Size(412, 31)
+        Me.AddressTextBox.TabIndex = 17
+        '
+        'CustomRoundedPanel9
+        '
+        Me.CustomRoundedPanel9.BackColor = System.Drawing.Color.White
+        Me.CustomRoundedPanel9.Controls.Add(Me.DOBDateTimePicker)
+        Me.CustomRoundedPanel9.Location = New System.Drawing.Point(1064, 166)
+        Me.CustomRoundedPanel9.Name = "CustomRoundedPanel9"
+        Me.CustomRoundedPanel9.Size = New System.Drawing.Size(500, 55)
+        Me.CustomRoundedPanel9.TabIndex = 27
+        '
+        'DOBDateTimePicker
+        '
+        Me.DOBDateTimePicker.CalendarForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.DOBDateTimePicker.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.DOBDateTimePicker.Checked = False
+        Me.DOBDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.GeneralUserBindingSource, "DOB", True))
+        Me.DOBDateTimePicker.Enabled = False
+        Me.DOBDateTimePicker.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DOBDateTimePicker.Location = New System.Drawing.Point(3, 11)
+        Me.DOBDateTimePicker.Name = "DOBDateTimePicker"
+        Me.DOBDateTimePicker.Size = New System.Drawing.Size(292, 32)
+        Me.DOBDateTimePicker.TabIndex = 18
+        '
+        'CustomRoundedPanel10
+        '
+        Me.CustomRoundedPanel10.BackColor = System.Drawing.Color.White
+        Me.CustomRoundedPanel10.Controls.Add(Me.PhoneNoTextBox)
+        Me.CustomRoundedPanel10.Location = New System.Drawing.Point(558, 166)
+        Me.CustomRoundedPanel10.Name = "CustomRoundedPanel10"
+        Me.CustomRoundedPanel10.Size = New System.Drawing.Size(500, 55)
+        Me.CustomRoundedPanel10.TabIndex = 27
+        '
+        'PhoneNoTextBox
+        '
+        Me.PhoneNoTextBox.BackColor = System.Drawing.Color.White
+        Me.PhoneNoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.PhoneNoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "PhoneNo", True))
+        Me.PhoneNoTextBox.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PhoneNoTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.PhoneNoTextBox.Location = New System.Drawing.Point(15, 15)
+        Me.PhoneNoTextBox.Name = "PhoneNoTextBox"
+        Me.PhoneNoTextBox.ReadOnly = True
+        Me.PhoneNoTextBox.Size = New System.Drawing.Size(170, 29)
+        Me.PhoneNoTextBox.TabIndex = 19
+        '
+        'CustomRoundedPanel7
+        '
+        Me.CustomRoundedPanel7.BackColor = System.Drawing.Color.White
+        Me.CustomRoundedPanel7.Controls.Add(Me.UserNameTextBox)
+        Me.CustomRoundedPanel7.Location = New System.Drawing.Point(558, 319)
+        Me.CustomRoundedPanel7.Name = "CustomRoundedPanel7"
+        Me.CustomRoundedPanel7.Size = New System.Drawing.Size(500, 55)
+        Me.CustomRoundedPanel7.TabIndex = 26
+        '
+        'UserNameTextBox
+        '
+        Me.UserNameTextBox.BackColor = System.Drawing.Color.White
+        Me.UserNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.UserNameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "UserName", True))
+        Me.UserNameTextBox.Font = New System.Drawing.Font("Century Gothic", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UserNameTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.UserNameTextBox.Location = New System.Drawing.Point(16, 11)
+        Me.UserNameTextBox.Name = "UserNameTextBox"
+        Me.UserNameTextBox.ReadOnly = True
+        Me.UserNameTextBox.Size = New System.Drawing.Size(224, 31)
+        Me.UserNameTextBox.TabIndex = 16
+        '
+        'CustomRoundedPanel12
+        '
+        Me.CustomRoundedPanel12.BackColor = System.Drawing.Color.White
+        Me.CustomRoundedPanel12.Controls.Add(Me.SecondNameTextBox)
+        Me.CustomRoundedPanel12.Location = New System.Drawing.Point(1064, 90)
+        Me.CustomRoundedPanel12.Name = "CustomRoundedPanel12"
+        Me.CustomRoundedPanel12.Size = New System.Drawing.Size(500, 55)
+        Me.CustomRoundedPanel12.TabIndex = 26
+        '
+        'SecondNameTextBox
+        '
+        Me.SecondNameTextBox.BackColor = System.Drawing.Color.White
+        Me.SecondNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.SecondNameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "SecondName", True))
+        Me.SecondNameTextBox.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SecondNameTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.SecondNameTextBox.Location = New System.Drawing.Point(14, 16)
+        Me.SecondNameTextBox.Name = "SecondNameTextBox"
+        Me.SecondNameTextBox.ReadOnly = True
+        Me.SecondNameTextBox.Size = New System.Drawing.Size(241, 29)
+        Me.SecondNameTextBox.TabIndex = 15
+        '
+        'CustomRoundedPanel11
+        '
+        Me.CustomRoundedPanel11.BackColor = System.Drawing.Color.White
+        Me.CustomRoundedPanel11.Controls.Add(Me.FirstNameTextBox)
+        Me.CustomRoundedPanel11.Location = New System.Drawing.Point(558, 90)
+        Me.CustomRoundedPanel11.Name = "CustomRoundedPanel11"
+        Me.CustomRoundedPanel11.Size = New System.Drawing.Size(500, 55)
+        Me.CustomRoundedPanel11.TabIndex = 25
+        '
+        'FirstNameTextBox
+        '
+        Me.FirstNameTextBox.BackColor = System.Drawing.Color.White
+        Me.FirstNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.FirstNameTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GeneralUserBindingSource, "FirstName", True))
+        Me.FirstNameTextBox.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FirstNameTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.FirstNameTextBox.Location = New System.Drawing.Point(16, 16)
+        Me.FirstNameTextBox.Name = "FirstNameTextBox"
+        Me.FirstNameTextBox.ReadOnly = True
+        Me.FirstNameTextBox.Size = New System.Drawing.Size(241, 29)
+        Me.FirstNameTextBox.TabIndex = 14
+        '
+        'CustomRoundedPanel6
+        '
+        Me.CustomRoundedPanel6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CustomRoundedPanel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.CustomRoundedPanel6.Controls.Add(Me.TextBox8)
+        Me.CustomRoundedPanel6.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CustomRoundedPanel6.Location = New System.Drawing.Point(322, 241)
+        Me.CustomRoundedPanel6.Name = "CustomRoundedPanel6"
+        Me.CustomRoundedPanel6.Size = New System.Drawing.Size(295, 38)
+        Me.CustomRoundedPanel6.TabIndex = 7
+        '
+        'TextBox8
+        '
+        Me.TextBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox8.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.TextBox8.Location = New System.Drawing.Point(21, 9)
+        Me.TextBox8.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(250, 21)
+        Me.TextBox8.TabIndex = 5
+        Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'CustomRoundedPanel5
+        '
+        Me.CustomRoundedPanel5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CustomRoundedPanel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.CustomRoundedPanel5.Controls.Add(Me.TextBox7)
+        Me.CustomRoundedPanel5.Location = New System.Drawing.Point(322, 164)
+        Me.CustomRoundedPanel5.Name = "CustomRoundedPanel5"
+        Me.CustomRoundedPanel5.Size = New System.Drawing.Size(295, 38)
+        Me.CustomRoundedPanel5.TabIndex = 6
+        '
+        'TextBox7
+        '
+        Me.TextBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(199, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox7.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.TextBox7.Location = New System.Drawing.Point(21, 9)
+        Me.TextBox7.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(250, 21)
+        Me.TextBox7.TabIndex = 2
+        Me.TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'CustomRoundedPanel4
+        '
+        Me.CustomRoundedPanel4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CustomRoundedPanel4.BackColor = System.Drawing.Color.Lavender
+        Me.CustomRoundedPanel4.Controls.Add(Me.TextBox5)
+        Me.CustomRoundedPanel4.Location = New System.Drawing.Point(247, 217)
+        Me.CustomRoundedPanel4.Name = "CustomRoundedPanel4"
+        Me.CustomRoundedPanel4.Size = New System.Drawing.Size(295, 38)
+        Me.CustomRoundedPanel4.TabIndex = 5
+        '
+        'TextBox5
+        '
+        Me.TextBox5.BackColor = System.Drawing.Color.Lavender
+        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox5.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.TextBox5.Location = New System.Drawing.Point(21, 8)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(250, 21)
+        Me.TextBox5.TabIndex = 2
+        Me.TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'CustomRoundedPanel3
+        '
+        Me.CustomRoundedPanel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CustomRoundedPanel3.BackColor = System.Drawing.Color.Gainsboro
+        Me.CustomRoundedPanel3.Controls.Add(Me.TextBox3)
+        Me.CustomRoundedPanel3.Location = New System.Drawing.Point(323, 226)
+        Me.CustomRoundedPanel3.Name = "CustomRoundedPanel3"
+        Me.CustomRoundedPanel3.Size = New System.Drawing.Size(323, 49)
+        Me.CustomRoundedPanel3.TabIndex = 7
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BackColor = System.Drawing.Color.Gainsboro
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox3.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.TextBox3.Location = New System.Drawing.Point(11, 7)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(303, 37)
+        Me.TextBox3.TabIndex = 5
+        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'CustomRoundedPanel2
+        '
+        Me.CustomRoundedPanel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CustomRoundedPanel2.BackColor = System.Drawing.Color.Gainsboro
+        Me.CustomRoundedPanel2.Controls.Add(Me.TextBox2)
+        Me.CustomRoundedPanel2.Location = New System.Drawing.Point(323, 138)
+        Me.CustomRoundedPanel2.Name = "CustomRoundedPanel2"
+        Me.CustomRoundedPanel2.Size = New System.Drawing.Size(323, 52)
+        Me.CustomRoundedPanel2.TabIndex = 6
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.Color.Gainsboro
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox2.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.TextBox2.Location = New System.Drawing.Point(11, 5)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(303, 37)
+        Me.TextBox2.TabIndex = 2
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'CustomRoundedPanel1
+        '
+        Me.CustomRoundedPanel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CustomRoundedPanel1.BackColor = System.Drawing.Color.Gainsboro
+        Me.CustomRoundedPanel1.Controls.Add(Me.walletrecharge_textbox)
+        Me.CustomRoundedPanel1.Location = New System.Drawing.Point(67, 152)
+        Me.CustomRoundedPanel1.Name = "CustomRoundedPanel1"
+        Me.CustomRoundedPanel1.Size = New System.Drawing.Size(526, 77)
+        Me.CustomRoundedPanel1.TabIndex = 14
+        '
+        'walletrecharge_textbox
+        '
+        Me.walletrecharge_textbox.BackColor = System.Drawing.Color.Gainsboro
+        Me.walletrecharge_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.walletrecharge_textbox.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.walletrecharge_textbox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.walletrecharge_textbox.Location = New System.Drawing.Point(10, 22)
+        Me.walletrecharge_textbox.Name = "walletrecharge_textbox"
+        Me.walletrecharge_textbox.Size = New System.Drawing.Size(500, 29)
+        Me.walletrecharge_textbox.TabIndex = 4
+        Me.walletrecharge_textbox.Text = "Enter Amount (Rs.)"
+        Me.walletrecharge_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1399, 857)
+        Me.ClientSize = New System.Drawing.Size(1924, 1055)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form2"
         Me.Text = "Form2"
         Me.Panel1.ResumeLayout(False)
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        Me.myprofile_panel.ResumeLayout(False)
-        Me.myprofile_panel.PerformLayout()
-        Me.passwordchange_panel.ResumeLayout(False)
-        Me.passwordchange_panel.PerformLayout()
-        Me.CustomRoundedPanel15.ResumeLayout(False)
-        Me.CustomRoundedPanel15.PerformLayout()
-        Me.CustomRoundedPanel14.ResumeLayout(False)
-        Me.CustomRoundedPanel14.PerformLayout()
-        Me.CustomRoundedPanel13.ResumeLayout(False)
-        Me.CustomRoundedPanel13.PerformLayout()
-        CType(Me.GeneralUserBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GeneralUserDBDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel25.ResumeLayout(False)
-        Me.Panel25.PerformLayout()
-        Me.CustomRoundedPanel8.ResumeLayout(False)
-        Me.CustomRoundedPanel8.PerformLayout()
-        Me.CustomRoundedPanel9.ResumeLayout(False)
-        Me.CustomRoundedPanel10.ResumeLayout(False)
-        Me.CustomRoundedPanel10.PerformLayout()
-        Me.CustomRoundedPanel7.ResumeLayout(False)
-        Me.CustomRoundedPanel7.PerformLayout()
-        Me.CustomRoundedPanel12.ResumeLayout(False)
-        Me.CustomRoundedPanel12.PerformLayout()
-        Me.CustomRoundedPanel11.ResumeLayout(False)
-        Me.CustomRoundedPanel11.PerformLayout()
-        Me.tv_panel.ResumeLayout(False)
         Me.td_panel.ResumeLayout(False)
         Me.Panel27.ResumeLayout(False)
         Me.Panel27.PerformLayout()
-        Me.CustomRoundedPanel6.ResumeLayout(False)
-        Me.CustomRoundedPanel6.PerformLayout()
-        Me.CustomRoundedPanel5.ResumeLayout(False)
-        Me.CustomRoundedPanel5.PerformLayout()
         Me.Panel26.ResumeLayout(False)
         Me.Panel26.PerformLayout()
-        Me.CustomRoundedPanel4.ResumeLayout(False)
-        Me.CustomRoundedPanel4.PerformLayout()
+        Me.tv_panel.ResumeLayout(False)
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TVPlansBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TVPlansDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel11.ResumeLayout(False)
         Me.Panel11.PerformLayout()
-        Me.mobile_panel.ResumeLayout(False)
         Me.internet_panel.ResumeLayout(False)
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.InternetPlansBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.InternetPlansDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel21.ResumeLayout(False)
         Me.Panel21.PerformLayout()
+        Me.mobile_panel.ResumeLayout(False)
+        Me.Panel12.ResumeLayout(False)
+        Me.Panel12.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MobilePlansBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MobilePlansDBDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel12.ResumeLayout(False)
-        Me.Panel12.PerformLayout()
-        Me.CustomRoundedPanel3.ResumeLayout(False)
-        Me.CustomRoundedPanel3.PerformLayout()
-        Me.CustomRoundedPanel2.ResumeLayout(False)
-        Me.CustomRoundedPanel2.PerformLayout()
         Me.Panel9.ResumeLayout(False)
         Me.Panel9.PerformLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.dashboard_panel.ResumeLayout(False)
         Me.dashboard_panel.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        Me.Panel24.ResumeLayout(False)
+        Me.Panel24.PerformLayout()
         Me.Panel13.ResumeLayout(False)
         Me.Panel13.PerformLayout()
         Me.Panel18.ResumeLayout(False)
@@ -2819,13 +2784,19 @@ Partial Class Form2
         Me.Panel6.PerformLayout()
         Me.Panel17.ResumeLayout(False)
         Me.Panel17.PerformLayout()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel24.ResumeLayout(False)
-        Me.Panel24.PerformLayout()
-        Me.CustomRoundedPanel1.ResumeLayout(False)
-        Me.CustomRoundedPanel1.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        Me.myprofile_panel.ResumeLayout(False)
+        Me.myprofile_panel.PerformLayout()
+        Me.passwordchange_panel.ResumeLayout(False)
+        Me.passwordchange_panel.PerformLayout()
+        CType(Me.GeneralUserBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GeneralUserDBDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel25.ResumeLayout(False)
+        Me.Panel25.PerformLayout()
         CType(Me.TVPlansBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TVPlansDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.InternetPlansBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2835,6 +2806,35 @@ Partial Class Form2
         CType(Me.GeneralUserBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.InternetPlansBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.InternetPlansDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.CustomRoundedPanel15.ResumeLayout(False)
+        Me.CustomRoundedPanel15.PerformLayout()
+        Me.CustomRoundedPanel14.ResumeLayout(False)
+        Me.CustomRoundedPanel14.PerformLayout()
+        Me.CustomRoundedPanel13.ResumeLayout(False)
+        Me.CustomRoundedPanel13.PerformLayout()
+        Me.CustomRoundedPanel8.ResumeLayout(False)
+        Me.CustomRoundedPanel8.PerformLayout()
+        Me.CustomRoundedPanel9.ResumeLayout(False)
+        Me.CustomRoundedPanel10.ResumeLayout(False)
+        Me.CustomRoundedPanel10.PerformLayout()
+        Me.CustomRoundedPanel7.ResumeLayout(False)
+        Me.CustomRoundedPanel7.PerformLayout()
+        Me.CustomRoundedPanel12.ResumeLayout(False)
+        Me.CustomRoundedPanel12.PerformLayout()
+        Me.CustomRoundedPanel11.ResumeLayout(False)
+        Me.CustomRoundedPanel11.PerformLayout()
+        Me.CustomRoundedPanel6.ResumeLayout(False)
+        Me.CustomRoundedPanel6.PerformLayout()
+        Me.CustomRoundedPanel5.ResumeLayout(False)
+        Me.CustomRoundedPanel5.PerformLayout()
+        Me.CustomRoundedPanel4.ResumeLayout(False)
+        Me.CustomRoundedPanel4.PerformLayout()
+        Me.CustomRoundedPanel3.ResumeLayout(False)
+        Me.CustomRoundedPanel3.PerformLayout()
+        Me.CustomRoundedPanel2.ResumeLayout(False)
+        Me.CustomRoundedPanel2.PerformLayout()
+        Me.CustomRoundedPanel1.ResumeLayout(False)
+        Me.CustomRoundedPanel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2852,7 +2852,6 @@ Partial Class Form2
     Friend WithEvents Button10 As Button
     Friend WithEvents Button9 As Button
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel4 As Panel
     Friend WithEvents dashboardname_label As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Panel7 As Panel

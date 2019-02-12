@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
@@ -23,18 +23,19 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Dim AadharLabel As System.Windows.Forms.Label
         Dim PasswordLabel As System.Windows.Forms.Label
         Dim UserNameLabel As System.Windows.Forms.Label
         Dim SecondNameLabel As System.Windows.Forms.Label
         Dim FirstNameLabel As System.Windows.Forms.Label
         Dim PhoneNoLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.GeneralUserBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GeneralUserDBDataSet = New TelephoneDirectory.GeneralUserDBDataSet()
         Me.GeneralUserTableAdapter = New TelephoneDirectory.GeneralUserDBDataSetTableAdapters.GeneralUserTableAdapter()
         Me.TableAdapterManager = New TelephoneDirectory.GeneralUserDBDataSetTableAdapters.TableAdapterManager()
         Me.login_panel = New System.Windows.Forms.Panel()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -86,6 +87,90 @@ Partial Class Form1
         Me.CustomRoundedPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
+        'AadharLabel
+        '
+        AadharLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        AadharLabel.AutoSize = True
+        AadharLabel.BackColor = System.Drawing.Color.Transparent
+        AadharLabel.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        AadharLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        AadharLabel.Location = New System.Drawing.Point(147, 525)
+        AadharLabel.Name = "AadharLabel"
+        AadharLabel.Size = New System.Drawing.Size(89, 20)
+        AadharLabel.TabIndex = 13
+        AadharLabel.Text = "Aadhar No"
+        '
+        'PasswordLabel
+        '
+        PasswordLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        PasswordLabel.AutoSize = True
+        PasswordLabel.BackColor = System.Drawing.Color.Transparent
+        PasswordLabel.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        PasswordLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        PasswordLabel.Location = New System.Drawing.Point(147, 395)
+        PasswordLabel.Name = "PasswordLabel"
+        PasswordLabel.Size = New System.Drawing.Size(79, 20)
+        PasswordLabel.TabIndex = 12
+        PasswordLabel.Text = "Password"
+        '
+        'UserNameLabel
+        '
+        UserNameLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        UserNameLabel.AutoSize = True
+        UserNameLabel.BackColor = System.Drawing.Color.Transparent
+        UserNameLabel.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        UserNameLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        UserNameLabel.Location = New System.Drawing.Point(147, 330)
+        UserNameLabel.Name = "UserNameLabel"
+        UserNameLabel.Size = New System.Drawing.Size(89, 20)
+        UserNameLabel.TabIndex = 11
+        UserNameLabel.Text = "User Name"
+        '
+        'SecondNameLabel
+        '
+        SecondNameLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        SecondNameLabel.AutoSize = True
+        SecondNameLabel.BackColor = System.Drawing.Color.Transparent
+        SecondNameLabel.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        SecondNameLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        SecondNameLabel.Location = New System.Drawing.Point(147, 266)
+        SecondNameLabel.Name = "SecondNameLabel"
+        SecondNameLabel.Size = New System.Drawing.Size(113, 20)
+        SecondNameLabel.TabIndex = 10
+        SecondNameLabel.Text = "Second Name"
+        '
+        'FirstNameLabel
+        '
+        FirstNameLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        FirstNameLabel.AutoSize = True
+        FirstNameLabel.BackColor = System.Drawing.Color.Transparent
+        FirstNameLabel.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        FirstNameLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        FirstNameLabel.Location = New System.Drawing.Point(147, 200)
+        FirstNameLabel.Name = "FirstNameLabel"
+        FirstNameLabel.Size = New System.Drawing.Size(83, 20)
+        FirstNameLabel.TabIndex = 9
+        FirstNameLabel.Text = "First Name"
+        '
+        'PhoneNoLabel
+        '
+        PhoneNoLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        PhoneNoLabel.AutoSize = True
+        PhoneNoLabel.BackColor = System.Drawing.Color.Transparent
+        PhoneNoLabel.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        PhoneNoLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        PhoneNoLabel.Location = New System.Drawing.Point(147, 135)
+        PhoneNoLabel.Name = "PhoneNoLabel"
+        PhoneNoLabel.Size = New System.Drawing.Size(81, 20)
+        PhoneNoLabel.TabIndex = 8
+        PhoneNoLabel.Text = "Phone No"
+        '
         'GeneralUserBindingSource
         '
         Me.GeneralUserBindingSource.DataMember = "GeneralUser"
@@ -112,6 +197,7 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.login_panel.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.login_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.login_panel.Controls.Add(Me.CheckBox1)
         Me.login_panel.Controls.Add(Me.Panel4)
         Me.login_panel.Controls.Add(Me.Panel3)
         Me.login_panel.Controls.Add(Me.Button1)
@@ -120,6 +206,19 @@ Partial Class Form1
         Me.login_panel.Name = "login_panel"
         Me.login_panel.Size = New System.Drawing.Size(1341, 110)
         Me.login_panel.TabIndex = 2
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Font = New System.Drawing.Font("Century Gothic", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox1.ForeColor = System.Drawing.Color.White
+        Me.CheckBox1.Location = New System.Drawing.Point(1102, 43)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(158, 25)
+        Me.CheckBox1.TabIndex = 3
+        Me.CheckBox1.Text = "Login As Admin"
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'Panel4
         '
@@ -254,20 +353,6 @@ Partial Class Form1
         Me.Panel2.Size = New System.Drawing.Size(637, 797)
         Me.Panel2.TabIndex = 0
         '
-        'AadharLabel
-        '
-        AadharLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        AadharLabel.AutoSize = True
-        AadharLabel.BackColor = System.Drawing.Color.Transparent
-        AadharLabel.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        AadharLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        AadharLabel.Location = New System.Drawing.Point(147, 525)
-        AadharLabel.Name = "AadharLabel"
-        AadharLabel.Size = New System.Drawing.Size(89, 20)
-        AadharLabel.TabIndex = 13
-        AadharLabel.Text = "Aadhar No"
-        '
         'CustomRoundedPanel5
         '
         Me.CustomRoundedPanel5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -345,34 +430,6 @@ Partial Class Form1
         Me.cpasswordtxtbox.TabStop = False
         Me.cpasswordtxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'PasswordLabel
-        '
-        PasswordLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        PasswordLabel.AutoSize = True
-        PasswordLabel.BackColor = System.Drawing.Color.Transparent
-        PasswordLabel.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        PasswordLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        PasswordLabel.Location = New System.Drawing.Point(147, 395)
-        PasswordLabel.Name = "PasswordLabel"
-        PasswordLabel.Size = New System.Drawing.Size(79, 20)
-        PasswordLabel.TabIndex = 12
-        PasswordLabel.Text = "Password"
-        '
-        'UserNameLabel
-        '
-        UserNameLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        UserNameLabel.AutoSize = True
-        UserNameLabel.BackColor = System.Drawing.Color.Transparent
-        UserNameLabel.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        UserNameLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        UserNameLabel.Location = New System.Drawing.Point(147, 330)
-        UserNameLabel.Name = "UserNameLabel"
-        UserNameLabel.Size = New System.Drawing.Size(89, 20)
-        UserNameLabel.TabIndex = 11
-        UserNameLabel.Text = "User Name"
-        '
         'CustomRoundedPanel7
         '
         Me.CustomRoundedPanel7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -397,34 +454,6 @@ Partial Class Form1
         Me.PasswordTextBox.TabIndex = 7
         Me.PasswordTextBox.TabStop = False
         Me.PasswordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'SecondNameLabel
-        '
-        SecondNameLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        SecondNameLabel.AutoSize = True
-        SecondNameLabel.BackColor = System.Drawing.Color.Transparent
-        SecondNameLabel.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        SecondNameLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        SecondNameLabel.Location = New System.Drawing.Point(147, 266)
-        SecondNameLabel.Name = "SecondNameLabel"
-        SecondNameLabel.Size = New System.Drawing.Size(113, 20)
-        SecondNameLabel.TabIndex = 10
-        SecondNameLabel.Text = "Second Name"
-        '
-        'FirstNameLabel
-        '
-        FirstNameLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        FirstNameLabel.AutoSize = True
-        FirstNameLabel.BackColor = System.Drawing.Color.Transparent
-        FirstNameLabel.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        FirstNameLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        FirstNameLabel.Location = New System.Drawing.Point(147, 200)
-        FirstNameLabel.Name = "FirstNameLabel"
-        FirstNameLabel.Size = New System.Drawing.Size(83, 20)
-        FirstNameLabel.TabIndex = 9
-        FirstNameLabel.Text = "First Name"
         '
         'CustomRoundedPanel2
         '
@@ -473,20 +502,6 @@ Partial Class Form1
         Me.UserNameTextBox.TabIndex = 6
         Me.UserNameTextBox.TabStop = False
         Me.UserNameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'PhoneNoLabel
-        '
-        PhoneNoLabel.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        PhoneNoLabel.AutoSize = True
-        PhoneNoLabel.BackColor = System.Drawing.Color.Transparent
-        PhoneNoLabel.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        PhoneNoLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        PhoneNoLabel.Location = New System.Drawing.Point(147, 135)
-        PhoneNoLabel.Name = "PhoneNoLabel"
-        PhoneNoLabel.Size = New System.Drawing.Size(81, 20)
-        PhoneNoLabel.TabIndex = 8
-        PhoneNoLabel.Text = "Phone No"
         '
         'CustomRoundedPanel4
         '
@@ -574,6 +589,7 @@ Partial Class Form1
         CType(Me.GeneralUserBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GeneralUserDBDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.login_panel.ResumeLayout(False)
+        Me.login_panel.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -633,4 +649,5 @@ Partial Class Form1
     Friend WithEvents PhoneNoTextBox As System.Windows.Forms.TextBox
     Friend WithEvents status_label As System.Windows.Forms.Label
     Friend WithEvents register_button As System.Windows.Forms.Button
+    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
 End Class

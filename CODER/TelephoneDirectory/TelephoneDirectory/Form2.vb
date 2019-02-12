@@ -1056,7 +1056,6 @@ Public Class Form2
 
     Private Sub DataGridView3_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView3.CellContentClick
         If e.ColumnIndex = 0 Then
-
             Dim planname As String = DataGridView3.Rows(e.RowIndex).Cells(2).Value
             Dim cost As Integer = CInt(DataGridView3.Rows(e.RowIndex).Cells(3).Value)
             Dim nplannumber As Integer = CInt(DataGridView3.Rows(e.RowIndex).Cells(1).Value)
@@ -1117,11 +1116,12 @@ Public Class Form2
                 End If
 
 
-
             Else
                 MsgBox("Please recharge Rs. " & cost - Tbalance & " into your account!")
 
             End If
+        ElseIf e.ColumnIndex = 4 Then
+
 
 
         End If
